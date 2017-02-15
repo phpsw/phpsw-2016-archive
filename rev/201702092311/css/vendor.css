@@ -10822,7 +10822,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 /* mouse grab icon */
 
 .grabbing {
-  cursor: url("../../201603280108/grabbing.png.html") 8 8, move;
+  cursor: url("../../201603280108/grabbing.png") 8 8, move;
 }
 
 /* fix */
@@ -10918,7 +10918,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 
 .owl-item.loading {
   min-height: 150px;
-  background: url("../../201603280108/AjaxLoader.gif.html") no-repeat center center;
+  background: url("../../201603280108/AjaxLoader.gif") no-repeat center center;
 }
 /* 
  *  Owl Carousel CSS3 Transitions 
