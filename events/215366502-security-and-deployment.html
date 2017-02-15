@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Security &amp; deployment, November 2014 · PHPSW · South West UK PHP User Group</title>
+    <meta name="description" content="PHP User Group, meets 2nd Wednesday of every month, in Bristol, UK, talking PHP and related technologies.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:site_name" content="PHPSW">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://phpsw.uk/events/215366502-security-and-deployment">
+      <meta property="og:title" content="Security &amp; deployment, November 2014">
+      <meta property="og:description" content="PHP User Group, meets 2nd Wednesday of every month, in Bristol, UK, talking PHP and related technologies.">
+      <meta property="og:image" content=""><meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:url" content="https://phpsw.uk/events/215366502-security-and-deployment">
+      <meta name="twitter:title" content="Security &amp; deployment, November 2014">
+      <meta name="twitter:description" content="PHP User Group, meets 2nd Wednesday of every month, in Bristol, UK, talking PHP and related technologies.">
+      <meta name="twitter:image" content="">
+      <meta name="twitter:site" content="@phpsw">
+      <meta name="twitter:creator" content="@phpsw">
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="shortcut icon" href="https://phpsw.uk/favicon.ico">
+    <link rel="canonical" href="215366502-security-and-deployment.html">
+    <link rel="stylesheet" href="../rev/201702092239/css/vendor.css">
+    <link rel="stylesheet" href="../rev/201702092239/css/main.css">
+  </head>
+  <body>
+          <header class="header">
+  <div class="container">
+    <h1>
+      <a href="../index.html">
+        <span class="sr-only">PHPSW</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="logo logo--global" preserveAspectRatio="xMidYMid meet" viewBox="0 0 436 212">
+  <path class="logo__php" d="M86.574997 69.474998l-46.018997 0l-19.9 100.743996l23.630999 0l4.975002 -26.118988l22.388 0c21.143997 1.2 44.8 -16.2 44.8 -46.019005c0.000999 -17.4 -9.9 -27.4 -29.8 -28.606003zm-17.412994 55.968002l-14.925003 0l6.219002 -37.312004l16.168999 0c8.706001 0 14.9 3.7 14.9 11.194c-1.243004 21.1 -11.2 24.9 -22.4 26.118004z M111.962997 144.100006l19.899002 -100.742996l23.632004 0l-4.975998 26.119003l22.388 0c19.899994 1.2 27.4 11.2 24.9 23.630997l-8.706009 50.992996l-24.875 0l8.706009 -46.018997c1.243988 -6.2 1.2 -9.9 -7.5 -9.949997l-18.655991 0l-11.193008 55.968994l-23.630997 0z M255.237 69.474998l-46.018997 0l-19.900009 100.743996l23.632004 0l4.975006 -26.118988l22.388 0c21.143997 1.2 44.8 -16.2 44.8 -46.019005c0 -17.4 -10 -27.4 -29.9 -28.606003zm-17.412003 55.968002l-14.925003 0l6.218994 -37.312004l16.167999 0c8.707001 0 14.9 3.7 14.9 11.194c-1.243988 21.1 -11.2 24.9 -22.4 26.118004z" fill="#1E1E1E"/>
+  <g class="logo__sw">
+    <path class="logo__sw__rhomboid" d="M414.498169 142.375l-115.998169 0l12.5 -75l116 0" fill="#2A8EBD"/>
+    <path class="logo__sw__text" d="M317.558777 118.025002c2.764008 1.7 6.6 3 11 2.971001c3.800018 0 7.3 -1.8 7.3 -5.389c0 -2.7 -2 -4.4 -6.3 -6.633003c-4.904999 -2.6 -9.6 -6.4 -9.6 -12.367996c0 -9.4 8.2 -15.1 18.3 -15.131004c5.597015 0 8.9 1.2 10.9 2.279999l-3.108002 8.291c-1.520996 -0.8 -4.8 -2.1 -8.6 -2.003998c-4.629028 0 -7 2.3 -7 4.836998c0 2.8 2.8 4.4 6.8 6.633003c5.665009 3 9.2 6.8 9.2 12.366997c0 10.4 -8.6 15.7 -18.9 15.684006c-6.425995 -0.1 -11.1 -1.7 -13.3 -3.316002l3.317993 -8.222z M357.56076 128.804001l-1.79599 -46.568001l10.087006 0l0 20.727997c0 5.7 -0.1 10.9 -0.3 15.131004l0.138 0c1.65802 -4.6 3.3 -9.3 5.5 -14.993004l8.360016 -20.865997l10.916992 0l-0.139008 20.795998c-0.069 5.6 -0.2 10.2 -0.5 14.786003l0.138 0c1.589996 -4.8 3.3 -9.8 5.2 -14.854004l8.015991 -20.727997l10.502014 0l-20.520996 46.568001l-10.848999 0l-0.276001 -19.069c-0.069 -5.5 0.1 -10.2 0.3 -15.476997l-0.139008 0c-1.65799 5 -3.3 10 -5.6 15.683998l-8.015991 18.862l-11.054016 0z" fill="white"/>
+  </g>
+</svg>
+
+      </a>
+    </h1>
+
+    <div class="balloons">
+      <svg xmlns="http://www.w3.org/2000/svg" class="balloon balloon--small" fill="#1E1E1E" viewBox="0 0 1015 1268" preserveAspectRatio="xMidYMid meet">
+  <path d="M289.5 18.6 c-19 4.2 -32.6 13.1 -62.9 41.2l-13 11.9 -7 1.3c-12.4 2.2 -33.7 7.7 -46.1 12 -24.2 8.4 -43.3 19.2 -57.9 33.1 -21.6 20.4 -32.9 44.6 -38 81.7 -3.3 23.7 -3.7 48.5 -3.4 229.2l0.3 178.5 2.3 5.8c3.4 8.4 11.7 16.9 20.6 21.1 10.2 4.9 19.7 6.7 34.6 6.7 22.2 -0 37.1 -5 47.3 -16 6.9 -7.5 9.7 -14.4 10.6 -26.6 0.8 -10.3 0.6 -10.7 5.1 13.7 1.6 9.3 4.4 24.2 6 33.3 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.3 23.8 6 32.7 8.9 48.5 33 182.2 33 182.9 0 0.5 -8.2 0.9 -18.2 0.9 -20.4 -0 -22 0.4 -27.2 7.3 -2.3 2.9 -2.6 4.3 -2.6 10.8 0 8 1.2 10.9 6.2 14.9 5.1 3.9 9.3 5 19.7 5l10 -0 0.5 3.2c0.7 4.2 3 23.4 5.6 45.8 1 9.6 3.3 29 4.9 43 8.1 68.3 11.3 95.6 12.6 108 0.9 7.4 2.2 18.7 3 25 0.8 6.3 2.4 19.8 3.5 30 1.1 10.2 2.2 19.5 2.5 20.8l0.5 2.2 216.6 -0c172.3 -0 216.5 -0.3 216.8 -1.3 0.5 -1.8 4.5 -34.9 6.2 -51.2 0.8 -7.7 2.1 -18.7 2.9 -24.5 0.8 -5.8 2.2 -17 3 -25 0.8 -8 2.2 -19.5 3 -25.5 0.8 -6.1 2.1 -17.3 3 -25 0.8 -7.7 2.4 -21.2 3.5 -30 3.4 -27.6 11 -92.6 11 -94.5 0 -0.6 3.4 -1 9 -1 10.2 -0 13.3 -1.1 19.3 -6.8l3.7 -3.6 0 -9.1c0 -9 0 -9.1 -3.2 -12.1 -6.5 -6 -7.8 -6.4 -20.3 -6.4l-11.5 -0 0 -2.7c0 -1.5 1.4 -10.8 3 -20.7 5.3 -31.5 8.8 -52.5 12 -72.1 1.7 -10.5 4.2 -25.5 5.5 -33.5 1.3 -8 4 -24.4 6 -36.5 2 -12.1 4.7 -28.5 6 -36.5 6.4 -38.1 7.7 -46.2 9.1 -55.5 0.8 -5.5 1.6 -10.5 1.8 -11.1 0.2 -0.6 4.4 -1.4 9.6 -1.7 25.4 -1.8 51 -10.6 65.2 -22.4 10.3 -8.5 16.6 -18.4 19.9 -31 1.8 -7.3 1.9 -12.1 1.9 -125.9l0 -118.2 3.4 -8.8c3.7 -9.6 6.6 -20.4 8.8 -32.4 1.7 -9.8 1.7 -51.2 0 -63.5 -4 -28.5 -11.3 -53 -22.2 -75.4l-6.9 -14.1 22.7 -0 22.8 -0 4.9 5.1c11 11.2 31.5 22.7 44.7 25 8.1 1.3 18.3 0.2 24.1 -2.7 4.1 -2.1 9.5 -7.1 11.4 -10.7 1.4 -2.7 2 -12.7 0.9 -14.5 -0.2 -0.4 2.4 -2.1 5.9 -3.6 7.9 -3.4 15 -10.6 16.1 -16.1 1.9 -10.1 -7.1 -20 -22.3 -24.5 -4 -1.2 -4.3 -1.6 -4.3 -4.9 0 -8.9 -5.1 -16.5 -13.6 -20.2 -8.8 -3.9 -22.3 -3.4 -33.1 1.2 -7.4 3.2 -18.2 10.9 -26.7 19.1l-7.9 7.8 -37.4 -0 -37.4 -0 -8.7 -7.8c-17.6 -15.7 -30.5 -24.4 -51.7 -34.8 -16.4 -8 -32.7 -13.9 -50.5 -18.4 -27.3 -6.9 -44.8 -9 -81 -9.7 -28 -0.6 -151.9 1.2 -160.5 2.3 -4.1 0.5 -4.1 0.5 -10.4 -7.6 -10.9 -13.8 -25.2 -23.8 -41.6 -29 -5.2 -1.7 -10.3 -2.4 -20 -2.7 -15.2 -0.6 -22.8 0.7 -36.4 6.2l-9 3.6 -6.8 -3.5c-11.5 -5.7 -19.5 -7.8 -32.3 -8.2 -8 -0.3 -13.6 0.1 -18.5 1.2zm-37.8 369.4l2.2 -0 0.4 91.7c0.3 101.2 0 96.1 6.7 109.2 10 19.9 32 33.5 63.6 39.3 5.8 1 6.8 1.6 10 5.5 1.9 2.3 3.7 5.8 4 7.5 0.2 1.8 1.8 13.6 3.4 26.3 1.7 12.6 4.4 33 6 45.2 1.7 12.3 4.3 32.3 5.9 44.5 1.7 12.3 4.1 30.8 5.5 41.3 1.5 10.4 3.2 24.2 4 30.5 0.8 6.3 3.7 28.4 6.5 49 2.8 20.6 5.3 40.3 5.7 43.8l0.7 6.2 -52.6 -0c-41.8 -0 -52.6 -0.3 -53 -1.3 -0.3 -0.7 -1.2 -6 -2.2 -11.7 -0.9 -5.8 -2.7 -16.4 -4 -23.5 -1.3 -7.2 -2.6 -15 -3 -17.5 -0.3 -2.5 -1.9 -11.9 -3.5 -21 -1.6 -9.1 -4.3 -24.8 -6 -35 -1.7 -10.2 -4.2 -24.8 -5.6 -32.5 -1.3 -7.7 -3 -17.8 -3.8 -22.5 -1.7 -10.3 -4.7 -27.7 -8.7 -51 -1.6 -9.6 -4.1 -24.3 -5.5 -32.5 -1.4 -8.3 -3.8 -22.4 -5.4 -31.5 -5.2 -30.2 -9 -52.4 -10.5 -61.5 -0.8 -5 -3.1 -18.2 -5.1 -29.5 -2 -11.3 -3.7 -22.5 -3.9 -25 -0.6 -8.5 -11.6 -67.5 -13.2 -70.8 -1.5 -2.9 -1.5 -4.5 -0.5 -13.3 3.7 -31.4 14.5 -49.9 33.5 -57.1 5.6 -2.1 17.5 -3.8 22.7 -3.2 1.9 0.2 4.5 0.4 5.7 0.4zm309.3 98c5.2 0.5 10 1 10.7 1 0.9 -0 1.3 11.1 1.6 43.7 0.4 46.4 0.5 47.2 5.5 58.7 1.2 2.6 3.8 7.1 5.9 9.9l3.7 5 -1.7 15.1c-1 8.3 -3.1 26.3 -4.7 40.1 -1.6 13.7 -4.3 36.6 -6 50.7 -11.3 96 -14.4 122.4 -18.1 154.3 -1.7 14.3 -4.1 34.3 -5.2 44.5l-2.2 18.5 -71.7 0.3c-39.5 0.1 -71.8 -0 -71.8 -0.3 0 -0.2 -0.6 -5.3 -1.4 -11.2 -0.8 -5.9 -1.8 -13.7 -2.1 -17.3 -0.4 -3.6 -1.9 -17.1 -3.5 -30 -1.6 -12.9 -4.3 -35.7 -6 -50.5 -1.7 -14.9 -4.2 -35.6 -5.5 -46 -1.3 -10.5 -2.7 -22.2 -3 -26 -0.4 -3.9 -1.7 -15.1 -3 -25 -1.3 -9.9 -2.6 -21.4 -3 -25.5 -0.4 -4.1 -1.5 -13.8 -2.6 -21.4 -2.6 -19.2 -2.9 -17.7 3.4 -16 14.6 3.8 25.9 4.9 52.2 4.9 22.4 -0 27.7 -0.4 38.4 -2.3 24.9 -4.5 43 -12.4 55.1 -24.2 7.3 -7.1 11 -12.7 14.9 -22.9l2.6 -6.6 0.3 -61.8 0.3 -61.9 3.7 0.6c2 0.4 8 1.1 13.2 1.6zm69.3 141.5c2.9 0.8 10.2 2.3 16.4 3.4 9.9 1.7 11.7 2.3 15.5 5.4 13 10.6 36.7 18.7 62.2 21.3 7.6 0.8 7.3 0.1 5.1 12.5 -1.5 8.8 -6.9 40.6 -15.5 91.4 -10.1 59.4 -15 88.6 -21.5 126.7 -3.6 21.2 -6.5 38.9 -6.5 39.2 0 0.3 -23 0.6 -51.1 0.6 -48.1 -0 -51 -0.1 -50.5 -1.8 0.3 -0.9 1 -6.4 1.6 -12.2 0.7 -5.8 2.2 -18.8 3.5 -29 1.3 -10.2 2.7 -21.2 3 -24.5 0.6 -5.7 3.3 -27.7 9 -73 4.6 -36.3 7.5 -60.8 9.5 -78 1.1 -9.4 2.6 -21.7 3.4 -27.5 0.8 -5.8 1.8 -13.4 2.1 -17 0.8 -8.2 4.4 -34.7 5.1 -37.8 0.3 -1.6 1 -2.2 2 -1.8 0.8 0.3 3.8 1.2 6.7 2.1z"/>
+</svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="balloon balloon--large" fill="#1E1E1E" viewBox="0 0 1015 1268" preserveAspectRatio="xMidYMid meet">
+  <path d="M289.5 18.6 c-19 4.2 -32.6 13.1 -62.9 41.2l-13 11.9 -7 1.3c-12.4 2.2 -33.7 7.7 -46.1 12 -24.2 8.4 -43.3 19.2 -57.9 33.1 -21.6 20.4 -32.9 44.6 -38 81.7 -3.3 23.7 -3.7 48.5 -3.4 229.2l0.3 178.5 2.3 5.8c3.4 8.4 11.7 16.9 20.6 21.1 10.2 4.9 19.7 6.7 34.6 6.7 22.2 -0 37.1 -5 47.3 -16 6.9 -7.5 9.7 -14.4 10.6 -26.6 0.8 -10.3 0.6 -10.7 5.1 13.7 1.6 9.3 4.4 24.2 6 33.3 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.3 23.8 6 32.7 8.9 48.5 33 182.2 33 182.9 0 0.5 -8.2 0.9 -18.2 0.9 -20.4 -0 -22 0.4 -27.2 7.3 -2.3 2.9 -2.6 4.3 -2.6 10.8 0 8 1.2 10.9 6.2 14.9 5.1 3.9 9.3 5 19.7 5l10 -0 0.5 3.2c0.7 4.2 3 23.4 5.6 45.8 1 9.6 3.3 29 4.9 43 8.1 68.3 11.3 95.6 12.6 108 0.9 7.4 2.2 18.7 3 25 0.8 6.3 2.4 19.8 3.5 30 1.1 10.2 2.2 19.5 2.5 20.8l0.5 2.2 216.6 -0c172.3 -0 216.5 -0.3 216.8 -1.3 0.5 -1.8 4.5 -34.9 6.2 -51.2 0.8 -7.7 2.1 -18.7 2.9 -24.5 0.8 -5.8 2.2 -17 3 -25 0.8 -8 2.2 -19.5 3 -25.5 0.8 -6.1 2.1 -17.3 3 -25 0.8 -7.7 2.4 -21.2 3.5 -30 3.4 -27.6 11 -92.6 11 -94.5 0 -0.6 3.4 -1 9 -1 10.2 -0 13.3 -1.1 19.3 -6.8l3.7 -3.6 0 -9.1c0 -9 0 -9.1 -3.2 -12.1 -6.5 -6 -7.8 -6.4 -20.3 -6.4l-11.5 -0 0 -2.7c0 -1.5 1.4 -10.8 3 -20.7 5.3 -31.5 8.8 -52.5 12 -72.1 1.7 -10.5 4.2 -25.5 5.5 -33.5 1.3 -8 4 -24.4 6 -36.5 2 -12.1 4.7 -28.5 6 -36.5 6.4 -38.1 7.7 -46.2 9.1 -55.5 0.8 -5.5 1.6 -10.5 1.8 -11.1 0.2 -0.6 4.4 -1.4 9.6 -1.7 25.4 -1.8 51 -10.6 65.2 -22.4 10.3 -8.5 16.6 -18.4 19.9 -31 1.8 -7.3 1.9 -12.1 1.9 -125.9l0 -118.2 3.4 -8.8c3.7 -9.6 6.6 -20.4 8.8 -32.4 1.7 -9.8 1.7 -51.2 0 -63.5 -4 -28.5 -11.3 -53 -22.2 -75.4l-6.9 -14.1 22.7 -0 22.8 -0 4.9 5.1c11 11.2 31.5 22.7 44.7 25 8.1 1.3 18.3 0.2 24.1 -2.7 4.1 -2.1 9.5 -7.1 11.4 -10.7 1.4 -2.7 2 -12.7 0.9 -14.5 -0.2 -0.4 2.4 -2.1 5.9 -3.6 7.9 -3.4 15 -10.6 16.1 -16.1 1.9 -10.1 -7.1 -20 -22.3 -24.5 -4 -1.2 -4.3 -1.6 -4.3 -4.9 0 -8.9 -5.1 -16.5 -13.6 -20.2 -8.8 -3.9 -22.3 -3.4 -33.1 1.2 -7.4 3.2 -18.2 10.9 -26.7 19.1l-7.9 7.8 -37.4 -0 -37.4 -0 -8.7 -7.8c-17.6 -15.7 -30.5 -24.4 -51.7 -34.8 -16.4 -8 -32.7 -13.9 -50.5 -18.4 -27.3 -6.9 -44.8 -9 -81 -9.7 -28 -0.6 -151.9 1.2 -160.5 2.3 -4.1 0.5 -4.1 0.5 -10.4 -7.6 -10.9 -13.8 -25.2 -23.8 -41.6 -29 -5.2 -1.7 -10.3 -2.4 -20 -2.7 -15.2 -0.6 -22.8 0.7 -36.4 6.2l-9 3.6 -6.8 -3.5c-11.5 -5.7 -19.5 -7.8 -32.3 -8.2 -8 -0.3 -13.6 0.1 -18.5 1.2zm-37.8 369.4l2.2 -0 0.4 91.7c0.3 101.2 0 96.1 6.7 109.2 10 19.9 32 33.5 63.6 39.3 5.8 1 6.8 1.6 10 5.5 1.9 2.3 3.7 5.8 4 7.5 0.2 1.8 1.8 13.6 3.4 26.3 1.7 12.6 4.4 33 6 45.2 1.7 12.3 4.3 32.3 5.9 44.5 1.7 12.3 4.1 30.8 5.5 41.3 1.5 10.4 3.2 24.2 4 30.5 0.8 6.3 3.7 28.4 6.5 49 2.8 20.6 5.3 40.3 5.7 43.8l0.7 6.2 -52.6 -0c-41.8 -0 -52.6 -0.3 -53 -1.3 -0.3 -0.7 -1.2 -6 -2.2 -11.7 -0.9 -5.8 -2.7 -16.4 -4 -23.5 -1.3 -7.2 -2.6 -15 -3 -17.5 -0.3 -2.5 -1.9 -11.9 -3.5 -21 -1.6 -9.1 -4.3 -24.8 -6 -35 -1.7 -10.2 -4.2 -24.8 -5.6 -32.5 -1.3 -7.7 -3 -17.8 -3.8 -22.5 -1.7 -10.3 -4.7 -27.7 -8.7 -51 -1.6 -9.6 -4.1 -24.3 -5.5 -32.5 -1.4 -8.3 -3.8 -22.4 -5.4 -31.5 -5.2 -30.2 -9 -52.4 -10.5 -61.5 -0.8 -5 -3.1 -18.2 -5.1 -29.5 -2 -11.3 -3.7 -22.5 -3.9 -25 -0.6 -8.5 -11.6 -67.5 -13.2 -70.8 -1.5 -2.9 -1.5 -4.5 -0.5 -13.3 3.7 -31.4 14.5 -49.9 33.5 -57.1 5.6 -2.1 17.5 -3.8 22.7 -3.2 1.9 0.2 4.5 0.4 5.7 0.4zm309.3 98c5.2 0.5 10 1 10.7 1 0.9 -0 1.3 11.1 1.6 43.7 0.4 46.4 0.5 47.2 5.5 58.7 1.2 2.6 3.8 7.1 5.9 9.9l3.7 5 -1.7 15.1c-1 8.3 -3.1 26.3 -4.7 40.1 -1.6 13.7 -4.3 36.6 -6 50.7 -11.3 96 -14.4 122.4 -18.1 154.3 -1.7 14.3 -4.1 34.3 -5.2 44.5l-2.2 18.5 -71.7 0.3c-39.5 0.1 -71.8 -0 -71.8 -0.3 0 -0.2 -0.6 -5.3 -1.4 -11.2 -0.8 -5.9 -1.8 -13.7 -2.1 -17.3 -0.4 -3.6 -1.9 -17.1 -3.5 -30 -1.6 -12.9 -4.3 -35.7 -6 -50.5 -1.7 -14.9 -4.2 -35.6 -5.5 -46 -1.3 -10.5 -2.7 -22.2 -3 -26 -0.4 -3.9 -1.7 -15.1 -3 -25 -1.3 -9.9 -2.6 -21.4 -3 -25.5 -0.4 -4.1 -1.5 -13.8 -2.6 -21.4 -2.6 -19.2 -2.9 -17.7 3.4 -16 14.6 3.8 25.9 4.9 52.2 4.9 22.4 -0 27.7 -0.4 38.4 -2.3 24.9 -4.5 43 -12.4 55.1 -24.2 7.3 -7.1 11 -12.7 14.9 -22.9l2.6 -6.6 0.3 -61.8 0.3 -61.9 3.7 0.6c2 0.4 8 1.1 13.2 1.6zm69.3 141.5c2.9 0.8 10.2 2.3 16.4 3.4 9.9 1.7 11.7 2.3 15.5 5.4 13 10.6 36.7 18.7 62.2 21.3 7.6 0.8 7.3 0.1 5.1 12.5 -1.5 8.8 -6.9 40.6 -15.5 91.4 -10.1 59.4 -15 88.6 -21.5 126.7 -3.6 21.2 -6.5 38.9 -6.5 39.2 0 0.3 -23 0.6 -51.1 0.6 -48.1 -0 -51 -0.1 -50.5 -1.8 0.3 -0.9 1 -6.4 1.6 -12.2 0.7 -5.8 2.2 -18.8 3.5 -29 1.3 -10.2 2.7 -21.2 3 -24.5 0.6 -5.7 3.3 -27.7 9 -73 4.6 -36.3 7.5 -60.8 9.5 -78 1.1 -9.4 2.6 -21.7 3.4 -27.5 0.8 -5.8 1.8 -13.4 2.1 -17 0.8 -8.2 4.4 -34.7 5.1 -37.8 0.3 -1.6 1 -2.2 2 -1.8 0.8 0.3 3.8 1.2 6.7 2.1z"/>
+</svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="balloon balloon--medium" fill="#1E1E1E" viewBox="0 0 1015 1268" preserveAspectRatio="xMidYMid meet">
+  <path d="M289.5 18.6 c-19 4.2 -32.6 13.1 -62.9 41.2l-13 11.9 -7 1.3c-12.4 2.2 -33.7 7.7 -46.1 12 -24.2 8.4 -43.3 19.2 -57.9 33.1 -21.6 20.4 -32.9 44.6 -38 81.7 -3.3 23.7 -3.7 48.5 -3.4 229.2l0.3 178.5 2.3 5.8c3.4 8.4 11.7 16.9 20.6 21.1 10.2 4.9 19.7 6.7 34.6 6.7 22.2 -0 37.1 -5 47.3 -16 6.9 -7.5 9.7 -14.4 10.6 -26.6 0.8 -10.3 0.6 -10.7 5.1 13.7 1.6 9.3 4.4 24.2 6 33.3 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.3 23.8 6 32.7 8.9 48.5 33 182.2 33 182.9 0 0.5 -8.2 0.9 -18.2 0.9 -20.4 -0 -22 0.4 -27.2 7.3 -2.3 2.9 -2.6 4.3 -2.6 10.8 0 8 1.2 10.9 6.2 14.9 5.1 3.9 9.3 5 19.7 5l10 -0 0.5 3.2c0.7 4.2 3 23.4 5.6 45.8 1 9.6 3.3 29 4.9 43 8.1 68.3 11.3 95.6 12.6 108 0.9 7.4 2.2 18.7 3 25 0.8 6.3 2.4 19.8 3.5 30 1.1 10.2 2.2 19.5 2.5 20.8l0.5 2.2 216.6 -0c172.3 -0 216.5 -0.3 216.8 -1.3 0.5 -1.8 4.5 -34.9 6.2 -51.2 0.8 -7.7 2.1 -18.7 2.9 -24.5 0.8 -5.8 2.2 -17 3 -25 0.8 -8 2.2 -19.5 3 -25.5 0.8 -6.1 2.1 -17.3 3 -25 0.8 -7.7 2.4 -21.2 3.5 -30 3.4 -27.6 11 -92.6 11 -94.5 0 -0.6 3.4 -1 9 -1 10.2 -0 13.3 -1.1 19.3 -6.8l3.7 -3.6 0 -9.1c0 -9 0 -9.1 -3.2 -12.1 -6.5 -6 -7.8 -6.4 -20.3 -6.4l-11.5 -0 0 -2.7c0 -1.5 1.4 -10.8 3 -20.7 5.3 -31.5 8.8 -52.5 12 -72.1 1.7 -10.5 4.2 -25.5 5.5 -33.5 1.3 -8 4 -24.4 6 -36.5 2 -12.1 4.7 -28.5 6 -36.5 6.4 -38.1 7.7 -46.2 9.1 -55.5 0.8 -5.5 1.6 -10.5 1.8 -11.1 0.2 -0.6 4.4 -1.4 9.6 -1.7 25.4 -1.8 51 -10.6 65.2 -22.4 10.3 -8.5 16.6 -18.4 19.9 -31 1.8 -7.3 1.9 -12.1 1.9 -125.9l0 -118.2 3.4 -8.8c3.7 -9.6 6.6 -20.4 8.8 -32.4 1.7 -9.8 1.7 -51.2 0 -63.5 -4 -28.5 -11.3 -53 -22.2 -75.4l-6.9 -14.1 22.7 -0 22.8 -0 4.9 5.1c11 11.2 31.5 22.7 44.7 25 8.1 1.3 18.3 0.2 24.1 -2.7 4.1 -2.1 9.5 -7.1 11.4 -10.7 1.4 -2.7 2 -12.7 0.9 -14.5 -0.2 -0.4 2.4 -2.1 5.9 -3.6 7.9 -3.4 15 -10.6 16.1 -16.1 1.9 -10.1 -7.1 -20 -22.3 -24.5 -4 -1.2 -4.3 -1.6 -4.3 -4.9 0 -8.9 -5.1 -16.5 -13.6 -20.2 -8.8 -3.9 -22.3 -3.4 -33.1 1.2 -7.4 3.2 -18.2 10.9 -26.7 19.1l-7.9 7.8 -37.4 -0 -37.4 -0 -8.7 -7.8c-17.6 -15.7 -30.5 -24.4 -51.7 -34.8 -16.4 -8 -32.7 -13.9 -50.5 -18.4 -27.3 -6.9 -44.8 -9 -81 -9.7 -28 -0.6 -151.9 1.2 -160.5 2.3 -4.1 0.5 -4.1 0.5 -10.4 -7.6 -10.9 -13.8 -25.2 -23.8 -41.6 -29 -5.2 -1.7 -10.3 -2.4 -20 -2.7 -15.2 -0.6 -22.8 0.7 -36.4 6.2l-9 3.6 -6.8 -3.5c-11.5 -5.7 -19.5 -7.8 -32.3 -8.2 -8 -0.3 -13.6 0.1 -18.5 1.2zm-37.8 369.4l2.2 -0 0.4 91.7c0.3 101.2 0 96.1 6.7 109.2 10 19.9 32 33.5 63.6 39.3 5.8 1 6.8 1.6 10 5.5 1.9 2.3 3.7 5.8 4 7.5 0.2 1.8 1.8 13.6 3.4 26.3 1.7 12.6 4.4 33 6 45.2 1.7 12.3 4.3 32.3 5.9 44.5 1.7 12.3 4.1 30.8 5.5 41.3 1.5 10.4 3.2 24.2 4 30.5 0.8 6.3 3.7 28.4 6.5 49 2.8 20.6 5.3 40.3 5.7 43.8l0.7 6.2 -52.6 -0c-41.8 -0 -52.6 -0.3 -53 -1.3 -0.3 -0.7 -1.2 -6 -2.2 -11.7 -0.9 -5.8 -2.7 -16.4 -4 -23.5 -1.3 -7.2 -2.6 -15 -3 -17.5 -0.3 -2.5 -1.9 -11.9 -3.5 -21 -1.6 -9.1 -4.3 -24.8 -6 -35 -1.7 -10.2 -4.2 -24.8 -5.6 -32.5 -1.3 -7.7 -3 -17.8 -3.8 -22.5 -1.7 -10.3 -4.7 -27.7 -8.7 -51 -1.6 -9.6 -4.1 -24.3 -5.5 -32.5 -1.4 -8.3 -3.8 -22.4 -5.4 -31.5 -5.2 -30.2 -9 -52.4 -10.5 -61.5 -0.8 -5 -3.1 -18.2 -5.1 -29.5 -2 -11.3 -3.7 -22.5 -3.9 -25 -0.6 -8.5 -11.6 -67.5 -13.2 -70.8 -1.5 -2.9 -1.5 -4.5 -0.5 -13.3 3.7 -31.4 14.5 -49.9 33.5 -57.1 5.6 -2.1 17.5 -3.8 22.7 -3.2 1.9 0.2 4.5 0.4 5.7 0.4zm309.3 98c5.2 0.5 10 1 10.7 1 0.9 -0 1.3 11.1 1.6 43.7 0.4 46.4 0.5 47.2 5.5 58.7 1.2 2.6 3.8 7.1 5.9 9.9l3.7 5 -1.7 15.1c-1 8.3 -3.1 26.3 -4.7 40.1 -1.6 13.7 -4.3 36.6 -6 50.7 -11.3 96 -14.4 122.4 -18.1 154.3 -1.7 14.3 -4.1 34.3 -5.2 44.5l-2.2 18.5 -71.7 0.3c-39.5 0.1 -71.8 -0 -71.8 -0.3 0 -0.2 -0.6 -5.3 -1.4 -11.2 -0.8 -5.9 -1.8 -13.7 -2.1 -17.3 -0.4 -3.6 -1.9 -17.1 -3.5 -30 -1.6 -12.9 -4.3 -35.7 -6 -50.5 -1.7 -14.9 -4.2 -35.6 -5.5 -46 -1.3 -10.5 -2.7 -22.2 -3 -26 -0.4 -3.9 -1.7 -15.1 -3 -25 -1.3 -9.9 -2.6 -21.4 -3 -25.5 -0.4 -4.1 -1.5 -13.8 -2.6 -21.4 -2.6 -19.2 -2.9 -17.7 3.4 -16 14.6 3.8 25.9 4.9 52.2 4.9 22.4 -0 27.7 -0.4 38.4 -2.3 24.9 -4.5 43 -12.4 55.1 -24.2 7.3 -7.1 11 -12.7 14.9 -22.9l2.6 -6.6 0.3 -61.8 0.3 -61.9 3.7 0.6c2 0.4 8 1.1 13.2 1.6zm69.3 141.5c2.9 0.8 10.2 2.3 16.4 3.4 9.9 1.7 11.7 2.3 15.5 5.4 13 10.6 36.7 18.7 62.2 21.3 7.6 0.8 7.3 0.1 5.1 12.5 -1.5 8.8 -6.9 40.6 -15.5 91.4 -10.1 59.4 -15 88.6 -21.5 126.7 -3.6 21.2 -6.5 38.9 -6.5 39.2 0 0.3 -23 0.6 -51.1 0.6 -48.1 -0 -51 -0.1 -50.5 -1.8 0.3 -0.9 1 -6.4 1.6 -12.2 0.7 -5.8 2.2 -18.8 3.5 -29 1.3 -10.2 2.7 -21.2 3 -24.5 0.6 -5.7 3.3 -27.7 9 -73 4.6 -36.3 7.5 -60.8 9.5 -78 1.1 -9.4 2.6 -21.7 3.4 -27.5 0.8 -5.8 1.8 -13.4 2.1 -17 0.8 -8.2 4.4 -34.7 5.1 -37.8 0.3 -1.6 1 -2.2 2 -1.8 0.8 0.3 3.8 1.2 6.7 2.1z"/>
+</svg>
+
+    </div>
+
+          <div class="js-nav-toggle js-shown">
+        <button
+          class="navbar-toggle collapsed"
+          aria-label="Toggle Navigation"
+          data-target="#nav"
+          data-toggle="collapse"
+          type="button"
+          role="button"
+        >
+          <span class="lines"></span>
+        </button>
+      </div>
+      </div>
+</header>
+
+  
+  <div class="content">
+          <nav id="nav" class="navbar navbar-default navbar-collapse collapse" role="navigation">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li class="">
+        <a href="../index.html">Home</a>
+      </li>
+      <li class="active">
+        <a href="../events.html">Events</a>
+      </li>
+      <li class="">
+        <a href="../speakers.html">Speakers</a>
+      </li>
+      <li class="">
+        <a href="../sponsors.html">Sponsors</a>
+      </li>
+      <li class="">
+        <a href="../talks.html">Talks</a>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+              <li class="hidden-xs hidden-sm">
+          <a href="http://www.meetup.com/php-sw/members">
+            <i class="fa fa-group"></i>
+            579 members
+          </a>
+        </li>
+      
+              <li class="hidden-xs hidden-sm">
+          <a href="http://www.meetup.com/php-sw/about/comments/?op=all">
+            <i class="fa fa-thumbs-o-up"></i>
+            4.7/5 from 139 ratings
+          </a>
+        </li>
+      
+      <li>
+        <a href="https://twitter.com/phpsw" title="Follow us on Twitter (@phpsw)">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+
+      <li>
+        <div>
+          <a href="http://www.meetup.com/php-sw" class="btn btn-primary navbar-btn" style="margin: 8px" title="Find us on Meetup">
+            Join group
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    
+              
+    <main>
+        <div id="event-215366502" class="event event--past">
+    <div class="container">
+      <header class="page-header event__header">
+          <div class="row">
+    <div class="col-xs-9">
+      <h1>
+        Security &amp; deployment
+
+        <small>
+          November 2014
+        </small>
+      </h1>
+    </div>
+
+    <div class="col-xs-3 text-right">
+      <time class="calendar-date" datetime="2014-11-12T19:00:00+00:00">
+         <span class="calendar-date__month">Nov</span>
+         <span class="calendar-data__day">12</span>
+      </time>
+    </div>
+  </div>
+
+      </header>
+
+              <div class="event__stats text-right">
+                      <a href="215366502-security-and-deployment.html#attendees" class="event__stats__stat">
+              <i class="fa fa-group"></i>
+              40
+
+                              attended
+                          </a>
+          
+                      <span class="event__stats__stat">
+              <i class="fa fa-thumbs-o-up"></i>
+              4.5/5 by 6 members
+            </span>
+                  </div>
+      
+      <div class="event__body">
+        <div class="row">
+          <div class="col-sm-8">
+            <p>Talks on security and deployment!</p>
+          </div>
+          <div class="col-sm-4 text-right">
+                        <a href="https://www.meetup.com/php-sw/events/215366502/" class="btn btn-primary">
+                              View on Meetup
+                          </a>
+          </div>
+        </div>
+
+                  <div class="row">
+            <div class="col-sm-8">
+                              <div id="talks" class="talks
+  talks--event
+  
+  talks--talks
+  
+">
+  <h2 class="sr-only">Talks</h2>
+
+  <ul class="list">
+          <li><div id="talk-215366502-you-ll-never-believe-how-easy-deployments-can-really-be" class="talk talk--padded">
+      <h3>
+      <a href="../talks/you-ll-never-believe-how-easy-deployments-can-really-be.html" class="talk__title">
+        <span>You’ll Never Believe How Easy Deployments Can Really Be…</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="../speakers/james-titcumb.html"><div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/8dTwRTm5AmagndbXrXCfVoeiWt8=/36x36/http-/photos1.meetupstatic.com/photos/member/9/d/3/c/highres_134740252.jpeg.png" alt="James Titcumb">
+                </div><span class="fn">James Titcumb</span></a>, founder of PHP Hampshire, Zend Certified Engineer and Development Manager at <a href="http://www.protected.co.uk">Protected.co.uk</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>The deadline is looming: one week until we release the new version. Some features aren’t going to make the cut, but the boss really wants to make sure these critical bugs are fixed. You can’t wait for the release cycle to be over so you can relax.</p>
+<p>But what if I told you it didn’t have to be that way? What if I could show you how to create a world where there is no release cycle? A world where weekend deployments are a rarity, not the norm?! In this talk we will cover the steps we took to achieve the coding utopia of releasing a feature as soon as it’s ready - many times per day. You’ll find out that by implementing a continuous deployment flow, you can empower your developers to take ownership and become more productive.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-215366502-security-in-the-face-of-adversity" class="talk talk--padded">
+      <h3>
+      <a href="../talks/security-in-the-face-of-adversity.html" class="talk__title">
+        <span>Security in the face of adversity</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="../speakers/dave-tibbs.html"><div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/y3xEuZSeeJCEilsbx9_ncT8_mAc=/36x36/http-/avatars.phpsw.uk/twitter/lowlysysadm1n-size=original.jpeg" alt="Dave Tibbs">
+                </div><span class="fn">Dave Tibbs</span></a>, Systems Administrator at <a href="http://www.brightpearl.com">Brightpearl</a> US, briefly in the UK!
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+      </ul>
+</div>
+
+              
+                              <h2 class="sr-only">Details</h2>
+
+                <p><a href="http://www.brightpearl.com">Brightpearl</a>&nbsp;have kindly offered to host the evening, providing food, beers and their office as the venue. Don't forget to check them out- and&nbsp;<a href="http://www.brightpearl.com/company/careers">if you're looking, they are hiring</a>.</p> <p>Afterwards, we'll head to the pub, probably the&nbsp;<a href="http://volunteertavern.co.uk/real-ales">Volunteer Tavern</a>!</p> <p>Also, do check out our&nbsp;<a href="http://phpsw.org.uk">website</a>, as well as&nbsp;<a href="http://phpsw.org.uk/sponsors">our sponsors</a>;&nbsp;<a href="http://www.ents24.com">Ents24</a>,&nbsp;<a href="http://tech.just-eat.com">Just Eat</a>&nbsp;and&nbsp;<a href="http://www.redrockconsulting.co.uk">Redrock</a>&nbsp;without whom our events would not be possible.</p>
+                          </div>
+
+            <div class="col-sm-4">
+              <h2 class="sr-only">Additional info</h2>
+
+              
+              <h3>Suggestion box</h3>
+              <p>
+                We're always looking for new ideas, if you have any suggestions
+                for talk nights, speakers or things you'd like to see at PHPSW,
+                drop us a line:
+              </p>
+              <div id="suggestion" class="message">
+  
+  
+  <form action="../message.html" method="post">
+    <input name="url" type="text">
+    <input name="subject" type="hidden" value="suggestion">
+    <textarea name="message" required></textarea>
+    <input class="btn btn-primary" type="submit" value="Submit a suggestion">
+  </form>
+</div>
+
+            </div>
+          </div>
+        
+              </div>
+
+              <a
+          href="208017562-lightning-talks.html"
+          class="prev"
+          title="Lightning talks &middot; October 2014"
+        >
+          <i class="fa fa-chevron-left"></i>
+          <span class="sr-only">Prev</span>
+        </a>
+                    <a
+          href="215370812-phpub-quiz.html"
+          class="next"
+          title="PHPub quiz &middot; December 2014"
+        >
+          <i class="fa fa-chevron-right"></i>
+          <span class="sr-only">Next</span>
+        </a>
+          </div>
+
+          <div
+        id="venue" class="event__venue"
+        data-latitude="51.46006"        data-longitude="-2.58452"        style="background-image: url('https://maps.googleapis.com/maps/api/staticmap?markers=51.46006,-2.58452&amp;scale=2&amp;size=640x320&amp;zoom=16')"
+      >
+        <div class="event__venue__overlay">
+          <h2>Venue</h2>
+
+          <p class="event__venue__address">
+            <strong class="event__venue__name">Brightpearl</strong>,<br>
+            New Bond House, Bond Street, Bristol BS2 9AG,<br>
+            Bristol
+          </p>
+        </div>
+      </div>
+    
+    <div id="attendees" class="container">
+              <h2 id="attendees">Attendees</h2>
+
+        <ul class="event__attendees list list--images list--inline">
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/172021852/" class="event__attendee" title="Cosmin B">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/rEjuaKq-YMUGsh2komkQ946oP60=/36x36/http-/photos3.meetupstatic.com/photos/member/b/0/8/8/highres_227925192.jpeg" alt="Cosmin B">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/29291902/" class="event__attendee" title="Bristol Tech Folk Bot">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/VoRt4zErQDgLXMhx1nx2bt4gmBw=/36x36/http-/photos2.meetupstatic.com/photos/member/2/6/3/8/highres_248949784.jpeg" alt="Bristol Tech Folk Bot">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/180854422/" class="event__attendee" title="Jon Adams">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/4ZhOC7J8108YZV3NLX9UnR2bmVw=/36x36/http-/photos3.meetupstatic.com/photos/member/e/7/6/a/highres_238799242.jpeg" alt="Jon Adams">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/166452002/" class="event__attendee" title="Mark Jeffries">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/HifHdPRm8kspclTia_csK2Vo19c=/36x36/http-/photos2.meetupstatic.com/photos/member/8/9/9/0/highres_262115216.jpeg" alt="Mark Jeffries">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/162145512/" class="event__attendee" title="Dan Messenger">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/Ml3W7G1Uy1H_AWbZABGSnbr6Tec=/36x36/http-/photos1.meetupstatic.com/photos/member/6/7/d/6/highres_219506582.jpeg" alt="Dan Messenger">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/13915585/" class="event__attendee" title="Steve Lacey">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/DvSRbyExEgD0G2PgYJ2PGzWbd-0=/36x36/http-/photos2.meetupstatic.com/photos/member/6/e/3/4/highres_155008212.jpeg" alt="Steve Lacey">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/31030432/" class="event__attendee" title="Adrian Slade">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/P3x59k-ybaDI71Twt2izDcZMSpA=/36x36/http-/photos1.meetupstatic.com/photos/member/2/b/f/5/highres_241511253.jpeg" alt="Adrian Slade">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/159803482/" class="event__attendee" title="Matt Votsikas">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/bFbvv9QeGbxVI9bmx_NkO9NuJ1Y=/36x36/http-/photos2.meetupstatic.com/photos/member/a/7/f/0/highres_230142992.jpeg" alt="Matt Votsikas">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/165811192/" class="event__attendee" title="Charlie Stalker">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/yJTNvHhNV2scnRuOoBjsjD9jLr8=/36x36/http-/photos3.meetupstatic.com/photos/member/7/4/1/0/highres_223529712.jpeg" alt="Charlie Stalker">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/60179652/" class="event__attendee" title="Dave Bould">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/X9qbo0GyOlLvNxNrJYPW31CtOGk=/36x36/http-/photos3.meetupstatic.com/photos/member/d/4/1/e/member_202194302.jpeg" alt="Dave Bould">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/67450042/" class="event__attendee" title="Kat Zien">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/9q6pKwO-Vv2ffVZcGCYRbK1nGTw=/36x36/http-/photos2.meetupstatic.com/photos/member/4/4/1/8/highres_219497432.jpeg" alt="Kat Zien">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/17672291/" class="event__attendee" title="Andy Gale">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/7ph0y65-GnmEf062k1oW6wkLewc=/36x36/http-/photos3.meetupstatic.com/photos/member/b/9/5/6/highres_243167446.jpeg" alt="Andy Gale">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/171870892/" class="event__attendee" title="Ian G">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/apbowfePmkcF66-eu1RgEwc9E-U=/36x36/http-/photos1.meetupstatic.com/photos/member/5/d/8/6/highres_227723942.jpeg" alt="Ian G">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/3177000/" class="event__attendee" title="Chris Hawes">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/t1BiXDTZ46pcDtjb6NqEw3hcZP8=/36x36/http-/photos3.meetupstatic.com/photos/member/2/d/1/2/highres_261731538.jpeg" alt="Chris Hawes">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/68338992/" class="event__attendee" title="Christopher McKirgan">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/JM8_Rnc-cFOU3Mph68QZKp-kJY0=/36x36/http-/photos1.meetupstatic.com/photos/member/2/7/4/5/highres_251650053.jpeg" alt="Christopher McKirgan">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/99490282/" class="event__attendee" title="Tom Coates">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/CsAhJb_rFKeNOyo6SVsbKo_2XWM=/36x36/http-/photos2.meetupstatic.com/photos/member/b/f/e/c/member_152989132.jpeg" alt="Tom Coates">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/32155192/" class="event__attendee" title="Harvey West">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/meyAKViPR1P5pYkG1XKUafnzKkY=/36x36/http-/photos1.meetupstatic.com/photos/member/8/2/1/e/highres_241473310.jpeg" alt="Harvey West">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/181708602/" class="event__attendee" title="Jan V.">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/0YgC7iv-5e5EbPgYG43IWxaOlAA=/36x36/http-/photos4.meetupstatic.com/photos/member/6/d/c/6/highres_240208102.jpeg" alt="Jan V.">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/92752962/" class="event__attendee" title="Denis Sellu">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/LOaxGaLwXibNlZblHX3MuUbJnbw=/36x36/http-/photos4.meetupstatic.com/photos/member/1/4/9/8/highres_116405272.jpeg" alt="Denis Sellu">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/39370012/" class="event__attendee" title="Dan Ackroyd">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/Da7s7B6jgsVDh-k5n5-dAayOd3M=/36x36/http-/photos3.meetupstatic.com/photos/member/3/6/e/e/highres_103154062.jpeg" alt="Dan Ackroyd">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/62478492/" class="event__attendee" title="Israel Sotomayor Azcuna">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/bQQ_ehO65Eozwdwpzfit5ECKyFI=/36x36/http-/photos1.meetupstatic.com/photos/member/d/4/1/4/highres_98574292.jpeg.png" alt="Israel Sotomayor Azcuna">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/48744542/" class="event__attendee" title="Matt">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/-FUeW55oeAd-Zc8-tAuuYan_924=/36x36/http-/photos4.meetupstatic.com/photos/member/1/2/1/8/highres_70864632.jpeg" alt="Matt">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/13703034/" class="event__attendee" title="Ben Organ">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/ArLFyPEKS9ENLl98B8WJrTwekDU=/36x36/http-/photos3.meetupstatic.com/photos/member/6/7/3/a/highres_11666426.jpeg" alt="Ben Organ">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/162145682/" class="event__attendee" title="jchlu">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/2r5kpqZX8PQmnjE2OpJi-zK2H9I=/36x36/http-/photos3.meetupstatic.com/photos/member/6/7/4/a/highres_219506442.jpeg" alt="jchlu">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/180104472/" class="event__attendee" title="Rupert Jabelman">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/R5C2B32VZgom5Q8jvStKUHSOP8g=/36x36/http-/photos3.meetupstatic.com/photos/member/8/f/5/4/highres_237636692.jpeg" alt="Rupert Jabelman">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/170891602/" class="event__attendee" title="Albert Rannetsperger">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/l9yz4PE3XWGttpCAt3w3f_6EvG8=/36x36/http-/photos1.meetupstatic.com/photos/member/d/0/0/0/highres_241433248.jpeg" alt="Albert Rannetsperger">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/14032031/" class="event__attendee" title="Ben Lumley">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/yVyeQ8Vwg3WaJNmpwFFX0FyALrQ=/36x36/http-/photos2.meetupstatic.com/photos/member/f/4/a/member_12063914.jpeg" alt="Ben Lumley">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/181858352/" class="event__attendee" title="Michael Timms">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/9zaeIX5CjjRlVVjS4UX9iIV098U=/36x36/http-/photos4.meetupstatic.com/photos/member/c/5/a/highres_240423162.jpeg" alt="Michael Timms">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/132866502/" class="event__attendee" title="Kiel Doyle">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/QIGifGfhQNAf3fTU6tC-TRJida8=/36x36/http-/photos3.meetupstatic.com/photos/member/8/b/3/0/member_177035632.jpeg" alt="Kiel Doyle">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/99787762/" class="event__attendee" title="James Titcumb">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/8dTwRTm5AmagndbXrXCfVoeiWt8=/36x36/http-/photos1.meetupstatic.com/photos/member/9/d/3/c/highres_134740252.jpeg.png" alt="James Titcumb">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/23546531/" class="event__attendee" title="Tom Robertshaw">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/oyVBWRSLWFjloR4JhWNmpmVVw1s=/36x36/http-/photos3.meetupstatic.com/photos/member/2/7/a/c/highres_242950156.jpeg.png" alt="Tom Robertshaw">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/96221542/" class="event__attendee" title="Tom Adam">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/7s14jH18T7FfOKKB1KnwzY-9tOM=/36x36/http-/photos1.meetupstatic.com/photos/member/a/1/b/0/member_122561392.jpeg" alt="Tom Adam">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/31894252/" class="event__attendee" title="Lee Stone">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/Ako28bKv3auR3HqEZeefORD3WaQ=/36x36/http-/photos1.meetupstatic.com/photos/member/6/5/2/e/highres_32485902.jpeg" alt="Lee Stone">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/107379882/" class="event__attendee" title="Berney">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/7b8M2PIFnZI5AAsLYHiKjWBEemI=/36x36/http-/photos3.meetupstatic.com/photos/member/a/3/e/0/highres_238241952.jpeg" alt="Berney">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/181721372/" class="event__attendee" title="Pavel Smolka">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/rFL6jFW12NQwuePzMqYhro_1OqU=/36x36/http-/photos1.meetupstatic.com/photos/member/7/6/0/e/highres_240210222.jpeg" alt="Pavel Smolka">
+                </div>
+              </a>
+            </li>
+                      <li>
+              <a href="https://www.meetup.com/php-sw/members/170172822/" class="event__attendee" title="Christina Daly">
+                <div class="avatar avatar--small">
+                  <img src="../../images.phpsw.uk/VTDhyrv3dE31AjvfKUo3xp-9YrE=/36x36/http-/photos2.meetupstatic.com/photos/member/4/3/4/6/highres_236417222.jpeg" alt="Christina Daly">
+                </div>
+              </a>
+            </li>
+                  </ul>
+      
+              <h2 id="comments">Comments</h2>
+
+        <ul class="comments">
+      <li>
+      <article id="comment-440881146" class="comment">
+      <div class="avatar avatar--medium">
+      <img src="../../images.phpsw.uk/89n--TTb1asZH2CMwCfHkRETak8=/72x72/http-/img1.meetupstatic.com/img/501554713870081192606960/nobody_50.png" alt="A Former Member">
+    </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <strong>
+                  A Former Member
+                                      </strong>
+      <a href="215366502-security-and-deployment.html#comment-440881146" class="text-muted">
+        <time datetime="2014-11-15T21:38:01+00:00">November 15th 2014</time>
+      </a>
+    </div>
+    <div class="panel-body">
+      <p>It was great to learn from professionals with experience</p>
+
+    </div>
+  </div>
+</article>
+
+
+    </li>
+      <li>
+      <article id="comment-440761142" class="comment">
+      <a href="https://www.meetup.com/php-sw/members/99787762/">
+      <div class="avatar avatar--medium">
+        <img src="../../images.phpsw.uk/qh8k5n0Pyf4ETwL6E44cTD_O-0o=/72x72/http-/photos1.meetupstatic.com/photos/member/9/d/3/c/highres_134740252.jpeg.png" alt="James Titcumb">
+      </div>
+    </a>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <strong>
+                  <a href="https://www.meetup.com/php-sw/members/99787762/" title="James is the founder of the UK based PHP Hampshire user group, a Zend Certified Engineer and Development Manager at Protected.co.uk.">James Titcumb</a>
+                                  <span class="badge progress-bar-warning">Speaker</span>
+                      </strong>
+      <a href="215366502-security-and-deployment.html#comment-440761142" class="text-muted">
+        <time datetime="2014-11-13T12:37:22+00:00">November 13th 2014</time>
+      </a>
+    </div>
+    <div class="panel-body">
+      <p>Thanks for having me PHPSW <object class="emojione" data="https://cdn.jsdelivr.net/emojione/assets/svg/1F604.svg?v=1.2.4" type="image/svg+xml" standby="&#x1f604;">&#x1f604;</object> I&#039;ve had a couple of great bits of feedback on my talk and what I can improve on next time, so thanks for letting me try it out on you lovely folks.</p>
+
+    </div>
+  </div>
+</article>
+
+
+    </li>
+      <li>
+      <article id="comment-440714126" class="comment">
+      <a href="https://www.meetup.com/php-sw/members/67450042/">
+      <div class="avatar avatar--medium">
+        <img src="../../images.phpsw.uk/I44tfN4aWLWBgUpD1GzwJDTp8CY=/72x72/http-/photos2.meetupstatic.com/photos/member/4/4/1/8/highres_219497432.jpeg" alt="Kat Zien">
+      </div>
+    </a>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <strong>
+                  <a href="https://www.meetup.com/php-sw/members/67450042/" title="Keyboard wizard, writing Go and PHP at Brightpearl">Kat Zien</a>
+                          <span class="badge progress-bar-success">Organiser</span>
+                              </strong>
+      <a href="215366502-security-and-deployment.html#comment-440714126" class="text-muted">
+        <time datetime="2014-11-12T12:47:49+00:00">November 12th 2014</time>
+      </a>
+    </div>
+    <div class="panel-body">
+      <p>Found a nice website that shows the evolution of PHP on a timeline - <a href="https://line.do/php-evolution/8oq/vertical">https://line.do/php-evolution/8oq/vertical</a></p>
+
+    </div>
+  </div>
+</article>
+
+
+    </li>
+      <li>
+      <article id="comment-440685112" class="comment">
+      <div class="avatar avatar--medium">
+      <img src="../../images.phpsw.uk/89n--TTb1asZH2CMwCfHkRETak8=/72x72/http-/img1.meetupstatic.com/img/501554713870081192606960/nobody_50.png" alt="A Former Member">
+    </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <strong>
+                  A Former Member
+                                      </strong>
+      <a href="215366502-security-and-deployment.html#comment-440685112" class="text-muted">
+        <time datetime="2014-11-11T20:01:25+00:00">November 11th 2014</time>
+      </a>
+    </div>
+    <div class="panel-body">
+      <p>A continuous deployment flow would still require booking of resources for each distinct stage of the dev life cycle. Can&#039;t see how it would add to improvements by switching from an eg agreed quarterly release to a release when ready. Customer expectations need managed from the outset not a wet finger in the air.  A release is only ready for production after successful testing has been signed of by testers and customers. This fanciful idea sounds like &#039;on the fly&#039; releasing with prod testing. Great if you can get away with it. Meanwhile in the real world...</p>
+
+    </div>
+  </div>
+</article>
+
+  <ul class="comments">
+      <li>
+      <article id="comment--230211894" class="comment">
+      <a href="https://www.meetup.com/php-sw/members/17672291/">
+      <div class="avatar avatar--medium">
+        <img src="../../images.phpsw.uk/F4w-XHA8WXodJNteLswjMMlNzJg=/72x72/http-/photos3.meetupstatic.com/photos/member/b/9/5/6/highres_243167446.jpeg" alt="Andy Gale">
+      </div>
+    </a>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <strong>
+                  <a href="https://www.meetup.com/php-sw/members/17672291/" title="DevOps Consultant at Hello Future.">Andy Gale</a>
+                                      </strong>
+      <a href="215366502-security-and-deployment.html#comment--230211894" class="text-muted">
+        <time datetime="2014-11-11T21:05:24+00:00">November 11th 2014</time>
+      </a>
+    </div>
+    <div class="panel-body">
+      <p>I&#039;m afraid you&#039;re pretty far behind the general curve with that comment. Find me tomorrow and I&#039;ll explain why Continuous Delivery works, who it works for and how (with buy in from the entire business which is essential) it&#039;s achievable by most.</p>
+
+    </div>
+  </div>
+</article>
+
+
+    </li>
+      <li>
+      <article id="comment--230214063" class="comment">
+      <a href="https://www.meetup.com/php-sw/members/99787762/">
+      <div class="avatar avatar--medium">
+        <img src="../../images.phpsw.uk/qh8k5n0Pyf4ETwL6E44cTD_O-0o=/72x72/http-/photos1.meetupstatic.com/photos/member/9/d/3/c/highres_134740252.jpeg.png" alt="James Titcumb">
+      </div>
+    </a>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <strong>
+                  <a href="https://www.meetup.com/php-sw/members/99787762/" title="James is the founder of the UK based PHP Hampshire user group, a Zend Certified Engineer and Development Manager at Protected.co.uk.">James Titcumb</a>
+                                  <span class="badge progress-bar-warning">Speaker</span>
+                      </strong>
+      <a href="215366502-security-and-deployment.html#comment--230214063" class="text-muted">
+        <time datetime="2014-11-11T22:21:03+00:00">November 11th 2014</time>
+      </a>
+    </div>
+    <div class="panel-body">
+      <p>Oh wow, conversation sparking already and I&#039;ve not even done the talk yet <object class="emojione" data="https://cdn.jsdelivr.net/emojione/assets/svg/1F604.svg?v=1.2.4" type="image/svg+xml" standby="&#x1f604;">&#x1f604;</object> Hopefully I can change your stance on CD tomorrow, see you there! <object class="emojione" data="https://cdn.jsdelivr.net/emojione/assets/svg/1F604.svg?v=1.2.4" type="image/svg+xml" standby="&#x1f604;">&#x1f604;</object></p>
+
+    </div>
+  </div>
+</article>
+
+
+    </li>
+      <li>
+      <article id="comment--230216206" class="comment">
+      <a href="https://www.meetup.com/php-sw/members/13915585/">
+      <div class="avatar avatar--medium">
+        <img src="../../images.phpsw.uk/DhWYTI57lEmvS-hT-lZ-zYQ_Y4I=/72x72/http-/photos2.meetupstatic.com/photos/member/6/e/3/4/highres_155008212.jpeg" alt="Steve Lacey">
+      </div>
+    </a>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <strong>
+                  <a href="https://www.meetup.com/php-sw/members/13915585/" title="Software Engineer">Steve Lacey</a>
+                                      </strong>
+      <a href="215366502-security-and-deployment.html#comment--230216206" class="text-muted">
+        <time datetime="2014-11-11T23:38:27+00:00">November 11th 2014</time>
+      </a>
+    </div>
+    <div class="panel-body">
+      <p>Love this</p>
+
+    </div>
+  </div>
+</article>
+
+
+    </li>
+  </ul>
+
+
+    </li>
+  </ul>
+
+
+        <a href="https://www.meetup.com/php-sw/events/215366502/#event-comments-section" class="btn btn-primary">
+          Comment on Meetup
+        </a>
+      
+              <footer class="event__footer">
+          <h2 id="sponsors">Sponsors</h2>
+
+          <div class="row">
+                                                                                              <div class="col-xs-4 col-sm-3">
+                  <a href="https://www.brightpearl.com" title="Brightpearl handles the scale and complexity of a growing multi-channel retail business">
+                    <img src="../images/sponsors/brightpearl.png" alt="Brightpearl">
+                  </a>
+                </div>
+                              <div class="col-xs-4 col-sm-3">
+                  <a href="http://www.ents24.com" title="The UK&#039;s busiest live entertainment guide, helping millions of fans discover live shows and buy tickets every year. Made in Bristol with PHP since 1999">
+                    <img src="../images/sponsors/ents24.png" alt="Ents24">
+                  </a>
+                </div>
+                              <div class="col-xs-4 col-sm-3">
+                  <a href="http://tech.just-eat.com" title="JUST EAT are expanding their technology development with the opening of a new specialist hub in Bristol">
+                    <img src="../images/sponsors/just-eat.png" alt="JUST EAT (inactive)">
+                  </a>
+                </div>
+                              <div class="col-xs-4 col-sm-3">
+                  <a href="http://www.redrockconsulting.co.uk" title="Redrock Consulting—Ethical and transparent recruiters reaching out to Software Developers in the South-West">
+                    <img src="../images/sponsors/redrock.png" alt="Redrock Consulting">
+                  </a>
+                </div>
+                                    </div>
+        </footer>
+          </div>
+  </div>
+    </main>
+  </div>
+
+      <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="logo logo--greyscale" preserveAspectRatio="xMidYMid meet" viewBox="0 0 436 212">
+  <path class="logo__php" d="M86.574997 69.474998l-46.018997 0l-19.9 100.743996l23.630999 0l4.975002 -26.118988l22.388 0c21.143997 1.2 44.8 -16.2 44.8 -46.019005c0.000999 -17.4 -9.9 -27.4 -29.8 -28.606003zm-17.412994 55.968002l-14.925003 0l6.219002 -37.312004l16.168999 0c8.706001 0 14.9 3.7 14.9 11.194c-1.243004 21.1 -11.2 24.9 -22.4 26.118004z M111.962997 144.100006l19.899002 -100.742996l23.632004 0l-4.975998 26.119003l22.388 0c19.899994 1.2 27.4 11.2 24.9 23.630997l-8.706009 50.992996l-24.875 0l8.706009 -46.018997c1.243988 -6.2 1.2 -9.9 -7.5 -9.949997l-18.655991 0l-11.193008 55.968994l-23.630997 0z M255.237 69.474998l-46.018997 0l-19.900009 100.743996l23.632004 0l4.975006 -26.118988l22.388 0c21.143997 1.2 44.8 -16.2 44.8 -46.019005c0 -17.4 -10 -27.4 -29.9 -28.606003zm-17.412003 55.968002l-14.925003 0l6.218994 -37.312004l16.167999 0c8.707001 0 14.9 3.7 14.9 11.194c-1.243988 21.1 -11.2 24.9 -22.4 26.118004z" fill="#1E1E1E"/>
+  <g class="logo__sw">
+    <path class="logo__sw__rhomboid" d="M414.498169 142.375l-115.998169 0l12.5 -75l116 0" fill="#2A8EBD"/>
+    <path class="logo__sw__text" d="M317.558777 118.025002c2.764008 1.7 6.6 3 11 2.971001c3.800018 0 7.3 -1.8 7.3 -5.389c0 -2.7 -2 -4.4 -6.3 -6.633003c-4.904999 -2.6 -9.6 -6.4 -9.6 -12.367996c0 -9.4 8.2 -15.1 18.3 -15.131004c5.597015 0 8.9 1.2 10.9 2.279999l-3.108002 8.291c-1.520996 -0.8 -4.8 -2.1 -8.6 -2.003998c-4.629028 0 -7 2.3 -7 4.836998c0 2.8 2.8 4.4 6.8 6.633003c5.665009 3 9.2 6.8 9.2 12.366997c0 10.4 -8.6 15.7 -18.9 15.684006c-6.425995 -0.1 -11.1 -1.7 -13.3 -3.316002l3.317993 -8.222z M357.56076 128.804001l-1.79599 -46.568001l10.087006 0l0 20.727997c0 5.7 -0.1 10.9 -0.3 15.131004l0.138 0c1.65802 -4.6 3.3 -9.3 5.5 -14.993004l8.360016 -20.865997l10.916992 0l-0.139008 20.795998c-0.069 5.6 -0.2 10.2 -0.5 14.786003l0.138 0c1.589996 -4.8 3.3 -9.8 5.2 -14.854004l8.015991 -20.727997l10.502014 0l-20.520996 46.568001l-10.848999 0l-0.276001 -19.069c-0.069 -5.5 0.1 -10.2 0.3 -15.476997l-0.139008 0c-1.65799 5 -3.3 10 -5.6 15.683998l-8.015991 18.862l-11.054016 0z" fill="white"/>
+  </g>
+</svg>
+
+      </div>
+
+      <div class="col-xs-12 col-sm-8">
+        <nav class="row">
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h4>Meetup</h4>
+
+            <ul class="list">
+              <li>
+                <a href="../index.html">
+                  <i class="fa fa-home"></i>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="../events.html">
+                  <i class="fa fa-calendar"></i>
+                  Events
+                </a>
+              </li>
+              <li>
+                <a href="../speakers.html">
+                  <i class="fa fa-bullhorn"></i>
+                  Speakers
+                </a>
+              </li>
+              <li>
+                <a href="../sponsors.html">
+                  <i class="fa fa-briefcase"></i>
+                  Sponsors
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h4>Support us</h4>
+
+            <ul class="list">
+              <li>
+                <a href="../brand.html">
+                  <i class="fa fa-picture-o"></i>
+                  Brand assets
+                </a>
+              </li>
+              <li>
+                <a href="../code-of-conduct.html">
+                  <i class="fa fa-file-text-o"></i>
+                  Code of conduct
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:info at phpsw dot uk"
+                  class="email"
+                >
+                  <i class="fa fa-paper-plane-o"></i>
+                  Get in touch
+                </a>
+              </li>
+              <li>
+                <a href="../speakers.html#speaking">
+                  <i class="fa fa-comments-o"></i>
+                  Submit a talk
+                </a>
+              </li>
+              <li>
+                <a href="../sponsors.html#sponsoring">
+                  <i class="fa fa-money"></i>
+                  Sponsor us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-4 col-lg-3">
+            <h4>Stay connected</h4>
+
+            <ul class="list">
+              <li>
+                <a href="http://www.meetup.com/php-sw">
+                  <i class="fa fa-calendar"></i>
+                  Find us on Meetup
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/phpsw">
+                  <i class="fa fa-twitter"></i>
+                  Follow us on Twitter
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="https://github.com/phpsw/phpsw">
+                  <i class="fa fa-github"></i>
+                  Fork this on GitHub
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="col-sm-2 hidden-xs hidden-sm">
+        <div class="balloons">
+          <svg xmlns="http://www.w3.org/2000/svg" class="balloon balloon--small" fill="#1E1E1E" viewBox="0 0 1015 1268" preserveAspectRatio="xMidYMid meet">
+  <path d="M289.5 18.6 c-19 4.2 -32.6 13.1 -62.9 41.2l-13 11.9 -7 1.3c-12.4 2.2 -33.7 7.7 -46.1 12 -24.2 8.4 -43.3 19.2 -57.9 33.1 -21.6 20.4 -32.9 44.6 -38 81.7 -3.3 23.7 -3.7 48.5 -3.4 229.2l0.3 178.5 2.3 5.8c3.4 8.4 11.7 16.9 20.6 21.1 10.2 4.9 19.7 6.7 34.6 6.7 22.2 -0 37.1 -5 47.3 -16 6.9 -7.5 9.7 -14.4 10.6 -26.6 0.8 -10.3 0.6 -10.7 5.1 13.7 1.6 9.3 4.4 24.2 6 33.3 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.3 23.8 6 32.7 8.9 48.5 33 182.2 33 182.9 0 0.5 -8.2 0.9 -18.2 0.9 -20.4 -0 -22 0.4 -27.2 7.3 -2.3 2.9 -2.6 4.3 -2.6 10.8 0 8 1.2 10.9 6.2 14.9 5.1 3.9 9.3 5 19.7 5l10 -0 0.5 3.2c0.7 4.2 3 23.4 5.6 45.8 1 9.6 3.3 29 4.9 43 8.1 68.3 11.3 95.6 12.6 108 0.9 7.4 2.2 18.7 3 25 0.8 6.3 2.4 19.8 3.5 30 1.1 10.2 2.2 19.5 2.5 20.8l0.5 2.2 216.6 -0c172.3 -0 216.5 -0.3 216.8 -1.3 0.5 -1.8 4.5 -34.9 6.2 -51.2 0.8 -7.7 2.1 -18.7 2.9 -24.5 0.8 -5.8 2.2 -17 3 -25 0.8 -8 2.2 -19.5 3 -25.5 0.8 -6.1 2.1 -17.3 3 -25 0.8 -7.7 2.4 -21.2 3.5 -30 3.4 -27.6 11 -92.6 11 -94.5 0 -0.6 3.4 -1 9 -1 10.2 -0 13.3 -1.1 19.3 -6.8l3.7 -3.6 0 -9.1c0 -9 0 -9.1 -3.2 -12.1 -6.5 -6 -7.8 -6.4 -20.3 -6.4l-11.5 -0 0 -2.7c0 -1.5 1.4 -10.8 3 -20.7 5.3 -31.5 8.8 -52.5 12 -72.1 1.7 -10.5 4.2 -25.5 5.5 -33.5 1.3 -8 4 -24.4 6 -36.5 2 -12.1 4.7 -28.5 6 -36.5 6.4 -38.1 7.7 -46.2 9.1 -55.5 0.8 -5.5 1.6 -10.5 1.8 -11.1 0.2 -0.6 4.4 -1.4 9.6 -1.7 25.4 -1.8 51 -10.6 65.2 -22.4 10.3 -8.5 16.6 -18.4 19.9 -31 1.8 -7.3 1.9 -12.1 1.9 -125.9l0 -118.2 3.4 -8.8c3.7 -9.6 6.6 -20.4 8.8 -32.4 1.7 -9.8 1.7 -51.2 0 -63.5 -4 -28.5 -11.3 -53 -22.2 -75.4l-6.9 -14.1 22.7 -0 22.8 -0 4.9 5.1c11 11.2 31.5 22.7 44.7 25 8.1 1.3 18.3 0.2 24.1 -2.7 4.1 -2.1 9.5 -7.1 11.4 -10.7 1.4 -2.7 2 -12.7 0.9 -14.5 -0.2 -0.4 2.4 -2.1 5.9 -3.6 7.9 -3.4 15 -10.6 16.1 -16.1 1.9 -10.1 -7.1 -20 -22.3 -24.5 -4 -1.2 -4.3 -1.6 -4.3 -4.9 0 -8.9 -5.1 -16.5 -13.6 -20.2 -8.8 -3.9 -22.3 -3.4 -33.1 1.2 -7.4 3.2 -18.2 10.9 -26.7 19.1l-7.9 7.8 -37.4 -0 -37.4 -0 -8.7 -7.8c-17.6 -15.7 -30.5 -24.4 -51.7 -34.8 -16.4 -8 -32.7 -13.9 -50.5 -18.4 -27.3 -6.9 -44.8 -9 -81 -9.7 -28 -0.6 -151.9 1.2 -160.5 2.3 -4.1 0.5 -4.1 0.5 -10.4 -7.6 -10.9 -13.8 -25.2 -23.8 -41.6 -29 -5.2 -1.7 -10.3 -2.4 -20 -2.7 -15.2 -0.6 -22.8 0.7 -36.4 6.2l-9 3.6 -6.8 -3.5c-11.5 -5.7 -19.5 -7.8 -32.3 -8.2 -8 -0.3 -13.6 0.1 -18.5 1.2zm-37.8 369.4l2.2 -0 0.4 91.7c0.3 101.2 0 96.1 6.7 109.2 10 19.9 32 33.5 63.6 39.3 5.8 1 6.8 1.6 10 5.5 1.9 2.3 3.7 5.8 4 7.5 0.2 1.8 1.8 13.6 3.4 26.3 1.7 12.6 4.4 33 6 45.2 1.7 12.3 4.3 32.3 5.9 44.5 1.7 12.3 4.1 30.8 5.5 41.3 1.5 10.4 3.2 24.2 4 30.5 0.8 6.3 3.7 28.4 6.5 49 2.8 20.6 5.3 40.3 5.7 43.8l0.7 6.2 -52.6 -0c-41.8 -0 -52.6 -0.3 -53 -1.3 -0.3 -0.7 -1.2 -6 -2.2 -11.7 -0.9 -5.8 -2.7 -16.4 -4 -23.5 -1.3 -7.2 -2.6 -15 -3 -17.5 -0.3 -2.5 -1.9 -11.9 -3.5 -21 -1.6 -9.1 -4.3 -24.8 -6 -35 -1.7 -10.2 -4.2 -24.8 -5.6 -32.5 -1.3 -7.7 -3 -17.8 -3.8 -22.5 -1.7 -10.3 -4.7 -27.7 -8.7 -51 -1.6 -9.6 -4.1 -24.3 -5.5 -32.5 -1.4 -8.3 -3.8 -22.4 -5.4 -31.5 -5.2 -30.2 -9 -52.4 -10.5 -61.5 -0.8 -5 -3.1 -18.2 -5.1 -29.5 -2 -11.3 -3.7 -22.5 -3.9 -25 -0.6 -8.5 -11.6 -67.5 -13.2 -70.8 -1.5 -2.9 -1.5 -4.5 -0.5 -13.3 3.7 -31.4 14.5 -49.9 33.5 -57.1 5.6 -2.1 17.5 -3.8 22.7 -3.2 1.9 0.2 4.5 0.4 5.7 0.4zm309.3 98c5.2 0.5 10 1 10.7 1 0.9 -0 1.3 11.1 1.6 43.7 0.4 46.4 0.5 47.2 5.5 58.7 1.2 2.6 3.8 7.1 5.9 9.9l3.7 5 -1.7 15.1c-1 8.3 -3.1 26.3 -4.7 40.1 -1.6 13.7 -4.3 36.6 -6 50.7 -11.3 96 -14.4 122.4 -18.1 154.3 -1.7 14.3 -4.1 34.3 -5.2 44.5l-2.2 18.5 -71.7 0.3c-39.5 0.1 -71.8 -0 -71.8 -0.3 0 -0.2 -0.6 -5.3 -1.4 -11.2 -0.8 -5.9 -1.8 -13.7 -2.1 -17.3 -0.4 -3.6 -1.9 -17.1 -3.5 -30 -1.6 -12.9 -4.3 -35.7 -6 -50.5 -1.7 -14.9 -4.2 -35.6 -5.5 -46 -1.3 -10.5 -2.7 -22.2 -3 -26 -0.4 -3.9 -1.7 -15.1 -3 -25 -1.3 -9.9 -2.6 -21.4 -3 -25.5 -0.4 -4.1 -1.5 -13.8 -2.6 -21.4 -2.6 -19.2 -2.9 -17.7 3.4 -16 14.6 3.8 25.9 4.9 52.2 4.9 22.4 -0 27.7 -0.4 38.4 -2.3 24.9 -4.5 43 -12.4 55.1 -24.2 7.3 -7.1 11 -12.7 14.9 -22.9l2.6 -6.6 0.3 -61.8 0.3 -61.9 3.7 0.6c2 0.4 8 1.1 13.2 1.6zm69.3 141.5c2.9 0.8 10.2 2.3 16.4 3.4 9.9 1.7 11.7 2.3 15.5 5.4 13 10.6 36.7 18.7 62.2 21.3 7.6 0.8 7.3 0.1 5.1 12.5 -1.5 8.8 -6.9 40.6 -15.5 91.4 -10.1 59.4 -15 88.6 -21.5 126.7 -3.6 21.2 -6.5 38.9 -6.5 39.2 0 0.3 -23 0.6 -51.1 0.6 -48.1 -0 -51 -0.1 -50.5 -1.8 0.3 -0.9 1 -6.4 1.6 -12.2 0.7 -5.8 2.2 -18.8 3.5 -29 1.3 -10.2 2.7 -21.2 3 -24.5 0.6 -5.7 3.3 -27.7 9 -73 4.6 -36.3 7.5 -60.8 9.5 -78 1.1 -9.4 2.6 -21.7 3.4 -27.5 0.8 -5.8 1.8 -13.4 2.1 -17 0.8 -8.2 4.4 -34.7 5.1 -37.8 0.3 -1.6 1 -2.2 2 -1.8 0.8 0.3 3.8 1.2 6.7 2.1z"/>
+</svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="balloon balloon--large" fill="#1E1E1E" viewBox="0 0 1015 1268" preserveAspectRatio="xMidYMid meet">
+  <path d="M289.5 18.6 c-19 4.2 -32.6 13.1 -62.9 41.2l-13 11.9 -7 1.3c-12.4 2.2 -33.7 7.7 -46.1 12 -24.2 8.4 -43.3 19.2 -57.9 33.1 -21.6 20.4 -32.9 44.6 -38 81.7 -3.3 23.7 -3.7 48.5 -3.4 229.2l0.3 178.5 2.3 5.8c3.4 8.4 11.7 16.9 20.6 21.1 10.2 4.9 19.7 6.7 34.6 6.7 22.2 -0 37.1 -5 47.3 -16 6.9 -7.5 9.7 -14.4 10.6 -26.6 0.8 -10.3 0.6 -10.7 5.1 13.7 1.6 9.3 4.4 24.2 6 33.3 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.3 23.8 6 32.7 8.9 48.5 33 182.2 33 182.9 0 0.5 -8.2 0.9 -18.2 0.9 -20.4 -0 -22 0.4 -27.2 7.3 -2.3 2.9 -2.6 4.3 -2.6 10.8 0 8 1.2 10.9 6.2 14.9 5.1 3.9 9.3 5 19.7 5l10 -0 0.5 3.2c0.7 4.2 3 23.4 5.6 45.8 1 9.6 3.3 29 4.9 43 8.1 68.3 11.3 95.6 12.6 108 0.9 7.4 2.2 18.7 3 25 0.8 6.3 2.4 19.8 3.5 30 1.1 10.2 2.2 19.5 2.5 20.8l0.5 2.2 216.6 -0c172.3 -0 216.5 -0.3 216.8 -1.3 0.5 -1.8 4.5 -34.9 6.2 -51.2 0.8 -7.7 2.1 -18.7 2.9 -24.5 0.8 -5.8 2.2 -17 3 -25 0.8 -8 2.2 -19.5 3 -25.5 0.8 -6.1 2.1 -17.3 3 -25 0.8 -7.7 2.4 -21.2 3.5 -30 3.4 -27.6 11 -92.6 11 -94.5 0 -0.6 3.4 -1 9 -1 10.2 -0 13.3 -1.1 19.3 -6.8l3.7 -3.6 0 -9.1c0 -9 0 -9.1 -3.2 -12.1 -6.5 -6 -7.8 -6.4 -20.3 -6.4l-11.5 -0 0 -2.7c0 -1.5 1.4 -10.8 3 -20.7 5.3 -31.5 8.8 -52.5 12 -72.1 1.7 -10.5 4.2 -25.5 5.5 -33.5 1.3 -8 4 -24.4 6 -36.5 2 -12.1 4.7 -28.5 6 -36.5 6.4 -38.1 7.7 -46.2 9.1 -55.5 0.8 -5.5 1.6 -10.5 1.8 -11.1 0.2 -0.6 4.4 -1.4 9.6 -1.7 25.4 -1.8 51 -10.6 65.2 -22.4 10.3 -8.5 16.6 -18.4 19.9 -31 1.8 -7.3 1.9 -12.1 1.9 -125.9l0 -118.2 3.4 -8.8c3.7 -9.6 6.6 -20.4 8.8 -32.4 1.7 -9.8 1.7 -51.2 0 -63.5 -4 -28.5 -11.3 -53 -22.2 -75.4l-6.9 -14.1 22.7 -0 22.8 -0 4.9 5.1c11 11.2 31.5 22.7 44.7 25 8.1 1.3 18.3 0.2 24.1 -2.7 4.1 -2.1 9.5 -7.1 11.4 -10.7 1.4 -2.7 2 -12.7 0.9 -14.5 -0.2 -0.4 2.4 -2.1 5.9 -3.6 7.9 -3.4 15 -10.6 16.1 -16.1 1.9 -10.1 -7.1 -20 -22.3 -24.5 -4 -1.2 -4.3 -1.6 -4.3 -4.9 0 -8.9 -5.1 -16.5 -13.6 -20.2 -8.8 -3.9 -22.3 -3.4 -33.1 1.2 -7.4 3.2 -18.2 10.9 -26.7 19.1l-7.9 7.8 -37.4 -0 -37.4 -0 -8.7 -7.8c-17.6 -15.7 -30.5 -24.4 -51.7 -34.8 -16.4 -8 -32.7 -13.9 -50.5 -18.4 -27.3 -6.9 -44.8 -9 -81 -9.7 -28 -0.6 -151.9 1.2 -160.5 2.3 -4.1 0.5 -4.1 0.5 -10.4 -7.6 -10.9 -13.8 -25.2 -23.8 -41.6 -29 -5.2 -1.7 -10.3 -2.4 -20 -2.7 -15.2 -0.6 -22.8 0.7 -36.4 6.2l-9 3.6 -6.8 -3.5c-11.5 -5.7 -19.5 -7.8 -32.3 -8.2 -8 -0.3 -13.6 0.1 -18.5 1.2zm-37.8 369.4l2.2 -0 0.4 91.7c0.3 101.2 0 96.1 6.7 109.2 10 19.9 32 33.5 63.6 39.3 5.8 1 6.8 1.6 10 5.5 1.9 2.3 3.7 5.8 4 7.5 0.2 1.8 1.8 13.6 3.4 26.3 1.7 12.6 4.4 33 6 45.2 1.7 12.3 4.3 32.3 5.9 44.5 1.7 12.3 4.1 30.8 5.5 41.3 1.5 10.4 3.2 24.2 4 30.5 0.8 6.3 3.7 28.4 6.5 49 2.8 20.6 5.3 40.3 5.7 43.8l0.7 6.2 -52.6 -0c-41.8 -0 -52.6 -0.3 -53 -1.3 -0.3 -0.7 -1.2 -6 -2.2 -11.7 -0.9 -5.8 -2.7 -16.4 -4 -23.5 -1.3 -7.2 -2.6 -15 -3 -17.5 -0.3 -2.5 -1.9 -11.9 -3.5 -21 -1.6 -9.1 -4.3 -24.8 -6 -35 -1.7 -10.2 -4.2 -24.8 -5.6 -32.5 -1.3 -7.7 -3 -17.8 -3.8 -22.5 -1.7 -10.3 -4.7 -27.7 -8.7 -51 -1.6 -9.6 -4.1 -24.3 -5.5 -32.5 -1.4 -8.3 -3.8 -22.4 -5.4 -31.5 -5.2 -30.2 -9 -52.4 -10.5 -61.5 -0.8 -5 -3.1 -18.2 -5.1 -29.5 -2 -11.3 -3.7 -22.5 -3.9 -25 -0.6 -8.5 -11.6 -67.5 -13.2 -70.8 -1.5 -2.9 -1.5 -4.5 -0.5 -13.3 3.7 -31.4 14.5 -49.9 33.5 -57.1 5.6 -2.1 17.5 -3.8 22.7 -3.2 1.9 0.2 4.5 0.4 5.7 0.4zm309.3 98c5.2 0.5 10 1 10.7 1 0.9 -0 1.3 11.1 1.6 43.7 0.4 46.4 0.5 47.2 5.5 58.7 1.2 2.6 3.8 7.1 5.9 9.9l3.7 5 -1.7 15.1c-1 8.3 -3.1 26.3 -4.7 40.1 -1.6 13.7 -4.3 36.6 -6 50.7 -11.3 96 -14.4 122.4 -18.1 154.3 -1.7 14.3 -4.1 34.3 -5.2 44.5l-2.2 18.5 -71.7 0.3c-39.5 0.1 -71.8 -0 -71.8 -0.3 0 -0.2 -0.6 -5.3 -1.4 -11.2 -0.8 -5.9 -1.8 -13.7 -2.1 -17.3 -0.4 -3.6 -1.9 -17.1 -3.5 -30 -1.6 -12.9 -4.3 -35.7 -6 -50.5 -1.7 -14.9 -4.2 -35.6 -5.5 -46 -1.3 -10.5 -2.7 -22.2 -3 -26 -0.4 -3.9 -1.7 -15.1 -3 -25 -1.3 -9.9 -2.6 -21.4 -3 -25.5 -0.4 -4.1 -1.5 -13.8 -2.6 -21.4 -2.6 -19.2 -2.9 -17.7 3.4 -16 14.6 3.8 25.9 4.9 52.2 4.9 22.4 -0 27.7 -0.4 38.4 -2.3 24.9 -4.5 43 -12.4 55.1 -24.2 7.3 -7.1 11 -12.7 14.9 -22.9l2.6 -6.6 0.3 -61.8 0.3 -61.9 3.7 0.6c2 0.4 8 1.1 13.2 1.6zm69.3 141.5c2.9 0.8 10.2 2.3 16.4 3.4 9.9 1.7 11.7 2.3 15.5 5.4 13 10.6 36.7 18.7 62.2 21.3 7.6 0.8 7.3 0.1 5.1 12.5 -1.5 8.8 -6.9 40.6 -15.5 91.4 -10.1 59.4 -15 88.6 -21.5 126.7 -3.6 21.2 -6.5 38.9 -6.5 39.2 0 0.3 -23 0.6 -51.1 0.6 -48.1 -0 -51 -0.1 -50.5 -1.8 0.3 -0.9 1 -6.4 1.6 -12.2 0.7 -5.8 2.2 -18.8 3.5 -29 1.3 -10.2 2.7 -21.2 3 -24.5 0.6 -5.7 3.3 -27.7 9 -73 4.6 -36.3 7.5 -60.8 9.5 -78 1.1 -9.4 2.6 -21.7 3.4 -27.5 0.8 -5.8 1.8 -13.4 2.1 -17 0.8 -8.2 4.4 -34.7 5.1 -37.8 0.3 -1.6 1 -2.2 2 -1.8 0.8 0.3 3.8 1.2 6.7 2.1z"/>
+</svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="balloon balloon--medium" fill="#1E1E1E" viewBox="0 0 1015 1268" preserveAspectRatio="xMidYMid meet">
+  <path d="M289.5 18.6 c-19 4.2 -32.6 13.1 -62.9 41.2l-13 11.9 -7 1.3c-12.4 2.2 -33.7 7.7 -46.1 12 -24.2 8.4 -43.3 19.2 -57.9 33.1 -21.6 20.4 -32.9 44.6 -38 81.7 -3.3 23.7 -3.7 48.5 -3.4 229.2l0.3 178.5 2.3 5.8c3.4 8.4 11.7 16.9 20.6 21.1 10.2 4.9 19.7 6.7 34.6 6.7 22.2 -0 37.1 -5 47.3 -16 6.9 -7.5 9.7 -14.4 10.6 -26.6 0.8 -10.3 0.6 -10.7 5.1 13.7 1.6 9.3 4.4 24.2 6 33.3 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.3 23.8 6 32.7 8.9 48.5 33 182.2 33 182.9 0 0.5 -8.2 0.9 -18.2 0.9 -20.4 -0 -22 0.4 -27.2 7.3 -2.3 2.9 -2.6 4.3 -2.6 10.8 0 8 1.2 10.9 6.2 14.9 5.1 3.9 9.3 5 19.7 5l10 -0 0.5 3.2c0.7 4.2 3 23.4 5.6 45.8 1 9.6 3.3 29 4.9 43 8.1 68.3 11.3 95.6 12.6 108 0.9 7.4 2.2 18.7 3 25 0.8 6.3 2.4 19.8 3.5 30 1.1 10.2 2.2 19.5 2.5 20.8l0.5 2.2 216.6 -0c172.3 -0 216.5 -0.3 216.8 -1.3 0.5 -1.8 4.5 -34.9 6.2 -51.2 0.8 -7.7 2.1 -18.7 2.9 -24.5 0.8 -5.8 2.2 -17 3 -25 0.8 -8 2.2 -19.5 3 -25.5 0.8 -6.1 2.1 -17.3 3 -25 0.8 -7.7 2.4 -21.2 3.5 -30 3.4 -27.6 11 -92.6 11 -94.5 0 -0.6 3.4 -1 9 -1 10.2 -0 13.3 -1.1 19.3 -6.8l3.7 -3.6 0 -9.1c0 -9 0 -9.1 -3.2 -12.1 -6.5 -6 -7.8 -6.4 -20.3 -6.4l-11.5 -0 0 -2.7c0 -1.5 1.4 -10.8 3 -20.7 5.3 -31.5 8.8 -52.5 12 -72.1 1.7 -10.5 4.2 -25.5 5.5 -33.5 1.3 -8 4 -24.4 6 -36.5 2 -12.1 4.7 -28.5 6 -36.5 6.4 -38.1 7.7 -46.2 9.1 -55.5 0.8 -5.5 1.6 -10.5 1.8 -11.1 0.2 -0.6 4.4 -1.4 9.6 -1.7 25.4 -1.8 51 -10.6 65.2 -22.4 10.3 -8.5 16.6 -18.4 19.9 -31 1.8 -7.3 1.9 -12.1 1.9 -125.9l0 -118.2 3.4 -8.8c3.7 -9.6 6.6 -20.4 8.8 -32.4 1.7 -9.8 1.7 -51.2 0 -63.5 -4 -28.5 -11.3 -53 -22.2 -75.4l-6.9 -14.1 22.7 -0 22.8 -0 4.9 5.1c11 11.2 31.5 22.7 44.7 25 8.1 1.3 18.3 0.2 24.1 -2.7 4.1 -2.1 9.5 -7.1 11.4 -10.7 1.4 -2.7 2 -12.7 0.9 -14.5 -0.2 -0.4 2.4 -2.1 5.9 -3.6 7.9 -3.4 15 -10.6 16.1 -16.1 1.9 -10.1 -7.1 -20 -22.3 -24.5 -4 -1.2 -4.3 -1.6 -4.3 -4.9 0 -8.9 -5.1 -16.5 -13.6 -20.2 -8.8 -3.9 -22.3 -3.4 -33.1 1.2 -7.4 3.2 -18.2 10.9 -26.7 19.1l-7.9 7.8 -37.4 -0 -37.4 -0 -8.7 -7.8c-17.6 -15.7 -30.5 -24.4 -51.7 -34.8 -16.4 -8 -32.7 -13.9 -50.5 -18.4 -27.3 -6.9 -44.8 -9 -81 -9.7 -28 -0.6 -151.9 1.2 -160.5 2.3 -4.1 0.5 -4.1 0.5 -10.4 -7.6 -10.9 -13.8 -25.2 -23.8 -41.6 -29 -5.2 -1.7 -10.3 -2.4 -20 -2.7 -15.2 -0.6 -22.8 0.7 -36.4 6.2l-9 3.6 -6.8 -3.5c-11.5 -5.7 -19.5 -7.8 -32.3 -8.2 -8 -0.3 -13.6 0.1 -18.5 1.2zm-37.8 369.4l2.2 -0 0.4 91.7c0.3 101.2 0 96.1 6.7 109.2 10 19.9 32 33.5 63.6 39.3 5.8 1 6.8 1.6 10 5.5 1.9 2.3 3.7 5.8 4 7.5 0.2 1.8 1.8 13.6 3.4 26.3 1.7 12.6 4.4 33 6 45.2 1.7 12.3 4.3 32.3 5.9 44.5 1.7 12.3 4.1 30.8 5.5 41.3 1.5 10.4 3.2 24.2 4 30.5 0.8 6.3 3.7 28.4 6.5 49 2.8 20.6 5.3 40.3 5.7 43.8l0.7 6.2 -52.6 -0c-41.8 -0 -52.6 -0.3 -53 -1.3 -0.3 -0.7 -1.2 -6 -2.2 -11.7 -0.9 -5.8 -2.7 -16.4 -4 -23.5 -1.3 -7.2 -2.6 -15 -3 -17.5 -0.3 -2.5 -1.9 -11.9 -3.5 -21 -1.6 -9.1 -4.3 -24.8 -6 -35 -1.7 -10.2 -4.2 -24.8 -5.6 -32.5 -1.3 -7.7 -3 -17.8 -3.8 -22.5 -1.7 -10.3 -4.7 -27.7 -8.7 -51 -1.6 -9.6 -4.1 -24.3 -5.5 -32.5 -1.4 -8.3 -3.8 -22.4 -5.4 -31.5 -5.2 -30.2 -9 -52.4 -10.5 -61.5 -0.8 -5 -3.1 -18.2 -5.1 -29.5 -2 -11.3 -3.7 -22.5 -3.9 -25 -0.6 -8.5 -11.6 -67.5 -13.2 -70.8 -1.5 -2.9 -1.5 -4.5 -0.5 -13.3 3.7 -31.4 14.5 -49.9 33.5 -57.1 5.6 -2.1 17.5 -3.8 22.7 -3.2 1.9 0.2 4.5 0.4 5.7 0.4zm309.3 98c5.2 0.5 10 1 10.7 1 0.9 -0 1.3 11.1 1.6 43.7 0.4 46.4 0.5 47.2 5.5 58.7 1.2 2.6 3.8 7.1 5.9 9.9l3.7 5 -1.7 15.1c-1 8.3 -3.1 26.3 -4.7 40.1 -1.6 13.7 -4.3 36.6 -6 50.7 -11.3 96 -14.4 122.4 -18.1 154.3 -1.7 14.3 -4.1 34.3 -5.2 44.5l-2.2 18.5 -71.7 0.3c-39.5 0.1 -71.8 -0 -71.8 -0.3 0 -0.2 -0.6 -5.3 -1.4 -11.2 -0.8 -5.9 -1.8 -13.7 -2.1 -17.3 -0.4 -3.6 -1.9 -17.1 -3.5 -30 -1.6 -12.9 -4.3 -35.7 -6 -50.5 -1.7 -14.9 -4.2 -35.6 -5.5 -46 -1.3 -10.5 -2.7 -22.2 -3 -26 -0.4 -3.9 -1.7 -15.1 -3 -25 -1.3 -9.9 -2.6 -21.4 -3 -25.5 -0.4 -4.1 -1.5 -13.8 -2.6 -21.4 -2.6 -19.2 -2.9 -17.7 3.4 -16 14.6 3.8 25.9 4.9 52.2 4.9 22.4 -0 27.7 -0.4 38.4 -2.3 24.9 -4.5 43 -12.4 55.1 -24.2 7.3 -7.1 11 -12.7 14.9 -22.9l2.6 -6.6 0.3 -61.8 0.3 -61.9 3.7 0.6c2 0.4 8 1.1 13.2 1.6zm69.3 141.5c2.9 0.8 10.2 2.3 16.4 3.4 9.9 1.7 11.7 2.3 15.5 5.4 13 10.6 36.7 18.7 62.2 21.3 7.6 0.8 7.3 0.1 5.1 12.5 -1.5 8.8 -6.9 40.6 -15.5 91.4 -10.1 59.4 -15 88.6 -21.5 126.7 -3.6 21.2 -6.5 38.9 -6.5 39.2 0 0.3 -23 0.6 -51.1 0.6 -48.1 -0 -51 -0.1 -50.5 -1.8 0.3 -0.9 1 -6.4 1.6 -12.2 0.7 -5.8 2.2 -18.8 3.5 -29 1.3 -10.2 2.7 -21.2 3 -24.5 0.6 -5.7 3.3 -27.7 9 -73 4.6 -36.3 7.5 -60.8 9.5 -78 1.1 -9.4 2.6 -21.7 3.4 -27.5 0.8 -5.8 1.8 -13.4 2.1 -17 0.8 -8.2 4.4 -34.7 5.1 -37.8 0.3 -1.6 1 -2.2 2 -1.8 0.8 0.3 3.8 1.2 6.7 2.1z"/>
+</svg>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  <script src="https://cdn.embedly.com/widgets/platform.js"></script>
+  <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+
+    <script src="https://phpsw.uk/rev/201702092239/js/vendor.js"></script>
+    <script src="https://phpsw.uk/rev/201702092239/js/main.js"></script>
+  </body>
+</html>

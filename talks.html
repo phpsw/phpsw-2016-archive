@@ -1,0 +1,2519 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Talks · PHPSW · South West UK PHP User Group</title>
+    <meta name="description" content="PHP User Group, meets 2nd Wednesday of every month, in Bristol, UK, talking PHP and related technologies.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:site_name" content="PHPSW">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://phpsw.uk/talks">
+      <meta property="og:title" content="Talks">
+      <meta property="og:description" content="PHP User Group, meets 2nd Wednesday of every month, in Bristol, UK, talking PHP and related technologies.">
+      <meta property="og:image" content="https://images.phpsw.uk/xqvi_FkeuZB3CJ5WGaycDM0GyC8=/1200x400/http://photos3.meetupstatic.com/photos/event/c/9/c/a/highres_436131658.jpeg"><meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:url" content="https://phpsw.uk/talks">
+      <meta name="twitter:title" content="Talks">
+      <meta name="twitter:description" content="PHP User Group, meets 2nd Wednesday of every month, in Bristol, UK, talking PHP and related technologies.">
+      <meta name="twitter:image" content="https://images.phpsw.uk/xqvi_FkeuZB3CJ5WGaycDM0GyC8=/1200x400/http://photos3.meetupstatic.com/photos/event/c/9/c/a/highres_436131658.jpeg">
+      <meta name="twitter:site" content="@phpsw">
+      <meta name="twitter:creator" content="@phpsw">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="https://phpsw.uk/favicon.ico">
+    <link rel="canonical" href="talks.html">
+    <link rel="stylesheet" href="rev/201702092308/css/vendor.css">
+    <link rel="stylesheet" href="rev/201702092308/css/main.css">
+  </head>
+  <body>
+          <header class="header">
+  <div class="container">
+    <h1>
+      <a href="index.html">
+        <span class="sr-only">PHPSW</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="logo logo--global" preserveAspectRatio="xMidYMid meet" viewBox="0 0 436 212">
+  <path class="logo__php" d="M86.574997 69.474998l-46.018997 0l-19.9 100.743996l23.630999 0l4.975002 -26.118988l22.388 0c21.143997 1.2 44.8 -16.2 44.8 -46.019005c0.000999 -17.4 -9.9 -27.4 -29.8 -28.606003zm-17.412994 55.968002l-14.925003 0l6.219002 -37.312004l16.168999 0c8.706001 0 14.9 3.7 14.9 11.194c-1.243004 21.1 -11.2 24.9 -22.4 26.118004z M111.962997 144.100006l19.899002 -100.742996l23.632004 0l-4.975998 26.119003l22.388 0c19.899994 1.2 27.4 11.2 24.9 23.630997l-8.706009 50.992996l-24.875 0l8.706009 -46.018997c1.243988 -6.2 1.2 -9.9 -7.5 -9.949997l-18.655991 0l-11.193008 55.968994l-23.630997 0z M255.237 69.474998l-46.018997 0l-19.900009 100.743996l23.632004 0l4.975006 -26.118988l22.388 0c21.143997 1.2 44.8 -16.2 44.8 -46.019005c0 -17.4 -10 -27.4 -29.9 -28.606003zm-17.412003 55.968002l-14.925003 0l6.218994 -37.312004l16.167999 0c8.707001 0 14.9 3.7 14.9 11.194c-1.243988 21.1 -11.2 24.9 -22.4 26.118004z" fill="#1E1E1E"/>
+  <g class="logo__sw">
+    <path class="logo__sw__rhomboid" d="M414.498169 142.375l-115.998169 0l12.5 -75l116 0" fill="#2A8EBD"/>
+    <path class="logo__sw__text" d="M317.558777 118.025002c2.764008 1.7 6.6 3 11 2.971001c3.800018 0 7.3 -1.8 7.3 -5.389c0 -2.7 -2 -4.4 -6.3 -6.633003c-4.904999 -2.6 -9.6 -6.4 -9.6 -12.367996c0 -9.4 8.2 -15.1 18.3 -15.131004c5.597015 0 8.9 1.2 10.9 2.279999l-3.108002 8.291c-1.520996 -0.8 -4.8 -2.1 -8.6 -2.003998c-4.629028 0 -7 2.3 -7 4.836998c0 2.8 2.8 4.4 6.8 6.633003c5.665009 3 9.2 6.8 9.2 12.366997c0 10.4 -8.6 15.7 -18.9 15.684006c-6.425995 -0.1 -11.1 -1.7 -13.3 -3.316002l3.317993 -8.222z M357.56076 128.804001l-1.79599 -46.568001l10.087006 0l0 20.727997c0 5.7 -0.1 10.9 -0.3 15.131004l0.138 0c1.65802 -4.6 3.3 -9.3 5.5 -14.993004l8.360016 -20.865997l10.916992 0l-0.139008 20.795998c-0.069 5.6 -0.2 10.2 -0.5 14.786003l0.138 0c1.589996 -4.8 3.3 -9.8 5.2 -14.854004l8.015991 -20.727997l10.502014 0l-20.520996 46.568001l-10.848999 0l-0.276001 -19.069c-0.069 -5.5 0.1 -10.2 0.3 -15.476997l-0.139008 0c-1.65799 5 -3.3 10 -5.6 15.683998l-8.015991 18.862l-11.054016 0z" fill="white"/>
+  </g>
+</svg>
+
+      </a>
+    </h1>
+
+    <div class="balloons">
+      <svg xmlns="http://www.w3.org/2000/svg" class="balloon balloon--small" fill="#1E1E1E" viewBox="0 0 1015 1268" preserveAspectRatio="xMidYMid meet">
+  <path d="M289.5 18.6 c-19 4.2 -32.6 13.1 -62.9 41.2l-13 11.9 -7 1.3c-12.4 2.2 -33.7 7.7 -46.1 12 -24.2 8.4 -43.3 19.2 -57.9 33.1 -21.6 20.4 -32.9 44.6 -38 81.7 -3.3 23.7 -3.7 48.5 -3.4 229.2l0.3 178.5 2.3 5.8c3.4 8.4 11.7 16.9 20.6 21.1 10.2 4.9 19.7 6.7 34.6 6.7 22.2 -0 37.1 -5 47.3 -16 6.9 -7.5 9.7 -14.4 10.6 -26.6 0.8 -10.3 0.6 -10.7 5.1 13.7 1.6 9.3 4.4 24.2 6 33.3 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.3 23.8 6 32.7 8.9 48.5 33 182.2 33 182.9 0 0.5 -8.2 0.9 -18.2 0.9 -20.4 -0 -22 0.4 -27.2 7.3 -2.3 2.9 -2.6 4.3 -2.6 10.8 0 8 1.2 10.9 6.2 14.9 5.1 3.9 9.3 5 19.7 5l10 -0 0.5 3.2c0.7 4.2 3 23.4 5.6 45.8 1 9.6 3.3 29 4.9 43 8.1 68.3 11.3 95.6 12.6 108 0.9 7.4 2.2 18.7 3 25 0.8 6.3 2.4 19.8 3.5 30 1.1 10.2 2.2 19.5 2.5 20.8l0.5 2.2 216.6 -0c172.3 -0 216.5 -0.3 216.8 -1.3 0.5 -1.8 4.5 -34.9 6.2 -51.2 0.8 -7.7 2.1 -18.7 2.9 -24.5 0.8 -5.8 2.2 -17 3 -25 0.8 -8 2.2 -19.5 3 -25.5 0.8 -6.1 2.1 -17.3 3 -25 0.8 -7.7 2.4 -21.2 3.5 -30 3.4 -27.6 11 -92.6 11 -94.5 0 -0.6 3.4 -1 9 -1 10.2 -0 13.3 -1.1 19.3 -6.8l3.7 -3.6 0 -9.1c0 -9 0 -9.1 -3.2 -12.1 -6.5 -6 -7.8 -6.4 -20.3 -6.4l-11.5 -0 0 -2.7c0 -1.5 1.4 -10.8 3 -20.7 5.3 -31.5 8.8 -52.5 12 -72.1 1.7 -10.5 4.2 -25.5 5.5 -33.5 1.3 -8 4 -24.4 6 -36.5 2 -12.1 4.7 -28.5 6 -36.5 6.4 -38.1 7.7 -46.2 9.1 -55.5 0.8 -5.5 1.6 -10.5 1.8 -11.1 0.2 -0.6 4.4 -1.4 9.6 -1.7 25.4 -1.8 51 -10.6 65.2 -22.4 10.3 -8.5 16.6 -18.4 19.9 -31 1.8 -7.3 1.9 -12.1 1.9 -125.9l0 -118.2 3.4 -8.8c3.7 -9.6 6.6 -20.4 8.8 -32.4 1.7 -9.8 1.7 -51.2 0 -63.5 -4 -28.5 -11.3 -53 -22.2 -75.4l-6.9 -14.1 22.7 -0 22.8 -0 4.9 5.1c11 11.2 31.5 22.7 44.7 25 8.1 1.3 18.3 0.2 24.1 -2.7 4.1 -2.1 9.5 -7.1 11.4 -10.7 1.4 -2.7 2 -12.7 0.9 -14.5 -0.2 -0.4 2.4 -2.1 5.9 -3.6 7.9 -3.4 15 -10.6 16.1 -16.1 1.9 -10.1 -7.1 -20 -22.3 -24.5 -4 -1.2 -4.3 -1.6 -4.3 -4.9 0 -8.9 -5.1 -16.5 -13.6 -20.2 -8.8 -3.9 -22.3 -3.4 -33.1 1.2 -7.4 3.2 -18.2 10.9 -26.7 19.1l-7.9 7.8 -37.4 -0 -37.4 -0 -8.7 -7.8c-17.6 -15.7 -30.5 -24.4 -51.7 -34.8 -16.4 -8 -32.7 -13.9 -50.5 -18.4 -27.3 -6.9 -44.8 -9 -81 -9.7 -28 -0.6 -151.9 1.2 -160.5 2.3 -4.1 0.5 -4.1 0.5 -10.4 -7.6 -10.9 -13.8 -25.2 -23.8 -41.6 -29 -5.2 -1.7 -10.3 -2.4 -20 -2.7 -15.2 -0.6 -22.8 0.7 -36.4 6.2l-9 3.6 -6.8 -3.5c-11.5 -5.7 -19.5 -7.8 -32.3 -8.2 -8 -0.3 -13.6 0.1 -18.5 1.2zm-37.8 369.4l2.2 -0 0.4 91.7c0.3 101.2 0 96.1 6.7 109.2 10 19.9 32 33.5 63.6 39.3 5.8 1 6.8 1.6 10 5.5 1.9 2.3 3.7 5.8 4 7.5 0.2 1.8 1.8 13.6 3.4 26.3 1.7 12.6 4.4 33 6 45.2 1.7 12.3 4.3 32.3 5.9 44.5 1.7 12.3 4.1 30.8 5.5 41.3 1.5 10.4 3.2 24.2 4 30.5 0.8 6.3 3.7 28.4 6.5 49 2.8 20.6 5.3 40.3 5.7 43.8l0.7 6.2 -52.6 -0c-41.8 -0 -52.6 -0.3 -53 -1.3 -0.3 -0.7 -1.2 -6 -2.2 -11.7 -0.9 -5.8 -2.7 -16.4 -4 -23.5 -1.3 -7.2 -2.6 -15 -3 -17.5 -0.3 -2.5 -1.9 -11.9 -3.5 -21 -1.6 -9.1 -4.3 -24.8 -6 -35 -1.7 -10.2 -4.2 -24.8 -5.6 -32.5 -1.3 -7.7 -3 -17.8 -3.8 -22.5 -1.7 -10.3 -4.7 -27.7 -8.7 -51 -1.6 -9.6 -4.1 -24.3 -5.5 -32.5 -1.4 -8.3 -3.8 -22.4 -5.4 -31.5 -5.2 -30.2 -9 -52.4 -10.5 -61.5 -0.8 -5 -3.1 -18.2 -5.1 -29.5 -2 -11.3 -3.7 -22.5 -3.9 -25 -0.6 -8.5 -11.6 -67.5 -13.2 -70.8 -1.5 -2.9 -1.5 -4.5 -0.5 -13.3 3.7 -31.4 14.5 -49.9 33.5 -57.1 5.6 -2.1 17.5 -3.8 22.7 -3.2 1.9 0.2 4.5 0.4 5.7 0.4zm309.3 98c5.2 0.5 10 1 10.7 1 0.9 -0 1.3 11.1 1.6 43.7 0.4 46.4 0.5 47.2 5.5 58.7 1.2 2.6 3.8 7.1 5.9 9.9l3.7 5 -1.7 15.1c-1 8.3 -3.1 26.3 -4.7 40.1 -1.6 13.7 -4.3 36.6 -6 50.7 -11.3 96 -14.4 122.4 -18.1 154.3 -1.7 14.3 -4.1 34.3 -5.2 44.5l-2.2 18.5 -71.7 0.3c-39.5 0.1 -71.8 -0 -71.8 -0.3 0 -0.2 -0.6 -5.3 -1.4 -11.2 -0.8 -5.9 -1.8 -13.7 -2.1 -17.3 -0.4 -3.6 -1.9 -17.1 -3.5 -30 -1.6 -12.9 -4.3 -35.7 -6 -50.5 -1.7 -14.9 -4.2 -35.6 -5.5 -46 -1.3 -10.5 -2.7 -22.2 -3 -26 -0.4 -3.9 -1.7 -15.1 -3 -25 -1.3 -9.9 -2.6 -21.4 -3 -25.5 -0.4 -4.1 -1.5 -13.8 -2.6 -21.4 -2.6 -19.2 -2.9 -17.7 3.4 -16 14.6 3.8 25.9 4.9 52.2 4.9 22.4 -0 27.7 -0.4 38.4 -2.3 24.9 -4.5 43 -12.4 55.1 -24.2 7.3 -7.1 11 -12.7 14.9 -22.9l2.6 -6.6 0.3 -61.8 0.3 -61.9 3.7 0.6c2 0.4 8 1.1 13.2 1.6zm69.3 141.5c2.9 0.8 10.2 2.3 16.4 3.4 9.9 1.7 11.7 2.3 15.5 5.4 13 10.6 36.7 18.7 62.2 21.3 7.6 0.8 7.3 0.1 5.1 12.5 -1.5 8.8 -6.9 40.6 -15.5 91.4 -10.1 59.4 -15 88.6 -21.5 126.7 -3.6 21.2 -6.5 38.9 -6.5 39.2 0 0.3 -23 0.6 -51.1 0.6 -48.1 -0 -51 -0.1 -50.5 -1.8 0.3 -0.9 1 -6.4 1.6 -12.2 0.7 -5.8 2.2 -18.8 3.5 -29 1.3 -10.2 2.7 -21.2 3 -24.5 0.6 -5.7 3.3 -27.7 9 -73 4.6 -36.3 7.5 -60.8 9.5 -78 1.1 -9.4 2.6 -21.7 3.4 -27.5 0.8 -5.8 1.8 -13.4 2.1 -17 0.8 -8.2 4.4 -34.7 5.1 -37.8 0.3 -1.6 1 -2.2 2 -1.8 0.8 0.3 3.8 1.2 6.7 2.1z"/>
+</svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="balloon balloon--large" fill="#1E1E1E" viewBox="0 0 1015 1268" preserveAspectRatio="xMidYMid meet">
+  <path d="M289.5 18.6 c-19 4.2 -32.6 13.1 -62.9 41.2l-13 11.9 -7 1.3c-12.4 2.2 -33.7 7.7 -46.1 12 -24.2 8.4 -43.3 19.2 -57.9 33.1 -21.6 20.4 -32.9 44.6 -38 81.7 -3.3 23.7 -3.7 48.5 -3.4 229.2l0.3 178.5 2.3 5.8c3.4 8.4 11.7 16.9 20.6 21.1 10.2 4.9 19.7 6.7 34.6 6.7 22.2 -0 37.1 -5 47.3 -16 6.9 -7.5 9.7 -14.4 10.6 -26.6 0.8 -10.3 0.6 -10.7 5.1 13.7 1.6 9.3 4.4 24.2 6 33.3 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.3 23.8 6 32.7 8.9 48.5 33 182.2 33 182.9 0 0.5 -8.2 0.9 -18.2 0.9 -20.4 -0 -22 0.4 -27.2 7.3 -2.3 2.9 -2.6 4.3 -2.6 10.8 0 8 1.2 10.9 6.2 14.9 5.1 3.9 9.3 5 19.7 5l10 -0 0.5 3.2c0.7 4.2 3 23.4 5.6 45.8 1 9.6 3.3 29 4.9 43 8.1 68.3 11.3 95.6 12.6 108 0.9 7.4 2.2 18.7 3 25 0.8 6.3 2.4 19.8 3.5 30 1.1 10.2 2.2 19.5 2.5 20.8l0.5 2.2 216.6 -0c172.3 -0 216.5 -0.3 216.8 -1.3 0.5 -1.8 4.5 -34.9 6.2 -51.2 0.8 -7.7 2.1 -18.7 2.9 -24.5 0.8 -5.8 2.2 -17 3 -25 0.8 -8 2.2 -19.5 3 -25.5 0.8 -6.1 2.1 -17.3 3 -25 0.8 -7.7 2.4 -21.2 3.5 -30 3.4 -27.6 11 -92.6 11 -94.5 0 -0.6 3.4 -1 9 -1 10.2 -0 13.3 -1.1 19.3 -6.8l3.7 -3.6 0 -9.1c0 -9 0 -9.1 -3.2 -12.1 -6.5 -6 -7.8 -6.4 -20.3 -6.4l-11.5 -0 0 -2.7c0 -1.5 1.4 -10.8 3 -20.7 5.3 -31.5 8.8 -52.5 12 -72.1 1.7 -10.5 4.2 -25.5 5.5 -33.5 1.3 -8 4 -24.4 6 -36.5 2 -12.1 4.7 -28.5 6 -36.5 6.4 -38.1 7.7 -46.2 9.1 -55.5 0.8 -5.5 1.6 -10.5 1.8 -11.1 0.2 -0.6 4.4 -1.4 9.6 -1.7 25.4 -1.8 51 -10.6 65.2 -22.4 10.3 -8.5 16.6 -18.4 19.9 -31 1.8 -7.3 1.9 -12.1 1.9 -125.9l0 -118.2 3.4 -8.8c3.7 -9.6 6.6 -20.4 8.8 -32.4 1.7 -9.8 1.7 -51.2 0 -63.5 -4 -28.5 -11.3 -53 -22.2 -75.4l-6.9 -14.1 22.7 -0 22.8 -0 4.9 5.1c11 11.2 31.5 22.7 44.7 25 8.1 1.3 18.3 0.2 24.1 -2.7 4.1 -2.1 9.5 -7.1 11.4 -10.7 1.4 -2.7 2 -12.7 0.9 -14.5 -0.2 -0.4 2.4 -2.1 5.9 -3.6 7.9 -3.4 15 -10.6 16.1 -16.1 1.9 -10.1 -7.1 -20 -22.3 -24.5 -4 -1.2 -4.3 -1.6 -4.3 -4.9 0 -8.9 -5.1 -16.5 -13.6 -20.2 -8.8 -3.9 -22.3 -3.4 -33.1 1.2 -7.4 3.2 -18.2 10.9 -26.7 19.1l-7.9 7.8 -37.4 -0 -37.4 -0 -8.7 -7.8c-17.6 -15.7 -30.5 -24.4 -51.7 -34.8 -16.4 -8 -32.7 -13.9 -50.5 -18.4 -27.3 -6.9 -44.8 -9 -81 -9.7 -28 -0.6 -151.9 1.2 -160.5 2.3 -4.1 0.5 -4.1 0.5 -10.4 -7.6 -10.9 -13.8 -25.2 -23.8 -41.6 -29 -5.2 -1.7 -10.3 -2.4 -20 -2.7 -15.2 -0.6 -22.8 0.7 -36.4 6.2l-9 3.6 -6.8 -3.5c-11.5 -5.7 -19.5 -7.8 -32.3 -8.2 -8 -0.3 -13.6 0.1 -18.5 1.2zm-37.8 369.4l2.2 -0 0.4 91.7c0.3 101.2 0 96.1 6.7 109.2 10 19.9 32 33.5 63.6 39.3 5.8 1 6.8 1.6 10 5.5 1.9 2.3 3.7 5.8 4 7.5 0.2 1.8 1.8 13.6 3.4 26.3 1.7 12.6 4.4 33 6 45.2 1.7 12.3 4.3 32.3 5.9 44.5 1.7 12.3 4.1 30.8 5.5 41.3 1.5 10.4 3.2 24.2 4 30.5 0.8 6.3 3.7 28.4 6.5 49 2.8 20.6 5.3 40.3 5.7 43.8l0.7 6.2 -52.6 -0c-41.8 -0 -52.6 -0.3 -53 -1.3 -0.3 -0.7 -1.2 -6 -2.2 -11.7 -0.9 -5.8 -2.7 -16.4 -4 -23.5 -1.3 -7.2 -2.6 -15 -3 -17.5 -0.3 -2.5 -1.9 -11.9 -3.5 -21 -1.6 -9.1 -4.3 -24.8 -6 -35 -1.7 -10.2 -4.2 -24.8 -5.6 -32.5 -1.3 -7.7 -3 -17.8 -3.8 -22.5 -1.7 -10.3 -4.7 -27.7 -8.7 -51 -1.6 -9.6 -4.1 -24.3 -5.5 -32.5 -1.4 -8.3 -3.8 -22.4 -5.4 -31.5 -5.2 -30.2 -9 -52.4 -10.5 -61.5 -0.8 -5 -3.1 -18.2 -5.1 -29.5 -2 -11.3 -3.7 -22.5 -3.9 -25 -0.6 -8.5 -11.6 -67.5 -13.2 -70.8 -1.5 -2.9 -1.5 -4.5 -0.5 -13.3 3.7 -31.4 14.5 -49.9 33.5 -57.1 5.6 -2.1 17.5 -3.8 22.7 -3.2 1.9 0.2 4.5 0.4 5.7 0.4zm309.3 98c5.2 0.5 10 1 10.7 1 0.9 -0 1.3 11.1 1.6 43.7 0.4 46.4 0.5 47.2 5.5 58.7 1.2 2.6 3.8 7.1 5.9 9.9l3.7 5 -1.7 15.1c-1 8.3 -3.1 26.3 -4.7 40.1 -1.6 13.7 -4.3 36.6 -6 50.7 -11.3 96 -14.4 122.4 -18.1 154.3 -1.7 14.3 -4.1 34.3 -5.2 44.5l-2.2 18.5 -71.7 0.3c-39.5 0.1 -71.8 -0 -71.8 -0.3 0 -0.2 -0.6 -5.3 -1.4 -11.2 -0.8 -5.9 -1.8 -13.7 -2.1 -17.3 -0.4 -3.6 -1.9 -17.1 -3.5 -30 -1.6 -12.9 -4.3 -35.7 -6 -50.5 -1.7 -14.9 -4.2 -35.6 -5.5 -46 -1.3 -10.5 -2.7 -22.2 -3 -26 -0.4 -3.9 -1.7 -15.1 -3 -25 -1.3 -9.9 -2.6 -21.4 -3 -25.5 -0.4 -4.1 -1.5 -13.8 -2.6 -21.4 -2.6 -19.2 -2.9 -17.7 3.4 -16 14.6 3.8 25.9 4.9 52.2 4.9 22.4 -0 27.7 -0.4 38.4 -2.3 24.9 -4.5 43 -12.4 55.1 -24.2 7.3 -7.1 11 -12.7 14.9 -22.9l2.6 -6.6 0.3 -61.8 0.3 -61.9 3.7 0.6c2 0.4 8 1.1 13.2 1.6zm69.3 141.5c2.9 0.8 10.2 2.3 16.4 3.4 9.9 1.7 11.7 2.3 15.5 5.4 13 10.6 36.7 18.7 62.2 21.3 7.6 0.8 7.3 0.1 5.1 12.5 -1.5 8.8 -6.9 40.6 -15.5 91.4 -10.1 59.4 -15 88.6 -21.5 126.7 -3.6 21.2 -6.5 38.9 -6.5 39.2 0 0.3 -23 0.6 -51.1 0.6 -48.1 -0 -51 -0.1 -50.5 -1.8 0.3 -0.9 1 -6.4 1.6 -12.2 0.7 -5.8 2.2 -18.8 3.5 -29 1.3 -10.2 2.7 -21.2 3 -24.5 0.6 -5.7 3.3 -27.7 9 -73 4.6 -36.3 7.5 -60.8 9.5 -78 1.1 -9.4 2.6 -21.7 3.4 -27.5 0.8 -5.8 1.8 -13.4 2.1 -17 0.8 -8.2 4.4 -34.7 5.1 -37.8 0.3 -1.6 1 -2.2 2 -1.8 0.8 0.3 3.8 1.2 6.7 2.1z"/>
+</svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="balloon balloon--medium" fill="#1E1E1E" viewBox="0 0 1015 1268" preserveAspectRatio="xMidYMid meet">
+  <path d="M289.5 18.6 c-19 4.2 -32.6 13.1 -62.9 41.2l-13 11.9 -7 1.3c-12.4 2.2 -33.7 7.7 -46.1 12 -24.2 8.4 -43.3 19.2 -57.9 33.1 -21.6 20.4 -32.9 44.6 -38 81.7 -3.3 23.7 -3.7 48.5 -3.4 229.2l0.3 178.5 2.3 5.8c3.4 8.4 11.7 16.9 20.6 21.1 10.2 4.9 19.7 6.7 34.6 6.7 22.2 -0 37.1 -5 47.3 -16 6.9 -7.5 9.7 -14.4 10.6 -26.6 0.8 -10.3 0.6 -10.7 5.1 13.7 1.6 9.3 4.4 24.2 6 33.3 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.3 23.8 6 32.7 8.9 48.5 33 182.2 33 182.9 0 0.5 -8.2 0.9 -18.2 0.9 -20.4 -0 -22 0.4 -27.2 7.3 -2.3 2.9 -2.6 4.3 -2.6 10.8 0 8 1.2 10.9 6.2 14.9 5.1 3.9 9.3 5 19.7 5l10 -0 0.5 3.2c0.7 4.2 3 23.4 5.6 45.8 1 9.6 3.3 29 4.9 43 8.1 68.3 11.3 95.6 12.6 108 0.9 7.4 2.2 18.7 3 25 0.8 6.3 2.4 19.8 3.5 30 1.1 10.2 2.2 19.5 2.5 20.8l0.5 2.2 216.6 -0c172.3 -0 216.5 -0.3 216.8 -1.3 0.5 -1.8 4.5 -34.9 6.2 -51.2 0.8 -7.7 2.1 -18.7 2.9 -24.5 0.8 -5.8 2.2 -17 3 -25 0.8 -8 2.2 -19.5 3 -25.5 0.8 -6.1 2.1 -17.3 3 -25 0.8 -7.7 2.4 -21.2 3.5 -30 3.4 -27.6 11 -92.6 11 -94.5 0 -0.6 3.4 -1 9 -1 10.2 -0 13.3 -1.1 19.3 -6.8l3.7 -3.6 0 -9.1c0 -9 0 -9.1 -3.2 -12.1 -6.5 -6 -7.8 -6.4 -20.3 -6.4l-11.5 -0 0 -2.7c0 -1.5 1.4 -10.8 3 -20.7 5.3 -31.5 8.8 -52.5 12 -72.1 1.7 -10.5 4.2 -25.5 5.5 -33.5 1.3 -8 4 -24.4 6 -36.5 2 -12.1 4.7 -28.5 6 -36.5 6.4 -38.1 7.7 -46.2 9.1 -55.5 0.8 -5.5 1.6 -10.5 1.8 -11.1 0.2 -0.6 4.4 -1.4 9.6 -1.7 25.4 -1.8 51 -10.6 65.2 -22.4 10.3 -8.5 16.6 -18.4 19.9 -31 1.8 -7.3 1.9 -12.1 1.9 -125.9l0 -118.2 3.4 -8.8c3.7 -9.6 6.6 -20.4 8.8 -32.4 1.7 -9.8 1.7 -51.2 0 -63.5 -4 -28.5 -11.3 -53 -22.2 -75.4l-6.9 -14.1 22.7 -0 22.8 -0 4.9 5.1c11 11.2 31.5 22.7 44.7 25 8.1 1.3 18.3 0.2 24.1 -2.7 4.1 -2.1 9.5 -7.1 11.4 -10.7 1.4 -2.7 2 -12.7 0.9 -14.5 -0.2 -0.4 2.4 -2.1 5.9 -3.6 7.9 -3.4 15 -10.6 16.1 -16.1 1.9 -10.1 -7.1 -20 -22.3 -24.5 -4 -1.2 -4.3 -1.6 -4.3 -4.9 0 -8.9 -5.1 -16.5 -13.6 -20.2 -8.8 -3.9 -22.3 -3.4 -33.1 1.2 -7.4 3.2 -18.2 10.9 -26.7 19.1l-7.9 7.8 -37.4 -0 -37.4 -0 -8.7 -7.8c-17.6 -15.7 -30.5 -24.4 -51.7 -34.8 -16.4 -8 -32.7 -13.9 -50.5 -18.4 -27.3 -6.9 -44.8 -9 -81 -9.7 -28 -0.6 -151.9 1.2 -160.5 2.3 -4.1 0.5 -4.1 0.5 -10.4 -7.6 -10.9 -13.8 -25.2 -23.8 -41.6 -29 -5.2 -1.7 -10.3 -2.4 -20 -2.7 -15.2 -0.6 -22.8 0.7 -36.4 6.2l-9 3.6 -6.8 -3.5c-11.5 -5.7 -19.5 -7.8 -32.3 -8.2 -8 -0.3 -13.6 0.1 -18.5 1.2zm-37.8 369.4l2.2 -0 0.4 91.7c0.3 101.2 0 96.1 6.7 109.2 10 19.9 32 33.5 63.6 39.3 5.8 1 6.8 1.6 10 5.5 1.9 2.3 3.7 5.8 4 7.5 0.2 1.8 1.8 13.6 3.4 26.3 1.7 12.6 4.4 33 6 45.2 1.7 12.3 4.3 32.3 5.9 44.5 1.7 12.3 4.1 30.8 5.5 41.3 1.5 10.4 3.2 24.2 4 30.5 0.8 6.3 3.7 28.4 6.5 49 2.8 20.6 5.3 40.3 5.7 43.8l0.7 6.2 -52.6 -0c-41.8 -0 -52.6 -0.3 -53 -1.3 -0.3 -0.7 -1.2 -6 -2.2 -11.7 -0.9 -5.8 -2.7 -16.4 -4 -23.5 -1.3 -7.2 -2.6 -15 -3 -17.5 -0.3 -2.5 -1.9 -11.9 -3.5 -21 -1.6 -9.1 -4.3 -24.8 -6 -35 -1.7 -10.2 -4.2 -24.8 -5.6 -32.5 -1.3 -7.7 -3 -17.8 -3.8 -22.5 -1.7 -10.3 -4.7 -27.7 -8.7 -51 -1.6 -9.6 -4.1 -24.3 -5.5 -32.5 -1.4 -8.3 -3.8 -22.4 -5.4 -31.5 -5.2 -30.2 -9 -52.4 -10.5 -61.5 -0.8 -5 -3.1 -18.2 -5.1 -29.5 -2 -11.3 -3.7 -22.5 -3.9 -25 -0.6 -8.5 -11.6 -67.5 -13.2 -70.8 -1.5 -2.9 -1.5 -4.5 -0.5 -13.3 3.7 -31.4 14.5 -49.9 33.5 -57.1 5.6 -2.1 17.5 -3.8 22.7 -3.2 1.9 0.2 4.5 0.4 5.7 0.4zm309.3 98c5.2 0.5 10 1 10.7 1 0.9 -0 1.3 11.1 1.6 43.7 0.4 46.4 0.5 47.2 5.5 58.7 1.2 2.6 3.8 7.1 5.9 9.9l3.7 5 -1.7 15.1c-1 8.3 -3.1 26.3 -4.7 40.1 -1.6 13.7 -4.3 36.6 -6 50.7 -11.3 96 -14.4 122.4 -18.1 154.3 -1.7 14.3 -4.1 34.3 -5.2 44.5l-2.2 18.5 -71.7 0.3c-39.5 0.1 -71.8 -0 -71.8 -0.3 0 -0.2 -0.6 -5.3 -1.4 -11.2 -0.8 -5.9 -1.8 -13.7 -2.1 -17.3 -0.4 -3.6 -1.9 -17.1 -3.5 -30 -1.6 -12.9 -4.3 -35.7 -6 -50.5 -1.7 -14.9 -4.2 -35.6 -5.5 -46 -1.3 -10.5 -2.7 -22.2 -3 -26 -0.4 -3.9 -1.7 -15.1 -3 -25 -1.3 -9.9 -2.6 -21.4 -3 -25.5 -0.4 -4.1 -1.5 -13.8 -2.6 -21.4 -2.6 -19.2 -2.9 -17.7 3.4 -16 14.6 3.8 25.9 4.9 52.2 4.9 22.4 -0 27.7 -0.4 38.4 -2.3 24.9 -4.5 43 -12.4 55.1 -24.2 7.3 -7.1 11 -12.7 14.9 -22.9l2.6 -6.6 0.3 -61.8 0.3 -61.9 3.7 0.6c2 0.4 8 1.1 13.2 1.6zm69.3 141.5c2.9 0.8 10.2 2.3 16.4 3.4 9.9 1.7 11.7 2.3 15.5 5.4 13 10.6 36.7 18.7 62.2 21.3 7.6 0.8 7.3 0.1 5.1 12.5 -1.5 8.8 -6.9 40.6 -15.5 91.4 -10.1 59.4 -15 88.6 -21.5 126.7 -3.6 21.2 -6.5 38.9 -6.5 39.2 0 0.3 -23 0.6 -51.1 0.6 -48.1 -0 -51 -0.1 -50.5 -1.8 0.3 -0.9 1 -6.4 1.6 -12.2 0.7 -5.8 2.2 -18.8 3.5 -29 1.3 -10.2 2.7 -21.2 3 -24.5 0.6 -5.7 3.3 -27.7 9 -73 4.6 -36.3 7.5 -60.8 9.5 -78 1.1 -9.4 2.6 -21.7 3.4 -27.5 0.8 -5.8 1.8 -13.4 2.1 -17 0.8 -8.2 4.4 -34.7 5.1 -37.8 0.3 -1.6 1 -2.2 2 -1.8 0.8 0.3 3.8 1.2 6.7 2.1z"/>
+</svg>
+
+    </div>
+
+          <div class="js-nav-toggle js-shown">
+        <button
+          class="navbar-toggle collapsed"
+          aria-label="Toggle Navigation"
+          data-target="#nav"
+          data-toggle="collapse"
+          type="button"
+          role="button"
+        >
+          <span class="lines"></span>
+        </button>
+      </div>
+      </div>
+</header>
+
+  
+  <div class="content">
+          <nav id="nav" class="navbar navbar-default navbar-collapse collapse" role="navigation">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li class="">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="">
+        <a href="events.html">Events</a>
+      </li>
+      <li class="">
+        <a href="speakers.html">Speakers</a>
+      </li>
+      <li class="">
+        <a href="sponsors.html">Sponsors</a>
+      </li>
+      <li class="active">
+        <a href="talks.html">Talks</a>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+              <li class="hidden-xs hidden-sm">
+          <a href="http://www.meetup.com/php-sw/members">
+            <i class="fa fa-group"></i>
+            579 members
+          </a>
+        </li>
+      
+              <li class="hidden-xs hidden-sm">
+          <a href="http://www.meetup.com/php-sw/about/comments/?op=all">
+            <i class="fa fa-thumbs-o-up"></i>
+            4.7/5 from 139 ratings
+          </a>
+        </li>
+      
+      <li>
+        <a href="https://twitter.com/phpsw" title="Follow us on Twitter (@phpsw)">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+
+      <li>
+        <div>
+          <a href="http://www.meetup.com/php-sw" class="btn btn-primary navbar-btn" style="margin: 8px" title="Find us on Meetup">
+            Join group
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    
+          <div class="hero hero--default">
+        <div class="hero__image" style="background-image: url('../images.phpsw.uk/xqvi_FkeuZB3CJ5WGaycDM0GyC8=/1200x400/http-/photos3.meetupstatic.com/photos/event/c/9/c/a/highres_436131658.jpeg')"></div>
+        <div class="hero__overlay"></div>
+
+              </div>
+    
+    <main>
+              <div class="container">
+          <header class="page-header">
+                          <h1>  Talks
+</h1>
+                      </header>
+
+            <h2 class="sr-only">Featured</h2>
+
+  <div class="talks row">
+          <div id="talk-222843562-building-and-selling-modules-for-magento-ecommerce" class="talk talk--featured col-sm-6 col-md-4">
+      <h3>
+      <a href="talks/building-and-selling-modules-for-magento-ecommerce.html" class="talk__title">
+        <span>Building and selling modules for Magento eCommerce</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+            <div id="video-222843562-building-and-selling-modules-for-magento-ecommerce" class="video video--small">
+  <iframe
+    src="https://www.youtube.com/embed/oSpKBaz-Pgo?rel=0&amp;showinfo=0"
+    frameborder="0" scrolling="no"
+    allowfullscreen mozallowfullscreen webkitallowfullscreen
+  >
+  </iframe>
+
+  <a href="https://www.youtube.com/watch?v=oSpKBaz-Pgo" class="js-hidden">
+    View on YouTube
+    <i class="fa fa-external-link"></i>
+  </a>
+</div>
+
+      
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/christos-constantinou.html"><span class="fn">Christos Constantinou</span></a>, Full stack JavaScript developer
+                  </div>
+          </div>
+  
+  <hr>    <a href="events/222843562-ecommerce.html">eCommerce</a><small>, July 2015</small>  
+  </div>
+
+
+      
+                <div id="talk-222843562-moltin" class="talk talk--featured col-sm-6 col-md-4">
+      <h3>
+      <a href="talks/moltin.html" class="talk__title">
+        <span>Moltin</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+            <div id="video-222843562-moltin" class="video video--small">
+  <iframe
+    src="https://www.youtube.com/embed/a23sc8HnV90?rel=0&amp;showinfo=0"
+    frameborder="0" scrolling="no"
+    allowfullscreen mozallowfullscreen webkitallowfullscreen
+  >
+  </iframe>
+
+  <a href="https://www.youtube.com/watch?v=a23sc8HnV90" class="js-hidden">
+    View on YouTube
+    <i class="fa fa-external-link"></i>
+  </a>
+</div>
+
+      
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/drew-mclellan.html"><span class="fn">Drew McLellan</span></a>, Lead developer on Perch CMS and publisher of <a href="http://24ways.org">24 ways</a>
+                  </div>
+          </div>
+  
+  <hr>    <a href="events/222843562-ecommerce.html">eCommerce</a><small>, July 2015</small>  
+  </div>
+
+
+              <div class="clearfix visible-xs visible-sm"></div>
+      
+                <div id="talk-222842964-embracing-change" class="talk talk--featured col-sm-6 col-md-4">
+      <h3>
+      <a href="talks/embracing-change.html" class="talk__title">
+        <span>Embracing change</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+            <div id="video-222842964-embracing-change" class="video video--small">
+  <iframe
+    src="https://www.youtube.com/embed/9cjlaeoRW3g?rel=0&amp;showinfo=0"
+    frameborder="0" scrolling="no"
+    allowfullscreen mozallowfullscreen webkitallowfullscreen
+  >
+  </iframe>
+
+  <a href="https://www.youtube.com/watch?v=9cjlaeoRW3g" class="js-hidden">
+    View on YouTube
+    <i class="fa fa-external-link"></i>
+  </a>
+</div>
+
+      
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/jakub-zalas.html"><span class="fn">Jakub Zalas</span></a>, Symfony core team member
+                  </div>
+          </div>
+  
+  <hr>    <a href="events/222842964-coding-practices.html">Coding practices</a><small>, June 2015</small>  
+  </div>
+
+
+      
+              <div class="clearfix hidden-xs hidden-sm"></div>
+                <div id="talk-222842964-go-mad-for-monads" class="talk talk--featured col-sm-6 col-md-4">
+      <h3>
+      <a href="talks/go-mad-for-monads.html" class="talk__title">
+        <span>Go mad for Monads</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+            <div id="video-222842964-go-mad-for-monads" class="video video--small">
+  <iframe
+    src="https://www.youtube.com/embed/F5fUgXFSH0Q?rel=0&amp;showinfo=0"
+    frameborder="0" scrolling="no"
+    allowfullscreen mozallowfullscreen webkitallowfullscreen
+  >
+  </iframe>
+
+  <a href="https://www.youtube.com/watch?v=F5fUgXFSH0Q" class="js-hidden">
+    View on YouTube
+    <i class="fa fa-external-link"></i>
+  </a>
+</div>
+
+      
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/warren-seymour.html"><span class="fn">Warren Seymour</span></a>, Software Developer at <a href="http://radify.io">Radify</a>
+                  </div>
+          </div>
+  
+  <hr>    <a href="events/222842964-coding-practices.html">Coding practices</a><small>, June 2015</small>  
+  </div>
+
+
+              <div class="clearfix visible-xs visible-sm"></div>
+      
+                <div id="talk-222842964-extremely-defensive-php" class="talk talk--featured col-sm-6 col-md-4">
+      <h3>
+      <a href="talks/extremely-defensive-php.html" class="talk__title">
+        <span>Extremely defensive PHP</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+            <div id="video-222842964-extremely-defensive-php" class="video video--small">
+  <iframe
+    src="https://www.youtube.com/embed/8d2AtAGJPno?rel=0&amp;showinfo=0"
+    frameborder="0" scrolling="no"
+    allowfullscreen mozallowfullscreen webkitallowfullscreen
+  >
+  </iframe>
+
+  <a href="https://www.youtube.com/watch?v=8d2AtAGJPno" class="js-hidden">
+    View on YouTube
+    <i class="fa fa-external-link"></i>
+  </a>
+</div>
+
+      
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/marco-pivetta.html"><span class="fn">Marco Pivetta</span></a>, Software Consultant at <a href="https://roave.com">Roave</a>, Doctrine core team member &amp; ZF2 contributor
+                  </div>
+          </div>
+  
+  <hr>    <a href="events/222842964-coding-practices.html">Coding practices</a><small>, June 2015</small>  
+  </div>
+
+
+      
+                <div id="talk-221484453-a-slim-3-primer" class="talk talk--featured col-sm-6 col-md-4">
+      <h3>
+      <a href="talks/a-slim-3-primer.html" class="talk__title">
+        <span>A Slim 3 primer</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+            <div id="video-221484453-a-slim-3-primer" class="video video--small">
+  <iframe
+    src="https://www.youtube.com/embed/3bXRrv7gp4U?rel=0&amp;showinfo=0"
+    frameborder="0" scrolling="no"
+    allowfullscreen mozallowfullscreen webkitallowfullscreen
+  >
+  </iframe>
+
+  <a href="https://www.youtube.com/watch?v=3bXRrv7gp4U" class="js-hidden">
+    View on YouTube
+    <i class="fa fa-external-link"></i>
+  </a>
+</div>
+
+      
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/rob-allen.html"><span class="fn">Rob Allen</span></a>, Software Engineer, ZF contributor and author of <a href="http://www.manning.com/allen">Zend Framework in Action</a>
+                  </div>
+          </div>
+  
+  <hr>    <a href="events/221484453-frameworks.html">Frameworks</a><small>, May 2015</small>  
+  </div>
+
+
+              <div class="clearfix visible-xs visible-sm"></div>
+      
+              <div class="clearfix hidden-xs hidden-sm"></div>
+            </div>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div id="talks" class="talks
+  
+  
+  talks--talks
+  
+">
+  <h2>Further viewing</h2>
+
+  <ul class="list">
+          <li><div id="talk-235102426-nigel-talks-crap-for-a-bit" class="talk talk--padded">
+      <h3>
+      <a href="talks/nigel-talks-crap-for-a-bit.html" class="talk__title">
+        <span>Nigel talks CRAP for a bit</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/nigel-dunn.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/SgZjlepP1Kma5sXrrFAYvrEijd8=/36x36/http-/photos4.meetupstatic.com/photos/member/b/b/b/4/highres_131268052.jpeg" alt="Nigel Dunn">
+                </div><span class="fn">Nigel Dunn</span></a>        </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-235102426-memcache" class="talk talk--padded">
+      <h3>
+      <a href="talks/memcache.html" class="talk__title">
+        <span>Memcache </span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/adrian-groves.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/DUXlpzoMmqJfpLfzA0bFTY6Yx-c=/36x36/http-/photos2.meetupstatic.com/photos/member/9/d/c/b/highres_252040395.jpeg" alt="Adrian Groves">
+                </div><span class="fn">Adrian Groves</span></a>        </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-235102426-mental-health" class="talk talk--padded">
+      <h3>
+      <a href="talks/mental-health.html" class="talk__title">
+        <span>Mental Health</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/tom-robertshaw.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/oyVBWRSLWFjloR4JhWNmpmVVw1s=/36x36/http-/photos3.meetupstatic.com/photos/member/2/7/a/c/highres_242950156.jpeg.png" alt="Tom Robertshaw">
+                </div><span class="fn">Tom Robertshaw</span></a>, director of <a href="https://www.meanbee.com/">Meanbee</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>It's easier in the world of today, especially as developers, to push ourselves too hard.  Our community, like many, has seen an increasing number of stories about burnout and illnesses such as anxiety and depression.  During this talk, Tom is going to share a little of his own story and the methods of managing it that he has found useful. </p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-235102426-bringing-functional-php-into-the-fold" class="talk talk--padded">
+      <h3>
+      <a href="talks/bringing-functional-php-into-the-fold.html" class="talk__title">
+        <span>Bringing Functional PHP into the Fold</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/tom-harding.html"><span class="fn">Tom Harding</span></a>        </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Immutability, unit testability, even the humble array_map - it's clear to see that functional programming has put down roots in PHP. So, what comes next? Tom introduces the idea of monoid folds, explains how it can help us to produce more readable and extensible business logic, and probably ends up defending Haskell in a room full of hecklers.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-235102426-modern-drupal-development-with-composer" class="talk talk--padded">
+      <h3>
+      <a href="talks/modern-drupal-development-with-composer.html" class="talk__title">
+        <span>Modern Drupal Development with Composer</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/oliver-davies.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/lZHtgs7v2kV4zCii4qZ4613wssY=/36x36/http-/avatars.phpsw.uk/twitter/opdavies-size=original.html" alt="Oliver Davies">
+                </div><span class="fn">Oliver Davies</span></a>        </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Building a Drupal application? You no longer need to download archives to add new modules or update core, or deal with Drupal specific tools to manage your codebase.With Drupal "getting off the island" there has been an increase in the adoption of common PHP tools within the Drupal ecosystem.In this lightning talk, I’ll show how to build a Drupal application using Composer for dependency management.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-235102426-how-pen-testing-helped-me-as-a-developer" class="talk talk--padded">
+      <h3>
+      <a href="talks/how-pen-testing-helped-me-as-a-developer.html" class="talk__title">
+        <span>How pen testing helped me as a Developer</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/paul-marks.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/qjviydl9CbB9uWsO74h3-BWDQLA=/36x36/http-/photos3.meetupstatic.com/photos/member/b/d/8/2/highres_248748514.jpeg" alt="Paul Marks">
+                </div><span class="fn">Paul Marks</span></a>        </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-235102426-a-junior-s-guide-to-changing-the-world" class="talk talk--padded">
+      <h3>
+      <a href="talks/a-junior-s-guide-to-changing-the-world.html" class="talk__title">
+        <span>A Junior’s Guide to Changing The World</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/lucia-velasco.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/HgLDgmZsAVa0ZU_yY7xZxYsr7Ys=/36x36/http-/photos3.meetupstatic.com/photos/member/5/7/7/4/highres_259522388.jpeg" alt="Lucia Velasco">
+                </div><span class="fn">Lucia Velasco</span></a>        </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Lucia's PHPSW debut will be a soft skills talk about the strategies she's picked up on using conversation to tackle problems and effect positive change in your working environment</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-235102426-mitigating-ddos-attacks-with-terraform" class="talk talk--padded">
+      <h3>
+      <a href="talks/mitigating-ddos-attacks-with-terraform.html" class="talk__title">
+        <span>Mitigating DDOS Attacks With Terraform</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/andy-gale.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/7ph0y65-GnmEf062k1oW6wkLewc=/36x36/http-/photos3.meetupstatic.com/photos/member/b/9/5/6/highres_243167446.jpeg" alt="Andy Gale">
+                </div><span class="fn">Andy Gale</span></a>        </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-234476250-solid-structure" class="talk talk--padded">
+      <h3>
+      <a href="talks/solid-structure.html" class="talk__title">
+        <span>Solid Structure</span><i class="fa fa-youtube-play"></i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/dan-ackroyd.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/Da7s7B6jgsVDh-k5n5-dAayOd3M=/36x36/http-/photos3.meetupstatic.com/photos/member/3/6/e/e/highres_103154062.jpeg" alt="Dan Ackroyd">
+                </div><span class="fn">Dan Ackroyd</span></a>, Independent C + PHP developer, Imagick maintainer. That guy with the beard.
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Dan is going to attempt to explain how to build modern testable application using a DIC container. </p>
+<p>He’ll also talk about the limits of what can be written as clean code that makes you happy and you should handle having horrible untestable code. </p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-233853545-securing-distributed-software" class="talk talk--padded">
+      <h3>
+      <a href="talks/securing-distributed-software.html" class="talk__title">
+        <span>Securing Distributed Software</span><i class="fa fa-youtube-play"></i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/drew-mclellan.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/99qWN-dA-iLCXQ28WIzPHByPvrM=/36x36/http-/photos2.meetupstatic.com/photos/member/2/5/1/3/highres_3549491.jpeg" alt="Drew McLellan">
+                </div><span class="fn">Drew McLellan</span></a>, Lead developer on Perch CMS and publisher of <a href="http://24ways.org/">24 ways</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Managing the security of your own project is one thing - but what happens when your software is installed on tens of thousands of hosting accounts that you don’t control? Find out how those challenges are faced with Perch CMS, and what happened last year when an exploitable security bug with found within a default plugin.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-230654971-dive-into-php-7" class="talk talk--padded">
+      <h3>
+      <a href="talks/dive-into-php-7.html" class="talk__title">
+        <span>Dive Into PHP 7</span><i class="fa fa-youtube-play"></i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/kat-zien.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/REP06EE4q0sW6UxflO6lorXXT28=/36x36/http-/avatars.phpsw.uk/twitter/kasiazien-size=original.jpeg" alt="Kat Zien">
+                </div><span class="fn">Kat Zien</span></a>, Keyboard wizard, currently busy writing Go and PHP at <a href="https://www.brightpearl.com/">Brightpearl</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>We all eventually gave up discussing that famous article describing PHP's bad design, bought our t-shirts and got on with our lives. Some of us decided to give Ruby a go. Or Go. We all know PHP is far from perfect but it's still one of the most popular languages on the web (thanks Wordpress!) so... just get on with it. Right?</p>
+<p>Wrong! </p>
+<p>There's a new kid in town. And it deserves your attention. Shame no more. Because PHP is not done yet!</p>
+<p>Over 10 years since its last major release, PHP 7 is now out and available. Heck, we're at 7.0.5 already! All this hard work, sweat, tears and swearing in the community brought us significant performance improvements, drastically reduced memory consumption, a brand spanking new Zend Engine and a host of new language features to make PHP shine again.</p>
+<p>Let's take a look at what's new. If you didn't get a chance to play around with PHP 7 yet I'll (hopefully) do the homework for you. If you're an expert already, looking forward to hearing what you think!</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-229737809-interface-segregation-the-forgotten-i-in-solid" class="talk talk--padded">
+      <h3>
+      <a href="talks/interface-segregation-the-forgotten-i-in-solid.html" class="talk__title">
+        <span>Interface segregation; the forgotten 'i' in SOLID</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/dan-ackroyd.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/Da7s7B6jgsVDh-k5n5-dAayOd3M=/36x36/http-/photos3.meetupstatic.com/photos/member/3/6/e/e/highres_103154062.jpeg" alt="Dan Ackroyd">
+                </div><span class="fn">Dan Ackroyd</span></a>, Independent C + PHP developer, Imagick maintainer. That guy with the beard
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>When people give talks on the "S.O.L.I.D." design principles one ofthe letters that doesn't get enough attention is the "i" - the"interface segregation principle". This talk seeks to redress thatimbalance by going into a bit more in-depth into:</p>
+<p>• An introduction to interface segregation and an explanation of howit make your code easier to test.</p>
+<p>• Why in PHP we need to apply the principle more broadly, to maketypes be more specific, so that code is more reasonable.</p>
+<p>• Me babbling on about emotions, and how good code is boring. Which is good!</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-229737809-mission-im-possible-quality-decoupled-code-with-drupal-7" class="talk talk--padded">
+      <h3>
+      <a href="talks/mission-im-possible-quality-decoupled-code-with-drupal-7.html" class="talk__title">
+        <span>Mission (Im)possible: Quality Decoupled Code with Drupal 7 </span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/marek-matulka.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/jx2uhXnJji1lmPe_tBP97IxI2mE=/36x36/http-/avatars.phpsw.uk/twitter/super_marek-size=original.jpeg" alt="Marek Matulka">
+                </div><span class="fn">Marek Matulka</span></a>, Software Engineer at <a href="https://sensiolabs.com/">SensioLabsUK</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>We're all excited about Drupal 8 coming up soon and we want to be ready for it! How can we make sure our code is ready for it? How can we build modules that are backwards compatible with D7 and future proofed for D8?</p>
+<p>Learn how to build code decoupled from your platform and use it with Drupal or any other framework.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-228496580-the-value-case-for-unit-tests" class="talk talk--padded">
+      <h3>
+      <a href="talks/the-value-case-for-unit-tests.html" class="talk__title">
+        <span>The Value Case for Unit Tests</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/dan-ackroyd.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/Da7s7B6jgsVDh-k5n5-dAayOd3M=/36x36/http-/photos3.meetupstatic.com/photos/member/3/6/e/e/highres_103154062.jpeg" alt="Dan Ackroyd">
+                </div><span class="fn">Dan Ackroyd</span></a>, Independent C + PHP developer, Imagick maintainer.
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Do you work at a company where there are not enough unit tests in place and things are constantly breaking? Or maybe you have a client that always wants new features to be delivered as soon as possible, without enough thought about maintaining code.</p>
+<p>How do you persuade people that Unit Tests should be written? And that by writing them you will improve your code quality and make development be easier? And how many unit tests should you be writing anyway?</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-228496580-beyond-unit-testing" class="talk talk--padded">
+      <h3>
+      <a href="talks/beyond-unit-testing.html" class="talk__title">
+        <span>Beyond Unit Testing</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/dave-liddament.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/riSAAfAJqvqHUAlBr_usROV8DyA=/36x36/http-/photos2.meetupstatic.com/photos/member/9/2/c/4/highres_203797572.jpeg.png" alt="Dave Liddament">
+                </div><span class="fn">Dave Liddament</span></a>, Director and developer at <a href="http://www.lampbristol.com/">Lamp Bristol</a>.
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Unit testing is an essential part of any successful software project, but it's only half the testing story. This talk will examine the other half of the testing story. We'll see why we need more than just unit tests and how to write these extra tests.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-227424666-profiling-your-php-application" class="talk talk--padded">
+      <h3>
+      <a href="talks/profiling-your-php-application.html" class="talk__title">
+        <span>Profiling your PHP application</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/michael-heap.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/S3azxVVwk23tzb5Dg6zT3ESJhBo=/36x36/http-/avatars.phpsw.uk/twitter/mheap-size=original.jpeg" alt="Michael Heap">
+                </div><span class="fn">Michael Heap</span></a>, Software Engineer at <a href="http://datasift.com/">DataSift</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>So, you've been through and changed all your double quotes to single quotes but your application still isn't running at the speed of light. What's going on?  </p>
+<p>Making an application scale is generally seen as something that only the most magical of developers can do, but it's easy once you have the correct tools. Fortunately for us, these tools are freely available online! <br>In this talk, we'll take a look at a few options that we have available to work out what our application is actually doing, help identify bottlenecks and fix them so that we can move on to the more important part of the project: delivering features.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-227424666-benchmarking-in-php-and-phpbench" class="talk talk--padded">
+      <h3>
+      <a href="talks/benchmarking-in-php-and-phpbench.html" class="talk__title">
+        <span>Benchmarking in PHP and PHPBench</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/daniel-leech.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/-uPW0Sh4Jz1eshr2D7KsU83_jVY=/36x36/http-/avatars.phpsw.uk/twitter/dantleech-size=original.jpeg" alt="Daniel Leech">
+                </div><span class="fn">Daniel Leech</span></a>, Open source PHP developer involved in the Symfony CMF and is the developer of <a href="https://github.com/phpbench/phpbench">PHPBench</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>In this talk Daniel Leech will introduce benchmarking as it applies to PHP, discuss when it can be used and present a tool with which to do it, PHPBench.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-225148132-building-static-sites-with-sculpin" class="talk talk--padded">
+      <h3>
+      <a href="talks/building-static-sites-with-sculpin.html" class="talk__title">
+        <span>Building Static Sites with Sculpin</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/oliver-davies.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/JrX-L3PU4VXPRqOZOah_63HRgA8=/36x36/http-/photos4.meetupstatic.com/photos/member/6/9/2/c/highres_255566924.jpeg" alt="Oliver Davies">
+                </div><span class="fn">Oliver Davies</span></a>, Senior Developer at <a href="https://microserve.io/">Microserve</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Sculpin is a static site generator written in PHP. It converts Markdown files, Twig templates and standard HTML into a static HTML site that can be easily deployed.<br>This talk will cover a little of the background to Sculpin and what it is, and then will move into some demonstrations of how to build a Sculpin site and what it can do!</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-225148132-nobody-likes-you-jenkins" class="talk talk--padded">
+      <h3>
+      <a href="talks/nobody-likes-you-jenkins.html" class="talk__title">
+        <span>Nobody likes you Jenkins</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/andy-gale.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/7ph0y65-GnmEf062k1oW6wkLewc=/36x36/http-/photos3.meetupstatic.com/photos/member/b/9/5/6/highres_243167446.jpeg" alt="Andy Gale">
+                </div><span class="fn">Andy Gale</span></a>, Devops Consultant at <a href="http://hellofutu.re/">Hello Future</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Take the hassle out of CI by using online CI instead. Rid yourself of that high-maintenance chancer butler.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-225148132-php-and-beanstalk" class="talk talk--padded">
+      <h3>
+      <a href="talks/php-and-beanstalk.html" class="talk__title">
+        <span>PHP &amp; Beanstalk </span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/doug-fitzmaurice.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/jdoXOiBqE_sSzQu17l_2uJEDzKI=/36x36/http-/photos3.meetupstatic.com/photos/member/6/a/9/c/highres_208467292.jpeg" alt="Doug Fitzmaurice">
+                </div><span class="fn">Doug Fitzmaurice</span></a>, Developer at <a href="http://www.ents24.com/">Ents24</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Beanstalk is a job queue, and you can use it to break apart PHP applications to handle long-running tasks and cope with scale.Learn how to use PHP for things it was never designed, without it all going wrong!</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-225148132-version-control-tips-and-tricks" class="talk talk--padded">
+      <h3>
+      <a href="talks/version-control-tips-and-tricks.html" class="talk__title">
+        <span>Version Control Tips &amp; Tricks</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/tess-barnes.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/dvr2_rAOQu4vvjaZu0-mrDhj8Is=/36x36/http-/photos3.meetupstatic.com/photos/member/a/0/e/d/highres_250241197.jpeg" alt="Tess Barnes">
+                </div><span class="fn">Tess Barnes</span></a>        </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Nervous of version control? Don’t panic! you’re not on your own. I've put together a run down of some of my tricks and ‘good citizen’ techniques to avoid the worst kinds of conflicts and deal with the remaining ones as efficiently as possible. Branching policies, basic conflict resolution, proactive diffs can all ease the pain of a tricky integration.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-225148132-code-review-with-gerrit" class="talk talk--padded">
+      <h3>
+      <a href="talks/code-review-with-gerrit.html" class="talk__title">
+        <span>Code Review with Gerrit</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/dave-liddament.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/riSAAfAJqvqHUAlBr_usROV8DyA=/36x36/http-/photos2.meetupstatic.com/photos/member/9/2/c/4/highres_203797572.jpeg.png" alt="Dave Liddament">
+                </div><span class="fn">Dave Liddament</span></a>, Director and developer at <a href="http://www.lampbristol.com/">Lamp Bristol</a>.
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Quick intro to integrating code review using Gerrit into your workflow.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-224872129-how-i-learned-to-stop-worrying-and-love-regular-expressions" class="talk talk--padded">
+      <h3>
+      <a href="talks/how-i-learned-to-stop-worrying-and-love-regular-expressions.html" class="talk__title">
+        <span>How I learned to stop worrying and love Regular Expressions</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/jordi-boggiano.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/CnOVmOGI2IbMJzgv7pnEh34KI9c=/36x36/http-/photos3.meetupstatic.com/photos/member/b/f/b/a/highres_42709082.jpeg" alt="Jordi Boggiano">
+                </div><span class="fn">Jordi Boggiano</span></a>, Author of <a href="https://getcomposer.org">Composer</a>, <a href="https://github.com/Seldaek/monolog">Monolog</a>, <a href="https://github.com/Seldaek/php-console">php-console</a> and frequent contributor to <a href="https://symfony.com">Symfony2</a>, <a href="http://twig.sensiolabs.org">Twig</a> and <a href="https://github.com/seldaek">other OS projects</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>This session will cover Regular Expressions from the basics to the darkest corners of this arcane art.</p>
+<p>Regular Expressions at the core come in handy to achieve validation and text manipulation tasks. In the day to day life of a developer, becoming comfortable with them opens up many more use cases.</p>
+<p>As one of the tortured souls that actually enjoys writing - and reading - regexes, Jordi will share his passion so that you too can see there is no reason to worry.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-224872129-generated-power-php-5-5-generators" class="talk talk--padded">
+      <h3>
+      <a href="talks/generated-power-php-5-5-generators.html" class="talk__title">
+        <span>Generated Power: PHP 5.5 Generators</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/mark-baker.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/G9DfeVYWAR4wfoiUeE-wtzCGs5s=/36x36/http-/avatars.phpsw.uk/twitter/mark_baker-size=original.jpeg" alt="Mark Baker">
+                </div><span class="fn">Mark Baker</span></a>, Coordinator and Lead Developer of <a href="https://github.com/PHPOffice">the PHPOffice library suite</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>One of the new features that was introduced in PHP 5.5: Generators provide an iterable alternative to arrays, or to classes that implement the Iterator interface. At the simplest level, they don't add anything new to PHP that you couldn't already do before, simply returning values or key/value pairs to a loop; though they do give you options to perform certain iterative functions without the memory overheads of an array, or without the complexities of lots of boilerplate code that an Iterator class requires.</p>
+<p>But look more closely at Generators, and they can be used for much more complex purposes: from simulating arrays with duplicate keys, or keys that aren't simple integer or string values, to accepting new data each iteration rather than simply returning it, so that you can actually modify their behaviour dynamically, or build Cooperative subroutines, even to simulate parallel processing.</p>
+<p>Generators add real power to PHP.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-224220700-a-travesty-of-a-mockery-of-a" class="talk talk--padded">
+      <h3>
+      <a href="talks/a-travesty-of-a-mockery-of-a.html" class="talk__title">
+        <span>A Travesty of a Mockery of a...</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/dave-marshall.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/7Ufx0rEnRxI6sza9-dFMDszKrKE=/36x36/http-/avatars.phpsw.uk/twitter/davedevelopment-size=original.jpeg" alt="Dave Marshall">
+                </div><span class="fn">Dave Marshall</span></a>, Software Sapper and Technical Manager at <a href="https://www.childcare.co.uk/">Childcare</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>A whirlwind tour of test doubles, what they are, how you can use them, when you should use them.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-224220700-is-tdd-dead-a-cheeky-guide-to-phpspec" class="talk talk--padded">
+      <h3>
+      <a href="talks/is-tdd-dead-a-cheeky-guide-to-phpspec.html" class="talk__title">
+        <span>Is TDD dead? A cheeky guide to phpspec</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/marek-matulka.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/jx2uhXnJji1lmPe_tBP97IxI2mE=/36x36/http-/avatars.phpsw.uk/twitter/super_marek-size=original.jpeg" alt="Marek Matulka">
+                </div><span class="fn">Marek Matulka</span></a>, Software Engineer at <a href="https://sensiolabs.com/">SensioLabsUK</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>A look at phpspec and why it could be an alternative to phpunit.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-221484453-ppi-the-interop-framework" class="talk talk--padded">
+      <h3>
+      <a href="talks/ppi-the-interop-framework.html" class="talk__title">
+        <span>PPI - The Interop Framework</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+      talk__speakers--multiple    ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/paul-dragoonis.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/bGH-53B_lYk2nNW2kNPhQNGXL28=/36x36/http-/photos1.meetupstatic.com/photos/member/9/0/2/7/highres_241716903.jpeg" alt="Paul Dragoonis">
+                </div><span class="fn">Paul Dragoonis</span></a>, Lead Developer at <a href="https://www.kainos.com">Kainos</a>, PHP internals and PHP-FIG voting member
+                  </div>
+              <div class="talk__speakers__speaker">
+          <a href="speakers/vitor-brandao.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/LIcduX7C22D-8GgGuANLkFjxHoE=/36x36/http-/photos2.meetupstatic.com/photos/member/1/9/c/0/highres_49806592.jpeg" alt="Vítor Brandão">
+                </div><span class="fn">Vítor Brandão</span></a>, PHP Software Engineer at <a href="https://www.kainos.com/">Kainos</a>, Entrepreneur and Gentoo Linux contributor
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Paul and Vítor will be showing off the newly released PPI 2.1, explaining what we’ve been working on and what extra value using an interop framework brings on top of just using a single standalone framework.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-221484453-do-you-speak-psr-7" class="talk talk--padded">
+      <h3>
+      <a href="talks/do-you-speak-psr-7.html" class="talk__title">
+        <span>Do you speak PSR-7?</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/gary-hockin.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/I5FkrhZs1GKjjQE68dSSy9s9SPw=/36x36/http-/photos1.meetupstatic.com/photos/member/1/6/c/a/highres_246065834.jpeg" alt="Gary Hockin">
+                </div><span class="fn">Gary Hockin</span></a>, Developer at <a href="https://roave.com">Roave</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>The PHP-FIG has recently put PSR-7 into vote (and by the time this talk is given it should be easily voted in). PSR-7 relates HTTP Messages; HTTP request and response objects that describe the interaction between a client and server in any HTTP exchange. While this doesn’t sound that interesting, PSR-7 threatens to open the door to truly interoperable libraries and frameworks, and heralds a new golden age for the next generation of PHP packages.</p>
+<p>Join us in this brief introduction to PSR-7 and the core concepts around phly/http, a concrete implementation of the standard.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-221484360-refactoring-repositories" class="talk talk--padded">
+      <h3>
+      <a href="talks/refactoring-repositories.html" class="talk__title">
+        <span>Refactoring repositories</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/gavin-davies.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/kvnRpX0y-3_qLy-skDTzKySpG6Q=/36x36/http-/photos2.meetupstatic.com/photos/member/1/f/1/a/member_114787962.jpeg" alt="Gavin Davies">
+                </div><span class="fn">Gavin Davies</span></a>, Software Developer at <a href="http://radify.io">Radify</a> and author of <a href="https://leanpub.com/dealwithit">Deal With It: Attitude for Coders</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Sometime a repository begins to smell; it's just not set up right. How can we apply refactoring strategies to source code repositories?</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-221484360-orientdb-the-first-days-in-a-few-minutes" class="talk talk--padded">
+      <h3>
+      <a href="talks/orientdb-the-first-days-in-a-few-minutes.html" class="talk__title">
+        <span>OrientDB - The First Days In A Few Minutes</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/richard-jones.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/NSHPADaIWx4_qDWRLwD5mwyimns=/36x36/http-/photos4.meetupstatic.com/photos/member/c/2/f/3/member_11989907.jpeg" alt="Richard Jones">
+                </div><span class="fn">Richard Jones</span></a>, Systems Engineer at <a href="http://www.futureplc.com">Future Publishing</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>OrientDB is a graphing database like Neo4j, a document store like Mongo, and you can query it with SQL. This is a brief introduction to getting a server set up, loading it with data and getting that data back out in interesting and fun ways.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-221484360-drupal-8" class="talk talk--padded">
+      <h3>
+      <a href="talks/drupal-8.html" class="talk__title">
+        <span>Drupal 8</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/oliver-davies.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/JrX-L3PU4VXPRqOZOah_63HRgA8=/36x36/http-/photos4.meetupstatic.com/photos/member/6/9/2/c/highres_255566924.jpeg" alt="Oliver Davies">
+                </div><span class="fn">Oliver Davies</span></a>, Drupal Developer and a Linux Systems Administrator, working for the <a href="https://assoc.drupal.org">Drupal Association</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-221484360-the-promised-land" class="talk talk--padded">
+      <h3>
+      <a href="talks/the-promised-land.html" class="talk__title">
+        <span>The Promised Land</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/warren-seymour.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/APQzRMd4pnajX2umvie4H8MBTMM=/36x36/http-/photos4.meetupstatic.com/photos/member/9/5/8/0/highres_118658272.jpeg" alt="Warren Seymour">
+                </div><span class="fn">Warren Seymour</span></a>, Software Developer at <a href="http://radify.io">Radify</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>React is an extension that brings event-driven, non-blocking IO to PHP. With this new paradigm comes the 'Promise'; a fascinating and powerful pattern for handling asynchronous behaviour. I'll be using React to demonstrate how Promises rock, and why you should consider them for your own applications.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-221484360-how-much-does-your-orm-cost" class="talk talk--padded">
+      <h3>
+      <a href="talks/how-much-does-your-orm-cost.html" class="talk__title">
+        <span>How Much Does Your ORM Cost?</span><i class="fa fa-youtube-play"></i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/stu-herbert.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/UKWkAKqXEvnGAv1ek3DqKL3q8fI=/36x36/http-/photos1.meetupstatic.com/photos/member/b/7/2/c/highres_24046892.jpeg" alt="Stu Herbert">
+                </div><span class="fn">Stu Herbert</span></a>, Freelance PHP / Architect / Quality Assurance at <a href="https://twitter.com/ganbarodigital">Ganbaro Digital</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-221484360-php-migrations-with-phinx" class="talk talk--padded">
+      <h3>
+      <a href="talks/php-migrations-with-phinx.html" class="talk__title">
+        <span>PHP Migrations with Phinx</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/andy-gale.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/7ph0y65-GnmEf062k1oW6wkLewc=/36x36/http-/photos3.meetupstatic.com/photos/member/b/9/5/6/highres_243167446.jpeg" alt="Andy Gale">
+                </div><span class="fn">Andy Gale</span></a>, Devops Consultant at <a href="http://hellofutu.re">Hello Future</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Automated database migrations are extremely useful when doing Continuous Integration and Delivery. Phinx is a simple PHP standalone tool for writing database migrations for existing or new applications. We like it.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-221484360-building-rpm-packages-for-yum-apt-a-guide-for-the-unwilling" class="talk talk--padded">
+      <h3>
+      <a href="talks/building-rpm-packages-for-yum-apt-a-guide-for-the-unwilling.html" class="talk__title">
+        <span>Building RPM packages for yum/apt: a guide for the unwilling</span><i class="fa fa-youtube-play"></i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/dan-ackroyd.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/Da7s7B6jgsVDh-k5n5-dAayOd3M=/36x36/http-/photos3.meetupstatic.com/photos/member/3/6/e/e/highres_103154062.jpeg" alt="Dan Ackroyd">
+                </div><span class="fn">Dan Ackroyd</span></a>, Independent C + PHP developer, Imagick maintainer. That guy with the beard
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-221484360-the-portability-problems-of-ordered-hashes" class="talk talk--padded">
+      <h3>
+      <a href="talks/the-portability-problems-of-ordered-hashes.html" class="talk__title">
+        <span>The portability problems of ordered hashes</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/tom-adam.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/7s14jH18T7FfOKKB1KnwzY-9tOM=/36x36/http-/photos1.meetupstatic.com/photos/member/a/1/b/0/member_122561392.jpeg" alt="Tom Adam">
+                </div><span class="fn">Tom Adam</span></a>, Developer as <a href="http://www.instantiate.co.uk">Instantiate</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-221484360-when-to-declare-classes-final" class="talk talk--padded">
+      <h3>
+      <a href="talks/when-to-declare-classes-final.html" class="talk__title">
+        <span>When to declare classes final</span><i class="fa fa-youtube-play"></i><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/marco-pivetta.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/crR9_9DwTjbGkVuHhpwPCyVkUkE=/36x36/http-/photos3.meetupstatic.com/photos/member/7/5/6/3/highres_243450051.jpeg" alt="Marco Pivetta">
+                </div><span class="fn">Marco Pivetta</span></a>, Software Consultant at <a href="https://roave.com">Roave</a>, Doctrine core team member &amp; ZF2 contributor
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-220864828-using-twig-and-symfony2-forms-in-wordpress" class="talk talk--padded">
+      <h3>
+      <a href="talks/using-twig-and-symfony2-forms-in-wordpress.html" class="talk__title">
+        <span>Using Twig and Symfony2 forms in WordPress</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/carl-hughes.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/Pn56mpA2xd1XKJSNb9AmY_VJQK8=/36x36/http-/photos4.meetupstatic.com/photos/member/a/f/f/2/highres_94125042.jpeg" alt="Carl Hughes">
+                </div><span class="fn">Carl Hughes</span></a>, Freelance Web Developer
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-220864828-integrating-a-blog-into-your-framework-application-using-trickery-varnish-and-esi" class="talk talk--padded">
+      <h3>
+      <a href="talks/integrating-a-blog-into-your-framework-application-using-trickery-varnish-and-esi.html" class="talk__title">
+        <span>Integrating a blog into your framework application using trickery, Varnish &amp; ESI</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/steve-lacey.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/DvSRbyExEgD0G2PgYJ2PGzWbd-0=/36x36/http-/photos2.meetupstatic.com/photos/member/6/e/3/4/highres_155008212.jpeg" alt="Steve Lacey">
+                </div><span class="fn">Steve Lacey</span></a>, Ruby, PHP &amp; Python Developer at <a href="http://simpleweb.co.uk">Simpleweb</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-220161444-what-is-my-code-doing-in-the-wild" class="talk talk--padded">
+      <h3>
+      <a href="talks/what-is-my-code-doing-in-the-wild.html" class="talk__title">
+        <span>What is my code doing in the wild?</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/dave-avent.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/VhJ86xfpUV1HSEZHl9ixP4YtMMg=/36x36/http-/avatars.phpsw.uk/twitter/daveavent-size=original.jpeg" alt="Dave Avent">
+                </div><span class="fn">Dave Avent</span></a>, Site Reliability Engineer at <a href="https://www.seatme.yelp.com">SeatMe (Yelp)</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>How can I make my PHP application run faster in Production? Using System Administration techniques and modern DevOps tools you can find out where and why your code is not responding as it does in development.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-220161444-faster-xdebug-coverage-analysis" class="talk talk--padded">
+      <h3>
+      <a href="talks/faster-xdebug-coverage-analysis.html" class="talk__title">
+        <span>Faster Xdebug coverage analysis</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/warren-seymour.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/APQzRMd4pnajX2umvie4H8MBTMM=/36x36/http-/photos4.meetupstatic.com/photos/member/9/5/8/0/highres_118658272.jpeg" alt="Warren Seymour">
+                </div><span class="fn">Warren Seymour</span></a>, Software Developer at <a href="http://radify.io/">Radify</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Code coverage analysis can be an incredibly useful metric for determining the overall quality of your test suite. However, as your codebase grows larger and more complex, so does the time taken to perform coverage analysis. I'll be sharing the tools and techniques we use at Radify to reduce our code coverage time by a factor of ten.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-220161444-boost-your-website-by-running-php-on-nginx" class="talk talk--padded">
+      <h3>
+      <a href="talks/boost-your-website-by-running-php-on-nginx.html" class="talk__title">
+        <span>Boost your website by running PHP on Nginx</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/harald-zeitlhofer.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/QYOlQrDgLAIjEUMo-k_Ua39oMeA=/36x36/http-/avatars.phpsw.uk/twitter/hzeitlhofer-size=original.jpeg" alt="Harald Zeitlhofer">
+                </div><span class="fn">Harald Zeitlhofer</span></a>, Technology Strategist at <a href="http://www.dynatrace.com">Dynatrace</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-220161444-making-a-php-app-slow" class="talk talk--padded">
+      <h3>
+      <a href="talks/making-a-php-app-slow.html" class="talk__title">
+        <span>Making a PHP app slow</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/ade-slade.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/P3x59k-ybaDI71Twt2izDcZMSpA=/36x36/http-/photos1.meetupstatic.com/photos/member/2/b/f/5/highres_241511253.jpeg" alt="Ade Slade">
+                </div><span class="fn">Ade Slade</span></a>, PHP Developer at <a href="http://www.basekit.com/">BaseKit</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-219548416-getting-started-with-docker-and-php" class="talk talk--padded">
+      <h3>
+      <a href="talks/getting-started-with-docker-and-php.html" class="talk__title">
+        <span>Getting Started with Docker and PHP</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/rob-haswell.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/NRhBvXimipmSBIrqnXs9nwNUTjQ=/36x36/http-/img1.meetupstatic.com/img/501554713870081192606960/nobody_50.png" alt="Rob Haswell">
+                </div><span class="fn">Rob Haswell</span></a>, VP Engineering and Co-founder of <a href="https://clusterhq.com">ClusterHQ</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-219548416-ansible-ec2-and-php-easy-orchestration" class="talk talk--padded">
+      <h3>
+      <a href="talks/ansible-ec2-and-php-easy-orchestration.html" class="talk__title">
+        <span>Ansible, EC2 and PHP: easy orchestration</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/craig-marvelley.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/Aj3uB8J3FeYU8B-uWIUZrfnvBSo=/36x36/http-/photos4.meetupstatic.com/photos/member/c/0/0/a/highres_24229162.jpeg" alt="Craig Marvelley">
+                </div><span class="fn">Craig Marvelley</span></a>, Head of Platform at <a href="https://www.bipsync.com">Bipsync</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-215366502-you-ll-never-believe-how-easy-deployments-can-really-be" class="talk talk--padded">
+      <h3>
+      <a href="talks/you-ll-never-believe-how-easy-deployments-can-really-be.html" class="talk__title">
+        <span>You’ll Never Believe How Easy Deployments Can Really Be…</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/james-titcumb.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/8dTwRTm5AmagndbXrXCfVoeiWt8=/36x36/http-/photos1.meetupstatic.com/photos/member/9/d/3/c/highres_134740252.jpeg.png" alt="James Titcumb">
+                </div><span class="fn">James Titcumb</span></a>, founder of PHP Hampshire, Zend Certified Engineer and Development Manager at <a href="http://www.protected.co.uk">Protected.co.uk</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>The deadline is looming: one week until we release the new version. Some features aren’t going to make the cut, but the boss really wants to make sure these critical bugs are fixed. You can’t wait for the release cycle to be over so you can relax.</p>
+<p>But what if I told you it didn’t have to be that way? What if I could show you how to create a world where there is no release cycle? A world where weekend deployments are a rarity, not the norm?! In this talk we will cover the steps we took to achieve the coding utopia of releasing a feature as soon as it’s ready - many times per day. You’ll find out that by implementing a continuous deployment flow, you can empower your developers to take ownership and become more productive.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-215366502-security-in-the-face-of-adversity" class="talk talk--padded">
+      <h3>
+      <a href="talks/security-in-the-face-of-adversity.html" class="talk__title">
+        <span>Security in the face of adversity</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/dave-tibbs.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/y3xEuZSeeJCEilsbx9_ncT8_mAc=/36x36/http-/avatars.phpsw.uk/twitter/lowlysysadm1n-size=original.jpeg" alt="Dave Tibbs">
+                </div><span class="fn">Dave Tibbs</span></a>, Systems Administrator at <a href="http://www.brightpearl.com">Brightpearl</a> US, briefly in the UK!
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-208017562-kahlan-a-bdd-framework-a-la-rspec-jspec-using-a-jasmine-style-notation" class="talk talk--padded">
+      <h3>
+      <a href="talks/kahlan-a-bdd-framework-a-la-rspec-jspec-using-a-jasmine-style-notation.html" class="talk__title">
+        <span>Kahlan, a BDD Framework a la RSpec/JSpec using a Jasmine style notation</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/warren-seymour.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/APQzRMd4pnajX2umvie4H8MBTMM=/36x36/http-/photos4.meetupstatic.com/photos/member/9/5/8/0/highres_118658272.jpeg" alt="Warren Seymour">
+                </div><span class="fn">Warren Seymour</span></a>, Software Developer at <a href="http://radify.io">Radify</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-208017562-php-static-site-generation" class="talk talk--padded">
+      <h3>
+      <a href="talks/php-static-site-generation.html" class="talk__title">
+        <span>PHP static site generation</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/kiel-doyle.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/QIGifGfhQNAf3fTU6tC-TRJida8=/36x36/http-/photos3.meetupstatic.com/photos/member/8/b/3/0/member_177035632.jpeg" alt="Kiel Doyle">
+                </div><span class="fn">Kiel Doyle</span></a>, PHP Developer at <a href="http://www.asdan.org.uk">ASDAN</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-208017562-terraform" class="talk talk--padded">
+      <h3>
+      <a href="talks/terraform.html" class="talk__title">
+        <span>Terraform</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/andy-gale.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/7ph0y65-GnmEf062k1oW6wkLewc=/36x36/http-/photos3.meetupstatic.com/photos/member/b/9/5/6/highres_243167446.jpeg" alt="Andy Gale">
+                </div><span class="fn">Andy Gale</span></a>, Web Consultant at <a href="http://hellofutu.re">Hello Future</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-208017562-thumbor" class="talk talk--padded">
+      <h3>
+      <a href="talks/thumbor.html" class="talk__title">
+        <span>Thumbor</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/tom-holder.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/xYV6JNCkCMUHs1dY0tsxGnuP7ww=/36x36/http-/photos3.meetupstatic.com/photos/member/3/3/6/a/member_36253162.jpeg" alt="Tom Holder">
+                </div><span class="fn">Tom Holder</span></a>, Technical Director at <a href="http://simpleweb.co.uk">Simpleweb</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-208017562-vagrant" class="talk talk--padded">
+      <h3>
+      <a href="talks/vagrant.html" class="talk__title">
+        <span>Vagrant</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/doug-fitzmaurice.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/jdoXOiBqE_sSzQu17l_2uJEDzKI=/36x36/http-/photos3.meetupstatic.com/photos/member/6/a/9/c/highres_208467292.jpeg" alt="Doug Fitzmaurice">
+                </div><span class="fn">Doug Fitzmaurice</span></a>, Developer at <a href="http://www.ents24.com">Ents24</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-208017562-working-with-legacy-code" class="talk talk--padded">
+      <h3>
+      <a href="talks/working-with-legacy-code.html" class="talk__title">
+        <span>Working with legacy code</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/gareth-jones.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/Z5xlrNpGQ6R4s2xJzhS7wjn--ck=/36x36/http-/photos2.meetupstatic.com/photos/member/e/5/9/4/highres_84898772.jpeg.png" alt="Gareth Jones">
+                </div><span class="fn">Gareth Jones</span></a>, Software Developer at Brightpearl
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-201441732-dependency-injection-the-right-way" class="talk talk--padded">
+      <h3>
+      <a href="talks/dependency-injection-the-right-way.html" class="talk__title">
+        <span>Dependency injection the right way</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/dan-ackroyd.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/Da7s7B6jgsVDh-k5n5-dAayOd3M=/36x36/http-/photos3.meetupstatic.com/photos/member/3/6/e/e/highres_103154062.jpeg" alt="Dan Ackroyd">
+                </div><span class="fn">Dan Ackroyd</span></a>, Independent C + PHP developer, Imagick maintainer. That guy with the beard
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>How DI makes code easier to write, be more testable, more flexible and generally more awesome.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-201441732-cqrs-and-event-sourcing-the-coolest-design-patterns-you-probably-shouldnt-be-using" class="talk talk--padded">
+      <h3>
+      <a href="talks/cqrs-and-event-sourcing-the-coolest-design-patterns-you-probably-shouldnt-be-using.html" class="talk__title">
+        <span>CQRS &amp; Event Sourcing - The coolest design patterns you probably shouldn't be using</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/billie-thompson.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/BKIRXO5Ciw4N2gR2UyK6zlldsik=/36x36/http-/avatars.phpsw.uk/twitter/PurpleBooth-size=original.jpeg" alt="Billie Thompson">
+                </div><span class="fn">Billie Thompson</span></a>, Contracting Software Developer, currently working with <a href="http://www.transformuk.com">Transform UK</a> at the <a href="https://www.gov.uk/government/organisations/home-office">Home Office</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>This talk will take you through the Event Sourcing design pattern, then go through how you'd implement it. From there we'll move on to CQRS, starting with what it is, then moving onto why it works well with event sourcing and how you'd implement it. Finally we'll wrap up with why it's probably not appropriate for most projects, and give some examples where it is appropriate.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-201441732-creating-models" class="talk talk--padded">
+      <h3>
+      <a href="talks/creating-models.html" class="talk__title">
+        <span>Creating models</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/rob-allen.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/qWi22a9k_kZ79noe2r6ySPK5h6k=/36x36/http-/photos1.meetupstatic.com/photos/member/9/5/4/e/highres_190778222.jpeg" alt="Rob Allen">
+                </div><span class="fn">Rob Allen</span></a>, Software Engineer, ZF contributor and author of <a href="http://www.manning.com/allen">Zend Framework in Action</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>How are you supposed to organise your models in an MVC application? What goes where? What is a service class, a mapper or an entity? This talk will look at the components of the model layer and the options you have when creating your models. We’ll look at the different schools of thought in this area and compare and contrast their strengths and weaknesses with an eye to flexibility and testability. We'll discuss the terminology and also take a look at what a service layer is and see how you use service classes to provide the business logic for your application and hide your persistence code from your controllers. By the end of this session you will be equipped to create excellent, maintainable models in your projects.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-195104522-designing-for-testability" class="talk talk--padded">
+      <h3>
+      <a href="talks/designing-for-testability.html" class="talk__title">
+        <span>Designing for testability</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/dave-liddament.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/riSAAfAJqvqHUAlBr_usROV8DyA=/36x36/http-/photos2.meetupstatic.com/photos/member/9/2/c/4/highres_203797572.jpeg.png" alt="Dave Liddament">
+                </div><span class="fn">Dave Liddament</span></a>, PHP, Java &amp; Python Software Developer
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-195104522-dos-and-donts-with-phpunit" class="talk talk--padded">
+      <h3>
+      <a href="talks/dos-and-donts-with-phpunit.html" class="talk__title">
+        <span>DOs &amp; DON'Ts with PHPUnit</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/kat-zien.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/9q6pKwO-Vv2ffVZcGCYRbK1nGTw=/36x36/http-/photos2.meetupstatic.com/photos/member/4/4/1/8/highres_219497432.jpeg" alt="Kat Zien">
+                </div><span class="fn">Kat Zien</span></a>, Software Developer at <a href="http://www.brightpearl.com/">Brightpearl</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-195104522-hollywood-on-demand" class="talk talk--padded">
+      <h3>
+      <a href="talks/hollywood-on-demand.html" class="talk__title">
+        <span>Hollywood on Demand</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/gavin-davies.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/kvnRpX0y-3_qLy-skDTzKySpG6Q=/36x36/http-/photos2.meetupstatic.com/photos/member/1/f/1/a/member_114787962.jpeg" alt="Gavin Davies">
+                </div><span class="fn">Gavin Davies</span></a>, Software Developer at <a href="http://radify.io">Radify</a> and author of <a href="https://leanpub.com/dealwithit">Deal With It: Attitude for Coders</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-190401062-api-pain-points" class="talk talk--padded">
+      <h3>
+      <a href="talks/api-pain-points.html" class="talk__title">
+        <span>API Pain-Points</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/phil-sturgeon.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/SbeaY6HHhLMs4lit5dhGt6EcwNQ=/36x36/http-/avatars.phpsw.uk/twitter/philsturgeon-size=original.jpeg" alt="Phil Sturgeon">
+                </div><span class="fn">Phil Sturgeon</span></a>, Englishman temporarily not in New York. PHP Town Crier. Charity Biker. Cider Drinker. Troll Slayer.
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>I've been building APIs for a long time now and it is becoming ever more common for server-side developer thanks to the rise of front-end JavaScript frameworks, iPhone applications and generally API-centric architectures.</p>
+<p>On one hand you're just grabbing stuff from a data source and shoving it out as JSON, but creating useful conventions from the start, surviving changes in business logic, handling database schema updates, and managing the shifting landscape of features creation and deprecated can be insanely tough.</p>
+<p>This talk will outline some good the common pitfalls developers get trapped in when building APIs and give you some tools to make decisions about what you will do yourselves.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-190401062-generating-api-documentation" class="talk talk--padded">
+      <h3>
+      <a href="talks/generating-api-documentation.html" class="talk__title">
+        <span>Generating API documentation</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/ade-slade.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/P3x59k-ybaDI71Twt2izDcZMSpA=/36x36/http-/photos1.meetupstatic.com/photos/member/2/b/f/5/highres_241511253.jpeg" alt="Ade Slade">
+                </div><span class="fn">Ade Slade</span></a>, PHP Developer at <a href="http://www.basekit.com/">BaseKit</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      <p>Generate interactive API documentation from a Guzzle service description. Shameless promotion of an open source project.</p>
+
+    </div>
+  </div>
+</li>
+          <li><div id="talk-183215072-monitoring-and-logging-in-side-projects" class="talk talk--padded">
+      <h3>
+      <a href="talks/monitoring-and-logging-in-side-projects.html" class="talk__title">
+        <span>Monitoring and Logging in side projects</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/philip-manavopoulos.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/Z3BwXozOefhVkASbo_mV-jMEAcM=/36x36/http-/photos3.meetupstatic.com/photos/member/e/8/0/highres_177303712.jpeg" alt="Philip Manavopoulos">
+                </div><span class="fn">Philip Manavopoulos</span></a>, Developer at <a href="http://coull.com">Coull</a>, builder of <a href="https://doorbell.io">Doorbell.io</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-183215072-sensu-at-brightpearl" class="talk talk--padded">
+      <h3>
+      <a href="talks/sensu-at-brightpearl.html" class="talk__title">
+        <span>Sensu at Brightpearl</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/dave-tibbs.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/q7gDJTcPtyKm4dMYSl7zZ-UNonM=/36x36/http-/avatars.phpsw.uk/twitter/LowlySysAdm1n-size=original.jpeg" alt="Dave Tibbs">
+                </div><span class="fn">Dave Tibbs</span></a>, Systems Administrator at <a href="http://www.brightpearl.com">Brightpearl</a> US
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-170468612-from-sql-to-nosql" class="talk talk--padded">
+      <h3>
+      <a href="talks/from-sql-to-nosql.html" class="talk__title">
+        <span>From SQL to noSQL</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/derick-rethans.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/OZqYtnlFzEuLrkAXCTej_YdmPws=/36x36/http-/avatars.phpsw.uk/twitter/derickr-size=original.jpeg" alt="Derick Rethans">
+                </div><span class="fn">Derick Rethans</span></a>, PHP Engineer/Evangelist on <a href="http://www.mongodb.org">MongoDB</a>, internals expert &amp; author of <a href="http://xdebug.org">Xdebug</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-170468612-one-does-not-simply-query-a-database" class="talk talk--padded">
+      <h3>
+      <a href="talks/one-does-not-simply-query-a-database.html" class="talk__title">
+        <span>One does not simply query a database</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/kat-zien.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/9q6pKwO-Vv2ffVZcGCYRbK1nGTw=/36x36/http-/photos2.meetupstatic.com/photos/member/4/4/1/8/highres_219497432.jpeg" alt="Kat Zien">
+                </div><span class="fn">Kat Zien</span></a>, Software Developer at <a href="http://www.brightpearl.com">Brightpearl</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-170468612-an-introduction-to-graph-databases" class="talk talk--padded">
+      <h3>
+      <a href="talks/an-introduction-to-graph-databases.html" class="talk__title">
+        <span>An introduction to graph databases</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/kiel-doyle.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/QIGifGfhQNAf3fTU6tC-TRJida8=/36x36/http-/photos3.meetupstatic.com/photos/member/8/b/3/0/member_177035632.jpeg" alt="Kiel Doyle">
+                </div><span class="fn">Kiel Doyle</span></a>, newly Bristol-based freelancer
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-168633542-introduction-to-php-fpm" class="talk talk--padded">
+      <h3>
+      <a href="talks/introduction-to-php-fpm.html" class="talk__title">
+        <span>Introduction to PHP-FPM</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/tom-adam.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/7s14jH18T7FfOKKB1KnwzY-9tOM=/36x36/http-/photos1.meetupstatic.com/photos/member/a/1/b/0/member_122561392.jpeg" alt="Tom Adam">
+                </div><span class="fn">Tom Adam</span></a>, <a href="http://www.instantiate.co.uk">Instantiate</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-158749832-auto-scaling-php-applications-using-chef-and-aws" class="talk talk--padded">
+      <h3>
+      <a href="talks/auto-scaling-php-applications-using-chef-and-aws.html" class="talk__title">
+        <span>Auto-scaling PHP Applications using Chef and AWS</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/andy-gale.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/EWkWEQgHwOPvb8SZgCTruqJke5A=/36x36/http-/avatars.phpsw.uk/twitter/andygale-size=original.jpeg" alt="Andy Gale">
+                </div><span class="fn">Andy Gale</span></a>, <a href="http://hellofutu.re">Hello Future</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-158749832-scaling-at-basekit" class="talk talk--padded">
+      <h3>
+      <a href="talks/scaling-at-basekit.html" class="talk__title">
+        <span>Scaling at BaseKit</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/ade-slade.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/ARvH2wCCpJpZdsh1v_M3pNae1aQ=/36x36/http-/avatars.phpsw.uk/twitter/adeslade-size=original.jpeg" alt="Ade Slade">
+                </div><span class="fn">Ade Slade</span></a>, <a href="http://www.basekit.com">BaseKit</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-158749832-scaling-wild-lamp-for-managed-hosting" class="talk talk--padded">
+      <h3>
+      <a href="talks/scaling-wild-lamp-for-managed-hosting.html" class="talk__title">
+        <span>Scaling wild LAMP for managed hosting</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/clement-debiaune.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/rO3UB1rla8ByF6zjh34EyE2JP1c=/36x36/http-/avatars.phpsw.uk/twitter/EUnibozu-size=original.jpeg" alt="Clément Debiaune">
+                </div><span class="fn">Clément Debiaune</span></a>, Freelance
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+          <li><div id="talk-151042702-php-fig-psr-wtf" class="talk talk--padded">
+      <h3>
+      <a href="talks/php-fig-psr-wtf.html" class="talk__title">
+        <span>PHP-FIG PSR WTF</span><i><svg xmlns="http://www.w3.org/2000/svg" class="slides" fill="black" preserveAspectRatio="xMidYMid meet" viewBox="0 0 160 140">
+  <path d="M70 11 l0 5 -32 -0 -32 -0 0 9.5 0 9.5 4.5 -0 4.5 -0 0 45.5 0 45.5 17.5 -0c9.6 -0 17.5 0.3 17.5 0.6 0 0.3 -2.9 5.3 -6.3 11.2 -3.5 5.9 -6.9 11.7 -7.6 12.9l-1.2 2.3 12.4 -0 12.4 -0 8.5 -13.3c5.9 -9.3 9 -13.2 10.3 -13.2 1.4 -0 4.2 3.8 9.8 13.3l8 13.2 14.4 -0c14.3 -0 14.4 -0 13.2 -2.1 -0.6 -1.2 -4.2 -7.3 -8 -13.5l-6.8 -11.4 17.4 -0 17.5 -0 0 -45.5 0 -45.5 5 -0 5 -0 0 -9.5 0 -9.5 -32 -0 -32 -0 0 -5 0 -5 -10 -0 -10 -0 0 5zm66 64.5l0 42.5 -56 -0 -56 -0 0 -42.5 0 -42.5 56 -0 56 -0 0 42.5z"/>
+  <path d="M33 75.5 l0 32.5 46.5 -0 46.5 -0 0 -32.5 0 -32.5 -46.5 -0 -46.5 -0 0 32.5z"/>
+</svg>
+</i></a>
+    </h3>
+  
+  
+      <div class="
+      talk__speakers
+          ">
+              <div class="talk__speakers__speaker">
+          <a href="speakers/steve-lacey.html"><div class="avatar avatar--small">
+                  <img src="../images.phpsw.uk/DvSRbyExEgD0G2PgYJ2PGzWbd-0=/36x36/http-/photos2.meetupstatic.com/photos/member/6/e/3/4/highres_155008212.jpeg" alt="Steve Lacey">
+                </div><span class="fn">Steve Lacey</span></a>, Ruby, PHP &amp; Python Developer at <a href="http://simpleweb.co.uk">Simpleweb</a>
+                  </div>
+          </div>
+  
+  
+      <div class="talk__description">
+      
+    </div>
+  </div>
+</li>
+      </ul>
+</div>
+
+    </div>
+
+    <div class="col-sm-4">
+      <h2 id="speaking">Interested in speaking?</h2>
+
+<p>We're always looking for speakers, so do drop us a line, regardless of your experience, we're all about first time speakers.</p>
+
+<p>If you're looking for ideas, a few of the topics we're keen to hear about are:</p>
+
+<ul>
+  <li>Debugging &amp; profiling</li>
+  <li>Frameworks</li>
+  <li>Lightning talks</li>
+  <li>PHP7, PHPNG</li>
+  <li>Support tools (e.g. phplint, boris, phpsh)</li>
+</ul>
+
+<div id="proposal" class="message">
+  
+  
+  <form action="message.html" method="post">
+    <input name="url" type="text">
+    <input name="subject" type="hidden" value="proposal">
+    <textarea name="message" required></textarea>
+    <input class="btn btn-primary" type="submit" value="Submit a proposal">
+  </form>
+</div>
+
+
+    </div>
+  </div>
+
+        </div>
+          </main>
+  </div>
+
+      <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="logo logo--greyscale" preserveAspectRatio="xMidYMid meet" viewBox="0 0 436 212">
+  <path class="logo__php" d="M86.574997 69.474998l-46.018997 0l-19.9 100.743996l23.630999 0l4.975002 -26.118988l22.388 0c21.143997 1.2 44.8 -16.2 44.8 -46.019005c0.000999 -17.4 -9.9 -27.4 -29.8 -28.606003zm-17.412994 55.968002l-14.925003 0l6.219002 -37.312004l16.168999 0c8.706001 0 14.9 3.7 14.9 11.194c-1.243004 21.1 -11.2 24.9 -22.4 26.118004z M111.962997 144.100006l19.899002 -100.742996l23.632004 0l-4.975998 26.119003l22.388 0c19.899994 1.2 27.4 11.2 24.9 23.630997l-8.706009 50.992996l-24.875 0l8.706009 -46.018997c1.243988 -6.2 1.2 -9.9 -7.5 -9.949997l-18.655991 0l-11.193008 55.968994l-23.630997 0z M255.237 69.474998l-46.018997 0l-19.900009 100.743996l23.632004 0l4.975006 -26.118988l22.388 0c21.143997 1.2 44.8 -16.2 44.8 -46.019005c0 -17.4 -10 -27.4 -29.9 -28.606003zm-17.412003 55.968002l-14.925003 0l6.218994 -37.312004l16.167999 0c8.707001 0 14.9 3.7 14.9 11.194c-1.243988 21.1 -11.2 24.9 -22.4 26.118004z" fill="#1E1E1E"/>
+  <g class="logo__sw">
+    <path class="logo__sw__rhomboid" d="M414.498169 142.375l-115.998169 0l12.5 -75l116 0" fill="#2A8EBD"/>
+    <path class="logo__sw__text" d="M317.558777 118.025002c2.764008 1.7 6.6 3 11 2.971001c3.800018 0 7.3 -1.8 7.3 -5.389c0 -2.7 -2 -4.4 -6.3 -6.633003c-4.904999 -2.6 -9.6 -6.4 -9.6 -12.367996c0 -9.4 8.2 -15.1 18.3 -15.131004c5.597015 0 8.9 1.2 10.9 2.279999l-3.108002 8.291c-1.520996 -0.8 -4.8 -2.1 -8.6 -2.003998c-4.629028 0 -7 2.3 -7 4.836998c0 2.8 2.8 4.4 6.8 6.633003c5.665009 3 9.2 6.8 9.2 12.366997c0 10.4 -8.6 15.7 -18.9 15.684006c-6.425995 -0.1 -11.1 -1.7 -13.3 -3.316002l3.317993 -8.222z M357.56076 128.804001l-1.79599 -46.568001l10.087006 0l0 20.727997c0 5.7 -0.1 10.9 -0.3 15.131004l0.138 0c1.65802 -4.6 3.3 -9.3 5.5 -14.993004l8.360016 -20.865997l10.916992 0l-0.139008 20.795998c-0.069 5.6 -0.2 10.2 -0.5 14.786003l0.138 0c1.589996 -4.8 3.3 -9.8 5.2 -14.854004l8.015991 -20.727997l10.502014 0l-20.520996 46.568001l-10.848999 0l-0.276001 -19.069c-0.069 -5.5 0.1 -10.2 0.3 -15.476997l-0.139008 0c-1.65799 5 -3.3 10 -5.6 15.683998l-8.015991 18.862l-11.054016 0z" fill="white"/>
+  </g>
+</svg>
+
+      </div>
+
+      <div class="col-xs-12 col-sm-8">
+        <nav class="row">
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h4>Meetup</h4>
+
+            <ul class="list">
+              <li>
+                <a href="index.html">
+                  <i class="fa fa-home"></i>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="events.html">
+                  <i class="fa fa-calendar"></i>
+                  Events
+                </a>
+              </li>
+              <li>
+                <a href="speakers.html">
+                  <i class="fa fa-bullhorn"></i>
+                  Speakers
+                </a>
+              </li>
+              <li>
+                <a href="sponsors.html">
+                  <i class="fa fa-briefcase"></i>
+                  Sponsors
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h4>Support us</h4>
+
+            <ul class="list">
+              <li>
+                <a href="brand.html">
+                  <i class="fa fa-picture-o"></i>
+                  Brand assets
+                </a>
+              </li>
+              <li>
+                <a href="code-of-conduct.html">
+                  <i class="fa fa-file-text-o"></i>
+                  Code of conduct
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:info at phpsw dot uk"
+                  class="email"
+                >
+                  <i class="fa fa-paper-plane-o"></i>
+                  Get in touch
+                </a>
+              </li>
+              <li>
+                <a href="speakers.html#speaking">
+                  <i class="fa fa-comments-o"></i>
+                  Submit a talk
+                </a>
+              </li>
+              <li>
+                <a href="sponsors.html#sponsoring">
+                  <i class="fa fa-money"></i>
+                  Sponsor us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-4 col-lg-3">
+            <h4>Stay connected</h4>
+
+            <ul class="list">
+              <li>
+                <a href="http://www.meetup.com/php-sw">
+                  <i class="fa fa-calendar"></i>
+                  Find us on Meetup
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/phpsw">
+                  <i class="fa fa-twitter"></i>
+                  Follow us on Twitter
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="https://github.com/phpsw/phpsw">
+                  <i class="fa fa-github"></i>
+                  Fork this on GitHub
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="col-sm-2 hidden-xs hidden-sm">
+        <div class="balloons">
+          <svg xmlns="http://www.w3.org/2000/svg" class="balloon balloon--small" fill="#1E1E1E" viewBox="0 0 1015 1268" preserveAspectRatio="xMidYMid meet">
+  <path d="M289.5 18.6 c-19 4.2 -32.6 13.1 -62.9 41.2l-13 11.9 -7 1.3c-12.4 2.2 -33.7 7.7 -46.1 12 -24.2 8.4 -43.3 19.2 -57.9 33.1 -21.6 20.4 -32.9 44.6 -38 81.7 -3.3 23.7 -3.7 48.5 -3.4 229.2l0.3 178.5 2.3 5.8c3.4 8.4 11.7 16.9 20.6 21.1 10.2 4.9 19.7 6.7 34.6 6.7 22.2 -0 37.1 -5 47.3 -16 6.9 -7.5 9.7 -14.4 10.6 -26.6 0.8 -10.3 0.6 -10.7 5.1 13.7 1.6 9.3 4.4 24.2 6 33.3 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.3 23.8 6 32.7 8.9 48.5 33 182.2 33 182.9 0 0.5 -8.2 0.9 -18.2 0.9 -20.4 -0 -22 0.4 -27.2 7.3 -2.3 2.9 -2.6 4.3 -2.6 10.8 0 8 1.2 10.9 6.2 14.9 5.1 3.9 9.3 5 19.7 5l10 -0 0.5 3.2c0.7 4.2 3 23.4 5.6 45.8 1 9.6 3.3 29 4.9 43 8.1 68.3 11.3 95.6 12.6 108 0.9 7.4 2.2 18.7 3 25 0.8 6.3 2.4 19.8 3.5 30 1.1 10.2 2.2 19.5 2.5 20.8l0.5 2.2 216.6 -0c172.3 -0 216.5 -0.3 216.8 -1.3 0.5 -1.8 4.5 -34.9 6.2 -51.2 0.8 -7.7 2.1 -18.7 2.9 -24.5 0.8 -5.8 2.2 -17 3 -25 0.8 -8 2.2 -19.5 3 -25.5 0.8 -6.1 2.1 -17.3 3 -25 0.8 -7.7 2.4 -21.2 3.5 -30 3.4 -27.6 11 -92.6 11 -94.5 0 -0.6 3.4 -1 9 -1 10.2 -0 13.3 -1.1 19.3 -6.8l3.7 -3.6 0 -9.1c0 -9 0 -9.1 -3.2 -12.1 -6.5 -6 -7.8 -6.4 -20.3 -6.4l-11.5 -0 0 -2.7c0 -1.5 1.4 -10.8 3 -20.7 5.3 -31.5 8.8 -52.5 12 -72.1 1.7 -10.5 4.2 -25.5 5.5 -33.5 1.3 -8 4 -24.4 6 -36.5 2 -12.1 4.7 -28.5 6 -36.5 6.4 -38.1 7.7 -46.2 9.1 -55.5 0.8 -5.5 1.6 -10.5 1.8 -11.1 0.2 -0.6 4.4 -1.4 9.6 -1.7 25.4 -1.8 51 -10.6 65.2 -22.4 10.3 -8.5 16.6 -18.4 19.9 -31 1.8 -7.3 1.9 -12.1 1.9 -125.9l0 -118.2 3.4 -8.8c3.7 -9.6 6.6 -20.4 8.8 -32.4 1.7 -9.8 1.7 -51.2 0 -63.5 -4 -28.5 -11.3 -53 -22.2 -75.4l-6.9 -14.1 22.7 -0 22.8 -0 4.9 5.1c11 11.2 31.5 22.7 44.7 25 8.1 1.3 18.3 0.2 24.1 -2.7 4.1 -2.1 9.5 -7.1 11.4 -10.7 1.4 -2.7 2 -12.7 0.9 -14.5 -0.2 -0.4 2.4 -2.1 5.9 -3.6 7.9 -3.4 15 -10.6 16.1 -16.1 1.9 -10.1 -7.1 -20 -22.3 -24.5 -4 -1.2 -4.3 -1.6 -4.3 -4.9 0 -8.9 -5.1 -16.5 -13.6 -20.2 -8.8 -3.9 -22.3 -3.4 -33.1 1.2 -7.4 3.2 -18.2 10.9 -26.7 19.1l-7.9 7.8 -37.4 -0 -37.4 -0 -8.7 -7.8c-17.6 -15.7 -30.5 -24.4 -51.7 -34.8 -16.4 -8 -32.7 -13.9 -50.5 -18.4 -27.3 -6.9 -44.8 -9 -81 -9.7 -28 -0.6 -151.9 1.2 -160.5 2.3 -4.1 0.5 -4.1 0.5 -10.4 -7.6 -10.9 -13.8 -25.2 -23.8 -41.6 -29 -5.2 -1.7 -10.3 -2.4 -20 -2.7 -15.2 -0.6 -22.8 0.7 -36.4 6.2l-9 3.6 -6.8 -3.5c-11.5 -5.7 -19.5 -7.8 -32.3 -8.2 -8 -0.3 -13.6 0.1 -18.5 1.2zm-37.8 369.4l2.2 -0 0.4 91.7c0.3 101.2 0 96.1 6.7 109.2 10 19.9 32 33.5 63.6 39.3 5.8 1 6.8 1.6 10 5.5 1.9 2.3 3.7 5.8 4 7.5 0.2 1.8 1.8 13.6 3.4 26.3 1.7 12.6 4.4 33 6 45.2 1.7 12.3 4.3 32.3 5.9 44.5 1.7 12.3 4.1 30.8 5.5 41.3 1.5 10.4 3.2 24.2 4 30.5 0.8 6.3 3.7 28.4 6.5 49 2.8 20.6 5.3 40.3 5.7 43.8l0.7 6.2 -52.6 -0c-41.8 -0 -52.6 -0.3 -53 -1.3 -0.3 -0.7 -1.2 -6 -2.2 -11.7 -0.9 -5.8 -2.7 -16.4 -4 -23.5 -1.3 -7.2 -2.6 -15 -3 -17.5 -0.3 -2.5 -1.9 -11.9 -3.5 -21 -1.6 -9.1 -4.3 -24.8 -6 -35 -1.7 -10.2 -4.2 -24.8 -5.6 -32.5 -1.3 -7.7 -3 -17.8 -3.8 -22.5 -1.7 -10.3 -4.7 -27.7 -8.7 -51 -1.6 -9.6 -4.1 -24.3 -5.5 -32.5 -1.4 -8.3 -3.8 -22.4 -5.4 -31.5 -5.2 -30.2 -9 -52.4 -10.5 -61.5 -0.8 -5 -3.1 -18.2 -5.1 -29.5 -2 -11.3 -3.7 -22.5 -3.9 -25 -0.6 -8.5 -11.6 -67.5 -13.2 -70.8 -1.5 -2.9 -1.5 -4.5 -0.5 -13.3 3.7 -31.4 14.5 -49.9 33.5 -57.1 5.6 -2.1 17.5 -3.8 22.7 -3.2 1.9 0.2 4.5 0.4 5.7 0.4zm309.3 98c5.2 0.5 10 1 10.7 1 0.9 -0 1.3 11.1 1.6 43.7 0.4 46.4 0.5 47.2 5.5 58.7 1.2 2.6 3.8 7.1 5.9 9.9l3.7 5 -1.7 15.1c-1 8.3 -3.1 26.3 -4.7 40.1 -1.6 13.7 -4.3 36.6 -6 50.7 -11.3 96 -14.4 122.4 -18.1 154.3 -1.7 14.3 -4.1 34.3 -5.2 44.5l-2.2 18.5 -71.7 0.3c-39.5 0.1 -71.8 -0 -71.8 -0.3 0 -0.2 -0.6 -5.3 -1.4 -11.2 -0.8 -5.9 -1.8 -13.7 -2.1 -17.3 -0.4 -3.6 -1.9 -17.1 -3.5 -30 -1.6 -12.9 -4.3 -35.7 -6 -50.5 -1.7 -14.9 -4.2 -35.6 -5.5 -46 -1.3 -10.5 -2.7 -22.2 -3 -26 -0.4 -3.9 -1.7 -15.1 -3 -25 -1.3 -9.9 -2.6 -21.4 -3 -25.5 -0.4 -4.1 -1.5 -13.8 -2.6 -21.4 -2.6 -19.2 -2.9 -17.7 3.4 -16 14.6 3.8 25.9 4.9 52.2 4.9 22.4 -0 27.7 -0.4 38.4 -2.3 24.9 -4.5 43 -12.4 55.1 -24.2 7.3 -7.1 11 -12.7 14.9 -22.9l2.6 -6.6 0.3 -61.8 0.3 -61.9 3.7 0.6c2 0.4 8 1.1 13.2 1.6zm69.3 141.5c2.9 0.8 10.2 2.3 16.4 3.4 9.9 1.7 11.7 2.3 15.5 5.4 13 10.6 36.7 18.7 62.2 21.3 7.6 0.8 7.3 0.1 5.1 12.5 -1.5 8.8 -6.9 40.6 -15.5 91.4 -10.1 59.4 -15 88.6 -21.5 126.7 -3.6 21.2 -6.5 38.9 -6.5 39.2 0 0.3 -23 0.6 -51.1 0.6 -48.1 -0 -51 -0.1 -50.5 -1.8 0.3 -0.9 1 -6.4 1.6 -12.2 0.7 -5.8 2.2 -18.8 3.5 -29 1.3 -10.2 2.7 -21.2 3 -24.5 0.6 -5.7 3.3 -27.7 9 -73 4.6 -36.3 7.5 -60.8 9.5 -78 1.1 -9.4 2.6 -21.7 3.4 -27.5 0.8 -5.8 1.8 -13.4 2.1 -17 0.8 -8.2 4.4 -34.7 5.1 -37.8 0.3 -1.6 1 -2.2 2 -1.8 0.8 0.3 3.8 1.2 6.7 2.1z"/>
+</svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="balloon balloon--large" fill="#1E1E1E" viewBox="0 0 1015 1268" preserveAspectRatio="xMidYMid meet">
+  <path d="M289.5 18.6 c-19 4.2 -32.6 13.1 -62.9 41.2l-13 11.9 -7 1.3c-12.4 2.2 -33.7 7.7 -46.1 12 -24.2 8.4 -43.3 19.2 -57.9 33.1 -21.6 20.4 -32.9 44.6 -38 81.7 -3.3 23.7 -3.7 48.5 -3.4 229.2l0.3 178.5 2.3 5.8c3.4 8.4 11.7 16.9 20.6 21.1 10.2 4.9 19.7 6.7 34.6 6.7 22.2 -0 37.1 -5 47.3 -16 6.9 -7.5 9.7 -14.4 10.6 -26.6 0.8 -10.3 0.6 -10.7 5.1 13.7 1.6 9.3 4.4 24.2 6 33.3 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.3 23.8 6 32.7 8.9 48.5 33 182.2 33 182.9 0 0.5 -8.2 0.9 -18.2 0.9 -20.4 -0 -22 0.4 -27.2 7.3 -2.3 2.9 -2.6 4.3 -2.6 10.8 0 8 1.2 10.9 6.2 14.9 5.1 3.9 9.3 5 19.7 5l10 -0 0.5 3.2c0.7 4.2 3 23.4 5.6 45.8 1 9.6 3.3 29 4.9 43 8.1 68.3 11.3 95.6 12.6 108 0.9 7.4 2.2 18.7 3 25 0.8 6.3 2.4 19.8 3.5 30 1.1 10.2 2.2 19.5 2.5 20.8l0.5 2.2 216.6 -0c172.3 -0 216.5 -0.3 216.8 -1.3 0.5 -1.8 4.5 -34.9 6.2 -51.2 0.8 -7.7 2.1 -18.7 2.9 -24.5 0.8 -5.8 2.2 -17 3 -25 0.8 -8 2.2 -19.5 3 -25.5 0.8 -6.1 2.1 -17.3 3 -25 0.8 -7.7 2.4 -21.2 3.5 -30 3.4 -27.6 11 -92.6 11 -94.5 0 -0.6 3.4 -1 9 -1 10.2 -0 13.3 -1.1 19.3 -6.8l3.7 -3.6 0 -9.1c0 -9 0 -9.1 -3.2 -12.1 -6.5 -6 -7.8 -6.4 -20.3 -6.4l-11.5 -0 0 -2.7c0 -1.5 1.4 -10.8 3 -20.7 5.3 -31.5 8.8 -52.5 12 -72.1 1.7 -10.5 4.2 -25.5 5.5 -33.5 1.3 -8 4 -24.4 6 -36.5 2 -12.1 4.7 -28.5 6 -36.5 6.4 -38.1 7.7 -46.2 9.1 -55.5 0.8 -5.5 1.6 -10.5 1.8 -11.1 0.2 -0.6 4.4 -1.4 9.6 -1.7 25.4 -1.8 51 -10.6 65.2 -22.4 10.3 -8.5 16.6 -18.4 19.9 -31 1.8 -7.3 1.9 -12.1 1.9 -125.9l0 -118.2 3.4 -8.8c3.7 -9.6 6.6 -20.4 8.8 -32.4 1.7 -9.8 1.7 -51.2 0 -63.5 -4 -28.5 -11.3 -53 -22.2 -75.4l-6.9 -14.1 22.7 -0 22.8 -0 4.9 5.1c11 11.2 31.5 22.7 44.7 25 8.1 1.3 18.3 0.2 24.1 -2.7 4.1 -2.1 9.5 -7.1 11.4 -10.7 1.4 -2.7 2 -12.7 0.9 -14.5 -0.2 -0.4 2.4 -2.1 5.9 -3.6 7.9 -3.4 15 -10.6 16.1 -16.1 1.9 -10.1 -7.1 -20 -22.3 -24.5 -4 -1.2 -4.3 -1.6 -4.3 -4.9 0 -8.9 -5.1 -16.5 -13.6 -20.2 -8.8 -3.9 -22.3 -3.4 -33.1 1.2 -7.4 3.2 -18.2 10.9 -26.7 19.1l-7.9 7.8 -37.4 -0 -37.4 -0 -8.7 -7.8c-17.6 -15.7 -30.5 -24.4 -51.7 -34.8 -16.4 -8 -32.7 -13.9 -50.5 -18.4 -27.3 -6.9 -44.8 -9 -81 -9.7 -28 -0.6 -151.9 1.2 -160.5 2.3 -4.1 0.5 -4.1 0.5 -10.4 -7.6 -10.9 -13.8 -25.2 -23.8 -41.6 -29 -5.2 -1.7 -10.3 -2.4 -20 -2.7 -15.2 -0.6 -22.8 0.7 -36.4 6.2l-9 3.6 -6.8 -3.5c-11.5 -5.7 -19.5 -7.8 -32.3 -8.2 -8 -0.3 -13.6 0.1 -18.5 1.2zm-37.8 369.4l2.2 -0 0.4 91.7c0.3 101.2 0 96.1 6.7 109.2 10 19.9 32 33.5 63.6 39.3 5.8 1 6.8 1.6 10 5.5 1.9 2.3 3.7 5.8 4 7.5 0.2 1.8 1.8 13.6 3.4 26.3 1.7 12.6 4.4 33 6 45.2 1.7 12.3 4.3 32.3 5.9 44.5 1.7 12.3 4.1 30.8 5.5 41.3 1.5 10.4 3.2 24.2 4 30.5 0.8 6.3 3.7 28.4 6.5 49 2.8 20.6 5.3 40.3 5.7 43.8l0.7 6.2 -52.6 -0c-41.8 -0 -52.6 -0.3 -53 -1.3 -0.3 -0.7 -1.2 -6 -2.2 -11.7 -0.9 -5.8 -2.7 -16.4 -4 -23.5 -1.3 -7.2 -2.6 -15 -3 -17.5 -0.3 -2.5 -1.9 -11.9 -3.5 -21 -1.6 -9.1 -4.3 -24.8 -6 -35 -1.7 -10.2 -4.2 -24.8 -5.6 -32.5 -1.3 -7.7 -3 -17.8 -3.8 -22.5 -1.7 -10.3 -4.7 -27.7 -8.7 -51 -1.6 -9.6 -4.1 -24.3 -5.5 -32.5 -1.4 -8.3 -3.8 -22.4 -5.4 -31.5 -5.2 -30.2 -9 -52.4 -10.5 -61.5 -0.8 -5 -3.1 -18.2 -5.1 -29.5 -2 -11.3 -3.7 -22.5 -3.9 -25 -0.6 -8.5 -11.6 -67.5 -13.2 -70.8 -1.5 -2.9 -1.5 -4.5 -0.5 -13.3 3.7 -31.4 14.5 -49.9 33.5 -57.1 5.6 -2.1 17.5 -3.8 22.7 -3.2 1.9 0.2 4.5 0.4 5.7 0.4zm309.3 98c5.2 0.5 10 1 10.7 1 0.9 -0 1.3 11.1 1.6 43.7 0.4 46.4 0.5 47.2 5.5 58.7 1.2 2.6 3.8 7.1 5.9 9.9l3.7 5 -1.7 15.1c-1 8.3 -3.1 26.3 -4.7 40.1 -1.6 13.7 -4.3 36.6 -6 50.7 -11.3 96 -14.4 122.4 -18.1 154.3 -1.7 14.3 -4.1 34.3 -5.2 44.5l-2.2 18.5 -71.7 0.3c-39.5 0.1 -71.8 -0 -71.8 -0.3 0 -0.2 -0.6 -5.3 -1.4 -11.2 -0.8 -5.9 -1.8 -13.7 -2.1 -17.3 -0.4 -3.6 -1.9 -17.1 -3.5 -30 -1.6 -12.9 -4.3 -35.7 -6 -50.5 -1.7 -14.9 -4.2 -35.6 -5.5 -46 -1.3 -10.5 -2.7 -22.2 -3 -26 -0.4 -3.9 -1.7 -15.1 -3 -25 -1.3 -9.9 -2.6 -21.4 -3 -25.5 -0.4 -4.1 -1.5 -13.8 -2.6 -21.4 -2.6 -19.2 -2.9 -17.7 3.4 -16 14.6 3.8 25.9 4.9 52.2 4.9 22.4 -0 27.7 -0.4 38.4 -2.3 24.9 -4.5 43 -12.4 55.1 -24.2 7.3 -7.1 11 -12.7 14.9 -22.9l2.6 -6.6 0.3 -61.8 0.3 -61.9 3.7 0.6c2 0.4 8 1.1 13.2 1.6zm69.3 141.5c2.9 0.8 10.2 2.3 16.4 3.4 9.9 1.7 11.7 2.3 15.5 5.4 13 10.6 36.7 18.7 62.2 21.3 7.6 0.8 7.3 0.1 5.1 12.5 -1.5 8.8 -6.9 40.6 -15.5 91.4 -10.1 59.4 -15 88.6 -21.5 126.7 -3.6 21.2 -6.5 38.9 -6.5 39.2 0 0.3 -23 0.6 -51.1 0.6 -48.1 -0 -51 -0.1 -50.5 -1.8 0.3 -0.9 1 -6.4 1.6 -12.2 0.7 -5.8 2.2 -18.8 3.5 -29 1.3 -10.2 2.7 -21.2 3 -24.5 0.6 -5.7 3.3 -27.7 9 -73 4.6 -36.3 7.5 -60.8 9.5 -78 1.1 -9.4 2.6 -21.7 3.4 -27.5 0.8 -5.8 1.8 -13.4 2.1 -17 0.8 -8.2 4.4 -34.7 5.1 -37.8 0.3 -1.6 1 -2.2 2 -1.8 0.8 0.3 3.8 1.2 6.7 2.1z"/>
+</svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="balloon balloon--medium" fill="#1E1E1E" viewBox="0 0 1015 1268" preserveAspectRatio="xMidYMid meet">
+  <path d="M289.5 18.6 c-19 4.2 -32.6 13.1 -62.9 41.2l-13 11.9 -7 1.3c-12.4 2.2 -33.7 7.7 -46.1 12 -24.2 8.4 -43.3 19.2 -57.9 33.1 -21.6 20.4 -32.9 44.6 -38 81.7 -3.3 23.7 -3.7 48.5 -3.4 229.2l0.3 178.5 2.3 5.8c3.4 8.4 11.7 16.9 20.6 21.1 10.2 4.9 19.7 6.7 34.6 6.7 22.2 -0 37.1 -5 47.3 -16 6.9 -7.5 9.7 -14.4 10.6 -26.6 0.8 -10.3 0.6 -10.7 5.1 13.7 1.6 9.3 4.4 24.2 6 33.3 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.4 23.9 6 33 1.7 9.1 4.3 23.8 6 32.7 8.9 48.5 33 182.2 33 182.9 0 0.5 -8.2 0.9 -18.2 0.9 -20.4 -0 -22 0.4 -27.2 7.3 -2.3 2.9 -2.6 4.3 -2.6 10.8 0 8 1.2 10.9 6.2 14.9 5.1 3.9 9.3 5 19.7 5l10 -0 0.5 3.2c0.7 4.2 3 23.4 5.6 45.8 1 9.6 3.3 29 4.9 43 8.1 68.3 11.3 95.6 12.6 108 0.9 7.4 2.2 18.7 3 25 0.8 6.3 2.4 19.8 3.5 30 1.1 10.2 2.2 19.5 2.5 20.8l0.5 2.2 216.6 -0c172.3 -0 216.5 -0.3 216.8 -1.3 0.5 -1.8 4.5 -34.9 6.2 -51.2 0.8 -7.7 2.1 -18.7 2.9 -24.5 0.8 -5.8 2.2 -17 3 -25 0.8 -8 2.2 -19.5 3 -25.5 0.8 -6.1 2.1 -17.3 3 -25 0.8 -7.7 2.4 -21.2 3.5 -30 3.4 -27.6 11 -92.6 11 -94.5 0 -0.6 3.4 -1 9 -1 10.2 -0 13.3 -1.1 19.3 -6.8l3.7 -3.6 0 -9.1c0 -9 0 -9.1 -3.2 -12.1 -6.5 -6 -7.8 -6.4 -20.3 -6.4l-11.5 -0 0 -2.7c0 -1.5 1.4 -10.8 3 -20.7 5.3 -31.5 8.8 -52.5 12 -72.1 1.7 -10.5 4.2 -25.5 5.5 -33.5 1.3 -8 4 -24.4 6 -36.5 2 -12.1 4.7 -28.5 6 -36.5 6.4 -38.1 7.7 -46.2 9.1 -55.5 0.8 -5.5 1.6 -10.5 1.8 -11.1 0.2 -0.6 4.4 -1.4 9.6 -1.7 25.4 -1.8 51 -10.6 65.2 -22.4 10.3 -8.5 16.6 -18.4 19.9 -31 1.8 -7.3 1.9 -12.1 1.9 -125.9l0 -118.2 3.4 -8.8c3.7 -9.6 6.6 -20.4 8.8 -32.4 1.7 -9.8 1.7 -51.2 0 -63.5 -4 -28.5 -11.3 -53 -22.2 -75.4l-6.9 -14.1 22.7 -0 22.8 -0 4.9 5.1c11 11.2 31.5 22.7 44.7 25 8.1 1.3 18.3 0.2 24.1 -2.7 4.1 -2.1 9.5 -7.1 11.4 -10.7 1.4 -2.7 2 -12.7 0.9 -14.5 -0.2 -0.4 2.4 -2.1 5.9 -3.6 7.9 -3.4 15 -10.6 16.1 -16.1 1.9 -10.1 -7.1 -20 -22.3 -24.5 -4 -1.2 -4.3 -1.6 -4.3 -4.9 0 -8.9 -5.1 -16.5 -13.6 -20.2 -8.8 -3.9 -22.3 -3.4 -33.1 1.2 -7.4 3.2 -18.2 10.9 -26.7 19.1l-7.9 7.8 -37.4 -0 -37.4 -0 -8.7 -7.8c-17.6 -15.7 -30.5 -24.4 -51.7 -34.8 -16.4 -8 -32.7 -13.9 -50.5 -18.4 -27.3 -6.9 -44.8 -9 -81 -9.7 -28 -0.6 -151.9 1.2 -160.5 2.3 -4.1 0.5 -4.1 0.5 -10.4 -7.6 -10.9 -13.8 -25.2 -23.8 -41.6 -29 -5.2 -1.7 -10.3 -2.4 -20 -2.7 -15.2 -0.6 -22.8 0.7 -36.4 6.2l-9 3.6 -6.8 -3.5c-11.5 -5.7 -19.5 -7.8 -32.3 -8.2 -8 -0.3 -13.6 0.1 -18.5 1.2zm-37.8 369.4l2.2 -0 0.4 91.7c0.3 101.2 0 96.1 6.7 109.2 10 19.9 32 33.5 63.6 39.3 5.8 1 6.8 1.6 10 5.5 1.9 2.3 3.7 5.8 4 7.5 0.2 1.8 1.8 13.6 3.4 26.3 1.7 12.6 4.4 33 6 45.2 1.7 12.3 4.3 32.3 5.9 44.5 1.7 12.3 4.1 30.8 5.5 41.3 1.5 10.4 3.2 24.2 4 30.5 0.8 6.3 3.7 28.4 6.5 49 2.8 20.6 5.3 40.3 5.7 43.8l0.7 6.2 -52.6 -0c-41.8 -0 -52.6 -0.3 -53 -1.3 -0.3 -0.7 -1.2 -6 -2.2 -11.7 -0.9 -5.8 -2.7 -16.4 -4 -23.5 -1.3 -7.2 -2.6 -15 -3 -17.5 -0.3 -2.5 -1.9 -11.9 -3.5 -21 -1.6 -9.1 -4.3 -24.8 -6 -35 -1.7 -10.2 -4.2 -24.8 -5.6 -32.5 -1.3 -7.7 -3 -17.8 -3.8 -22.5 -1.7 -10.3 -4.7 -27.7 -8.7 -51 -1.6 -9.6 -4.1 -24.3 -5.5 -32.5 -1.4 -8.3 -3.8 -22.4 -5.4 -31.5 -5.2 -30.2 -9 -52.4 -10.5 -61.5 -0.8 -5 -3.1 -18.2 -5.1 -29.5 -2 -11.3 -3.7 -22.5 -3.9 -25 -0.6 -8.5 -11.6 -67.5 -13.2 -70.8 -1.5 -2.9 -1.5 -4.5 -0.5 -13.3 3.7 -31.4 14.5 -49.9 33.5 -57.1 5.6 -2.1 17.5 -3.8 22.7 -3.2 1.9 0.2 4.5 0.4 5.7 0.4zm309.3 98c5.2 0.5 10 1 10.7 1 0.9 -0 1.3 11.1 1.6 43.7 0.4 46.4 0.5 47.2 5.5 58.7 1.2 2.6 3.8 7.1 5.9 9.9l3.7 5 -1.7 15.1c-1 8.3 -3.1 26.3 -4.7 40.1 -1.6 13.7 -4.3 36.6 -6 50.7 -11.3 96 -14.4 122.4 -18.1 154.3 -1.7 14.3 -4.1 34.3 -5.2 44.5l-2.2 18.5 -71.7 0.3c-39.5 0.1 -71.8 -0 -71.8 -0.3 0 -0.2 -0.6 -5.3 -1.4 -11.2 -0.8 -5.9 -1.8 -13.7 -2.1 -17.3 -0.4 -3.6 -1.9 -17.1 -3.5 -30 -1.6 -12.9 -4.3 -35.7 -6 -50.5 -1.7 -14.9 -4.2 -35.6 -5.5 -46 -1.3 -10.5 -2.7 -22.2 -3 -26 -0.4 -3.9 -1.7 -15.1 -3 -25 -1.3 -9.9 -2.6 -21.4 -3 -25.5 -0.4 -4.1 -1.5 -13.8 -2.6 -21.4 -2.6 -19.2 -2.9 -17.7 3.4 -16 14.6 3.8 25.9 4.9 52.2 4.9 22.4 -0 27.7 -0.4 38.4 -2.3 24.9 -4.5 43 -12.4 55.1 -24.2 7.3 -7.1 11 -12.7 14.9 -22.9l2.6 -6.6 0.3 -61.8 0.3 -61.9 3.7 0.6c2 0.4 8 1.1 13.2 1.6zm69.3 141.5c2.9 0.8 10.2 2.3 16.4 3.4 9.9 1.7 11.7 2.3 15.5 5.4 13 10.6 36.7 18.7 62.2 21.3 7.6 0.8 7.3 0.1 5.1 12.5 -1.5 8.8 -6.9 40.6 -15.5 91.4 -10.1 59.4 -15 88.6 -21.5 126.7 -3.6 21.2 -6.5 38.9 -6.5 39.2 0 0.3 -23 0.6 -51.1 0.6 -48.1 -0 -51 -0.1 -50.5 -1.8 0.3 -0.9 1 -6.4 1.6 -12.2 0.7 -5.8 2.2 -18.8 3.5 -29 1.3 -10.2 2.7 -21.2 3 -24.5 0.6 -5.7 3.3 -27.7 9 -73 4.6 -36.3 7.5 -60.8 9.5 -78 1.1 -9.4 2.6 -21.7 3.4 -27.5 0.8 -5.8 1.8 -13.4 2.1 -17 0.8 -8.2 4.4 -34.7 5.1 -37.8 0.3 -1.6 1 -2.2 2 -1.8 0.8 0.3 3.8 1.2 6.7 2.1z"/>
+</svg>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  <script src="https://cdn.embedly.com/widgets/platform.js"></script>
+  <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+
+    <script src="https://phpsw.uk/rev/201702092308/js/vendor.js"></script>
+    <script src="https://phpsw.uk/rev/201702092308/js/main.js"></script>
+  </body>
+</html>
